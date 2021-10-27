@@ -9,3 +9,7 @@ body {
     padding: 30px;
     margin: auto;
     }
+
+address {
+    font-style: normal;
+    }
