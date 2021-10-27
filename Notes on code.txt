@@ -1,0 +1,9 @@
+1   The characters you are reading on your screen now each have a numerical value. In the ASCII format, 
+    for example, the letter 'A' is 65, 'B' is 66, and so on. If you look at a table of characters available 
+    in ASCII you will see that it isn't much use for someone who wishes to write something in Mandarin, Arabic, 
+    or Japanese. For characters / words from those languages to be displayed we needed another system of 
+    encoding them to and from numbers stored in computer memory.
+
+    UTF-8 is just one of the encoding methods that were invented to implement this requirement. 
+    It lets you write text in all kinds of languages, so French accents will appear perfectly fine, 
+    as will text like this
