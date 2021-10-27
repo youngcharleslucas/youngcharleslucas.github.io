@@ -1,15 +1,44 @@
-body {
-    background-image: url('/fIS2zkx\ -\ Imgur.jpg'); 
+/*body {
+
+            
+}
+
+body::before{
+    background-image: url(); 
     background-size: cover;
     background-attachment: fixed;
-    background-repeat: no-repeat;         
+    background-repeat: no-repeat;
+    opacity: 0.5;
+
+}*/
+
+body {
+    position: relative; 
+    height: 100vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body::before {    
+      content: "";
+      background-image: url('/fIS2zkx\ -\ Imgur.jpg');
+      background-size: cover;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.4;
 }
 
 .paragraph {
+    position: relative;
     padding: 30px;
     margin: auto;
     min-width: 400px;
-    text-indent: 1em;
+    text-indent: 2em;
 }
 
 address {
@@ -28,7 +57,14 @@ img {
 
 .portrait {
     flex-basis: 100%;
-    padding-right: 100px;
+    padding-left: 100px;
     min-width: 400px;
 }
 
+.navbar { /*pins the contents to top of page*/
+    position: fixed;
+    top: 0px;
+    left: 0px;    
+    width: 100%;
+    background-color: rgba(100,100,100);
+}
