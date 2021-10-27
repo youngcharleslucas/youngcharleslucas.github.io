@@ -1,5 +1,5 @@
 body {
-    background-image: url('/fIS2zkx\ -\ Imgur.jpg'); 
+    background-image: url('/fIS2zkx\ -\ Imgur 4.jpg'); 
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;            
@@ -28,22 +28,40 @@ body::before {
       opacity: 0.4;
 }
 */
+h1, h2, address{
+    position: relative;
+    padding: 30px;
+    margin-left: 10%;
+    font-family: 'helvetica';
+    color: rgb(175, 175, 175);
+}
+
+
 .paragraph {
     position: relative;
     padding: 30px;
     margin-left: 10%;
     min-width: 400px;
     text-indent: 2em;
+    font-family: 'helvetica';
+    color: rgb(175, 175, 175);
 }
 
-address {
-    font-style: normal;
+.paragraph a {
+    text-decoration: none;
+    color: rgb(175, 175, 175);
+}
+
+address a {
+    text-decoration: none;
+    color: rgb(175, 175, 175);
+
 }
 
 .container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: row;
 }
 
 img {
@@ -54,15 +72,22 @@ img {
     flex-basis: 100%;
     padding-left: 100px;
     min-width: 400px;
-   
+       
 }
 
 .navbar { /*pins the contents to left of page*/
     position: fixed;
-    top: 0px;
+    top: 0m;
     left: 0px;    
     height: 100%;
-    width: 10%;
+    width: 8%;
     background-color: rgba(100,100,100, 0.5);
-    color: white;
+    color: rgb(175, 175, 175);
+    text-decoration: none;
+    padding-left: 2em;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(175, 175, 175);
 }
