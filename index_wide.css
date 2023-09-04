@@ -4,14 +4,23 @@ backgroung-color: pink;
 }
 
 .home-body {
-  max-width: 90vw;
+  width: 90vw;
+  max-width: 1200px;
   margin: auto
+}
+
+.home-profile-image {
+  padding: 1em;
+}
+
+.home-brief-bio {
+  padding: 1em;
 }
 
 .home-bio-row::after {
   content: "";
   clear: both;
-  display: table;
+  display: grid;
 }
 
 img {
