@@ -3,7 +3,12 @@
 backgroung-color: pink;
 }
 
-.row::after {
+.home-body {
+  max-width: 90vw;
+  margin: auto
+}
+
+.home-bio-row::after {
   content: "";
   clear: both;
   display: table;
@@ -19,8 +24,7 @@ body {
   color: #575757;
 }
 
-p {    
-    
+p {        
     font-family: Helvetica,arial,sans-serif;
     font-family: ltc-bodoni-175;
     font-weight: normal;
