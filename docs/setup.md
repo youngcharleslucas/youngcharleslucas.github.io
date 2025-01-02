@@ -21,7 +21,9 @@ Add the configuration file withing the repository folder:
 #### Deployment Branch  
 
 In the repository's settings, click on "Pages" on the left navigation bar. 
-Change the Branch to "gh-pages" and "/(root)".  
+Change the Branch to "gh-pages" and "/docs". It may not let the change to 
+"/docs" occur until the new mkdocs file has been pushed, and added the 
+"/docs" folder.  
 
 #### Add .gitignore  
 
@@ -95,4 +97,24 @@ by side. Click this and it should open "settings.json".
 
 Execute `mkdocs serve` in cmd terminal, where the virtual environment is running.  
 Navigate to the local address returned.  
+
+
+### Add code block styling  
+
+For the language you want to be formated in the code block, find the associated 
+configuration codes from the following site:  
+
+https://pygments.org/docs/lexers/  
+
+Add the lexer code to the mkdocs.yml file under "markdown_extensions:"  
+
+You can also add more format to the code block by adding the following on the 
+first line:  
+
+> \`\`\`py title="Code Block Title" linenums="1" 
+
+You can highlight lines by:  
+
+> hl_lines="2-4"  
+
 
