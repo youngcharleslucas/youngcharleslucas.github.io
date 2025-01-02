@@ -51,9 +51,9 @@ Create a new makedocs project:
 
 Open the parent folder of the project in VS Code.  
 
-Add the following minimal configuration to set a theme:  
+Add the following minimal configuration to `mkdocs.yml` to set a theme:  
 
-```yaml  
+```yml  
 site_name: My site
 site_url: https://mydomain.org/mysite
 theme:
@@ -91,4 +91,8 @@ by side. Click this and it should open "settings.json".
 }
 ```
 
-####
+### See live changes to the Mkdocs site  
+
+Execute `mkdocs serve` in cmd terminal, where the virtual environment is running.  
+Navigate to the local address returned.  
+
