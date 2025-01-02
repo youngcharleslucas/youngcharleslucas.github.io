@@ -1,10 +1,13 @@
 # Setting up MakeDocs  
 
 Material for MakeDocs Installation:  
-https://squidfunk.github.io/mkdocs-material/getting-started/  
+[Getting Started](https://squidfunk.github.io/mkdocs-material/getting-started/)  
 
 Manage python packages with pip:  
-https://realpython.com/what-is-pip/  
+[What is pip?](https://realpython.com/what-is-pip/)  
+
+Tutorial for setup:  
+[James Willett](https://jameswillett.dev/getting-started-with-material-for-mkdocs/#code-blocks)
 
 ### Setup the GitHub pages repository  
 
@@ -111,10 +114,86 @@ Add the lexer code to the mkdocs.yml file under "markdown_extensions:"
 You can also add more format to the code block by adding the following on the 
 first line:  
 
-> \`\`\`py title="Code Block Title" linenums="1" 
+` \`\`\`py title="Code Block Title" linenums="1" `
 
 You can highlight lines by:  
 
-> hl_lines="2-4"  
+` hl_lines="2-4"  `
+
+### Add tabbed content blocks  
+
+Add the following block to the mkdocs.yml file under extentions:  
+
+```yml  
+markdown_extensions:
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true  
+```
+
+Add the tabbed content as the example below:  
+
+```md  
+
+=== "Plain text"  
+
+    Feed me a stray cat...  
+
+=== "List"  
+
+    * One  
+    * Two  
+    * Three 
+
+```
+
+=== "Plain text"  
+
+    Feed me a stray cat...  
+
+=== "List"  
+
+    * One  
+    * Two  
+    * Three 
+
+### Admonitions  
+
+Admonitions are a way to call out blocks of information.  
+
+- Add `- admonition` to the mkdocs.yml  
+- Place the text information under a title using exclaimation marks. The information
+block may need to be indented 4 spaces:    
+
+```md  
+
+!!! note "Title of callout"  
+
+    Now each of us from time to time, has gazed upon the sea.
+    And watched the warships pulling out, to keep this country free.
+    And most of us have read a book, or heard a lusty tale.
+    About the men who sail these ships, through lightening, wind and hail.  
+
+```
+
+!!! note "Title of callout"  
+
+    Now each of us from time to time, has gazed upon the sea.
+    And watched the warships pulling out, to keep this country free.
+    And most of us have read a book, or heard a lusty tale.
+    About the men who sail these ships, through lightening, wind and hail.  
+
+A collapsable can be made with question marks `???`:  
+
+??? info "The Hole"  
+
+    But theres a place within each ship, that legend fails to teach,
+    Within the shell, deep down in Hell, where legend cannot reach.
+    Its down below the waterline, it takes a living toil
+    A hot metal living hell, that sailors call the HOLE.
+
+
+
+
 
 
