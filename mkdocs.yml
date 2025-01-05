@@ -5,11 +5,20 @@ theme:
   font: 
     text: Roboto Mono  
   icon: 
-    logo: material/home  
+    logo: material/square-outline
   favicon: assets/images/dot-circles.svg
   palette: 
     primary: custom  
+  features: 
+    - toc.integrate  
+
   custom_dir: overrides
+
+extra: 
+  social: 
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/charles-lucas-young/
+
 
 extra_css: 
   - stylesheets/extra.css

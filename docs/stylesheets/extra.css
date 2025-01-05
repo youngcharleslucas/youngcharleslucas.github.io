@@ -1,4 +1,74 @@
 :root {
-    --md-primary-fg-color: rgba(31, 33, 40, .7);
+    --md-primary-fg-color: rgba(0, 192, 245, 0.804);
     --md-default-bg-color: rgba(31, 33, 40, 1);
-  }
+}
+
+.md-grid {
+    max-width: initial;
+}
+
+.md-header__inner {
+    backdrop-filter: blur(2px);
+}
+
+.md-header__title > .md-header__ellipsis {
+    display: flex;
+    align-items: center;
+}
+
+.md-header__title{
+    height: 3rem;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link > .md-ellipsis {
+    background-color: rgba(245, 188, 0, 0.804);
+}
+
+.md-nav--secondary > .md-nav__list > .md-nav__item > .md-nav__link > .md-ellipsis {
+    background-color: rgba(252, 231, 163, 0.804);
+}
+
+.md-nav--secondary > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > .md-nav__link > .md-ellipsis {
+    background-color: rgba(253, 243, 208, 0.804);
+}
+.md-nav--primary .md-nav__title{
+    background-color: white;
+    color: white;
+}
+
+.md-sidebar__inner{
+    color: black;
+}
+
+.md-sidebar__inner .md-nav__link--passed{
+    color: black;
+}
+
+.md-sidebar__inner .md-nav__link--active{
+    color: rgb(44, 0, 167);
+    font-weight: 800;
+}
+
+.md-typeset h1{
+    font-weight: 800;
+    color: black;
+}
+
+.md-typeset h2{
+    font-weight: 800;
+    color: black;
+}
+
+.md-typeset h3{
+    font-weight: 800;
+    color: black;
+}
+
+.md-typeset h4{
+    font-weight: 800;
+    color: black;
+}
+
+.md-content__inner a {
+    color: rgb(160, 0, 209);
+}
