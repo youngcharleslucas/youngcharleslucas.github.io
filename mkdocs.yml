@@ -1,18 +1,14 @@
 site_name: youngcharleslucas
 site_url: https://youngcharleslucas.github.io
 theme:
-  name: material
+  name: material 
+  font: 
+    text: Roboto Mono  
+  icon: 
+    logo: material/home  
+  favicon: assets/images/dot-circles.svg
   palette: 
-    # Dark Mode  
-    - scheme: slate  
-      toggle: 
-        icon: material/weather-sunny  
-        name: Dark Mode
-    # Light Mode
-    - scheme: default 
-      toggle: 
-        icon: material/weather-night  
-        name: Light Mode 
+    primary: custom  
   custom_dir: overrides
 
 extra_css: 
