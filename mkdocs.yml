@@ -23,6 +23,10 @@ extra:
 extra_css: 
   - stylesheets/extra.css
 
+# Uncomment for offline build
+# plugins:
+#   - offline 
+
 markdown_extensions:
   - attr_list
   - pymdownx.emoji:
@@ -42,3 +46,28 @@ markdown_extensions:
       combine_header_slug: true
   - admonition  
   - pymdownx.details 
+
+nav: 
+  - Bio: index.md  
+  - Setup: setup.md  
+  - WGU Notes: 
+    - D333 Ethics in Tech: WGU_Notes/D333_Ethics_in_Tech/D333_ethics_in_tech.md  
+    - C191 Operating Systems: WGU_Notes/C191_Operating_Systems/c191_Operating_Systems.md
+    - C949 Data Structures I: WGU_Notes/C949_Data_Structures_I/C949_Data_Structures_I.md
+    - C950 Data Structures II:  WGU_Notes/C950_Data_Structures_II/C950_Data_Structures_II.md
+    - C951 AI: WGU_Notes/C951_AI/C951_ai.md
+    - C960 Discrete Math II:  WGU_Notes/C960_Discrete_Math_II/C960_Discrete_Math_II.md
+    - D284 Software Engineering:  WGU_Notes/D284_Software_Engineering/D284_Software_Engineering.md
+    - D286 Communication:  WGU_Notes/D268_Communication/D268_Communication.md  
+    - D287 Java Frameworks:  
+      - Searching and Algorithms: WGU_Notes/D287_Java_Frameworks/Searching_and_Algorithms/Search_and_Algo.md
+      - Unit Testing: WGU_Notes/D287_Java_Frameworks/Unit_Testing/Unit_Testing.md  
+      - Exceptions: WGU_Notes/D287_Java_Frameworks/Exceptions/Exceptions.md  
+      - Generics: WGU_Notes/D287_Java_Frameworks/Generics/Generics.md  
+      - Collections: WGU_Notes/D287_Java_Frameworks/Collections/Collections.md  
+      - Additional Material: WGU_Notes/D287_Java_Frameworks/Additional_Material/Additional_Material.md  
+    - D288 Backend Programming:  WGU_Notes/D288_Backend_Programming/D288_Backend_Programming.md  
+    - D336 Business in IT: WGU_Notes/D336_Business_IT/D336_business_it.md    
+    - D387 Advanced Java:  WGU_Notes/D387_Advanced_Java/D387_Advanced_Java.md
+    - D480 Software QA: WGU_Notes/D480_Software_QA/D480_Software_QA.md
+  - Quotes: Quotes.md
