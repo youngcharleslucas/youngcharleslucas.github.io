@@ -27,6 +27,9 @@ extra_css:
 # plugins:
 #   - offline 
 
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
 markdown_extensions:
   - attr_list
   - pymdownx.emoji:
@@ -44,6 +47,7 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
       combine_header_slug: true
+  - mdx_math
   - admonition  
   - pymdownx.details 
 

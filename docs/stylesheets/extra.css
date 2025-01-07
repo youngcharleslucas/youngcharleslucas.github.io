@@ -1,5 +1,5 @@
 :root {
-    --md-primary-fg-color: rgba(0, 192, 245, 0.804);
+    --md-primary-fg-color: rgba(0, 92, 118, 0.804);
     --md-default-bg-color: rgba(31, 33, 40, 1);
 }
 
@@ -21,7 +21,8 @@
 }
 
 .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link > .md-ellipsis {
-    background-color: rgba(245, 188, 200, 0.804);
+    background-color: rgba(0,0,0, 0.804);
+    color: white;
 }
 
 .md-nav--secondary > .md-nav__list > .md-nav__item > .md-nav__link > .md-ellipsis {
@@ -31,9 +32,9 @@
 .md-nav--secondary > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > .md-nav__link > .md-ellipsis {
     background-color: rgba(253, 243, 208, 0.804);
 }
+
 .md-nav--primary .md-nav__title{
-    background-color: white;
-    color: white;
+    display: none;
 }
 
 .md-sidebar__inner{

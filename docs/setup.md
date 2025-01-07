@@ -1,15 +1,6 @@
 # Setting up MakeDocs  
 
-Material for MakeDocs Installation:  
-[Getting Started](https://squidfunk.github.io/mkdocs-material/getting-started/)  
-
-Manage python packages with pip:  
-[What is pip?](https://realpython.com/what-is-pip/)  
-
-Tutorial for setup:  
-[James Willett](https://jameswillett.dev/getting-started-with-material-for-mkdocs/#code-blocks)
-
-### Setup the GitHub pages repository  
+## Setup the GitHub pages repository  
 
 This is optional. If deploying to GitHub pages, create the repository for the 
 site, then clone down the repository.  Complete the following steps in the repository.  
@@ -31,6 +22,8 @@ Change the Branch to "gh-pages" and "/docs". It may not let the change to
 #### Add .gitignore  
 
 Google .gitignore for mkdocs and add the file.  
+
+## Package installation
 
 ### Create the python virtual environment  
 
@@ -65,7 +58,7 @@ theme:
   name: material
 ```
 
-#### Add yaml support to VS Code  
+## Add yaml support to VS Code  
 
 https://squidfunk.github.io/mkdocs-material/creating-your-site/
 
@@ -101,6 +94,7 @@ by side. Click this and it should open "settings.json".
 Execute `mkdocs serve` in cmd terminal, where the virtual environment is running.  
 Navigate to the local address returned.  
 
+## Styling and Features  
 
 ### Add code block styling  
 
@@ -193,6 +187,48 @@ A collapsable can be made with question marks `???`:
     A hot metal living hell, that sailors call the HOLE.
 
 
+## Math equations with LaTeX  
+
+LaTeX is capable of writing complex math equations in a format supported 
+by html.  
+
+-   In the python virtual environment (venv), use pip to install the following:  
+
+    `pip install mkdocs python-markdown-math`   
+
+-   Add the extension and javascript to *mkdocs.yml*:  
+
+    ```yml  
+    extra_javascript:
+      - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+    markdown_extensions:
+      - mdx_math
+    ```  
+
+-   Build the project with LaTeX:  
+
+    ```
+    When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+    $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$  
+    ```
+
+    When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+    $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+
+
+## References  
+
+Material for MakeDocs Installation:  
+[Getting Started](https://squidfunk.github.io/mkdocs-material/getting-started/)  
+
+Manage python packages with pip:  
+[What is pip?](https://realpython.com/what-is-pip/)  
+
+Tutorial for setup:  
+[James Willett](https://jameswillett.dev/getting-started-with-material-for-mkdocs/#code-blocks)  
+
+Adding LaTeX with python markdown math:  
+[LaTeX within MkDocs](https://gist.github.com/josemazo/36af7bb9c58b92c684bbd431f6c68ce9)
 
 
 
