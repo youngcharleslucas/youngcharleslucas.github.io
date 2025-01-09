@@ -28,7 +28,8 @@ extra_css:
 #   - offline 
 
 extra_javascript:
-  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 markdown_extensions:
   - attr_list
@@ -47,7 +48,8 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
       combine_header_slug: true
-  - mdx_math
+  - pymdownx.arithmatex:
+      generic: true
   - admonition  
   - pymdownx.details 
 
@@ -74,4 +76,7 @@ nav:
     - D336 Business in IT: WGU_Notes/D336_Business_IT/D336_business_it.md    
     - D387 Advanced Java:  WGU_Notes/D387_Advanced_Java/D387_Advanced_Java.md
     - D480 Software QA: WGU_Notes/D480_Software_QA/D480_Software_QA.md
+  - Library: 
+    - Algorithms and Data Structures: 
+      - Algorithms Intro: Library/Data_Structures_and_Algos/basics.md
   - Quotes: Quotes.md

@@ -187,34 +187,9 @@ A collapsable can be made with question marks `???`:
     A hot metal living hell, that sailors call the HOLE.
 
 
-## Math equations with LaTeX  
+## Math equations  
 
-LaTeX is capable of writing complex math equations in a format supported 
-by html.  
-
--   In the python virtual environment (venv), use pip to install the following:  
-
-    `pip install mkdocs python-markdown-math`   
-
--   Add the extension and javascript to *mkdocs.yml*:  
-
-    ```yml  
-    extra_javascript:
-      - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
-    markdown_extensions:
-      - mdx_math
-    ```  
-
--   Build the project with LaTeX:  
-
-    ```
-    When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
-    $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$  
-    ```
-
-    When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
-    $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
-
+$O(N)$
 
 ## References  
 
@@ -227,8 +202,8 @@ Manage python packages with pip:
 Tutorial for setup:  
 [James Willett](https://jameswillett.dev/getting-started-with-material-for-mkdocs/#code-blocks)  
 
-Adding LaTeX with python markdown math:  
-[LaTeX within MkDocs](https://gist.github.com/josemazo/36af7bb9c58b92c684bbd431f6c68ce9)
+Print the MkDocs site to PDF:  
+[mkdocs-with-pdf](https://pypi.org/project/mkdocs-with-pdf/)
 
 
 
