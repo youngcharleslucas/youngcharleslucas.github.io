@@ -32,6 +32,9 @@ package*.json
 *.manifest
 *.spec
 
+# Python Virtual environment  
+virtual/
+
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt

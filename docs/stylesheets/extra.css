@@ -32,11 +32,11 @@
 .md-nav--secondary > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > .md-nav__link > .md-ellipsis {
     background-color: rgba(253, 243, 208, 0.804);
 }
-
+\*
 .md-nav--primary .md-nav__title{
     display: none;
 }
-
+*\
 .md-sidebar__inner{
     color: black;
 }
