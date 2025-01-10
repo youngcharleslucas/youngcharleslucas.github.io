@@ -23,6 +23,12 @@ Change the Branch to "gh-pages" and "/docs". It may not let the change to
 
 Google .gitignore for mkdocs and add the file.  
 
+!!! info  
+
+	Make sure to include the python virtual environment folder in the .gitignore. 
+	When cloning down the repository, a new python virtual environment must be 
+	created and `mkdocs-material` must be re-installed in the virtual environment.  
+
 ## Package installation
 
 ### Create the python virtual environment  
