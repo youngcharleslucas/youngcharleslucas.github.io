@@ -33,7 +33,7 @@ package*.json
 *.spec
 
 # Python Virtual environment  
-virtual/
+/virtual
 
 # Installer logs
 pip-log.txt
