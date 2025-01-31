@@ -79,4 +79,10 @@ nav:
   - Library: 
     - Algorithms and Data Structures: 
       - Algorithms Intro: Library/Data_Structures_and_Algos/basics.md
+    - Frontend Masters:  
+      - React v18:  
+        - React Intro: Library/Frontend_Masters/react_v18/intro.md  
+        - JSX: Library/Frontend_Masters/react_v18/jsx.md  
+        - React: Library/Frontend_Masters/react_v18/react.md  
+        - Testing: Library/Frontend_Masters/react_v18/testing.md  
   - Quotes: Quotes.md

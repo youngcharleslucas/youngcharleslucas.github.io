@@ -27,9 +27,9 @@ the project:
 
 	`npm i -D prettier`  
 
-!!! note "" 
+!!! note
 
-   The `D` means that it is a development tool!!!   
+    The `D` means that it is a development tool     
 
 Add a command that formats the project. Open package.json, then under "scripts" 
 include:  

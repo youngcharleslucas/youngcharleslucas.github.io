@@ -41,7 +41,7 @@ To run the api server, it is found in the supplied code for repository
 `citr-v9-project` by Brain Holt. There is a folder called `api`. Open a command 
 prompt from that folder. Run `npm i`, then `npm run dev` to get the server running.  
 
-!!! tip ""
+!!! tip
 	
 	When building component, like Order component, it is better to declare 
 	it with `function` rather than as an annonymous function. A component created 

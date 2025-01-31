@@ -1,4 +1,4 @@
-# Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+# Copyright (c) 2016-2025 Martin Donath <martin.donath@squidfunk.com>
 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to
@@ -163,7 +163,7 @@ class SocialPlugin(BasePlugin[SocialConfig]):
         self._image_promises = []
 
     # Create social cards
-    def on_page_markdown(self, markdown, page, config, files):
+    def on_page_content(self, html, page, config, files):
         if not self.config.cards:
             return
 
