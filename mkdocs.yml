@@ -84,5 +84,6 @@ nav:
         - React Intro: Library/Frontend_Masters/react_v18/intro.md  
         - JSX: Library/Frontend_Masters/react_v18/jsx.md  
         - React: Library/Frontend_Masters/react_v18/react.md  
-        - Testing: Library/Frontend_Masters/react_v18/testing.md  
+        - Testing: Library/Frontend_Masters/react_v18/testing.md 
+      - ASW for Frontend Eng.: Library/Frontend_Masters/aws_frontend_v2/aws_frontend_v2.md
   - Quotes: Quotes.md
