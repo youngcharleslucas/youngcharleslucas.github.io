@@ -85,6 +85,12 @@ h4 {
     display: inline-block !important;
   }
 
+  /* Hide square logo icon on desktop */
+  .md-header__button.md-logo,
+  .md-nav__button.md-logo {
+    display: none !important;
+  }
+
   /* Hide sidebar when checkbox is unchecked */
   .md-toggle[data-md-toggle="drawer"]:not(:checked) ~ .md-container .md-sidebar--primary {
     transform: translateX(-12.1rem);
