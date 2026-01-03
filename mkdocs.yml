@@ -1,4 +1,4 @@
-site_name: youngcharleslucas
+site_name: Young/*
 site_url: https://youngcharleslucas.github.io
 theme:
   name: material 
@@ -28,6 +28,7 @@ extra_css:
 #   - offline 
 
 extra_javascript:
+  - javascripts/drawer-toggle.js
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
