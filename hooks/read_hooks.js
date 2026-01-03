@@ -1,7 +1,6 @@
 async function main() {
   const chunks = []
   for await (const chunk of process.stdin) {
-    console.log("Received chunk:", chunk)
     chunks.push(chunk)
   }
 
