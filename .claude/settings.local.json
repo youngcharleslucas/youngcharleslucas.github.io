@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "node ./hooks/read_hooks.js"
+            "command": "node ./.claude/hooks/read_hooks.js"
           }
         ]
       }

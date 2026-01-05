@@ -11,6 +11,7 @@ theme:
     primary: custom  
   features: 
     - toc.integrate  
+    - navigation.indexes
 
   custom_dir: overrides
 
