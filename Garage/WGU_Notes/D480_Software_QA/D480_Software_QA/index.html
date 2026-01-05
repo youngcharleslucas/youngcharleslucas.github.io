@@ -1,0 +1,3632 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://youngcharleslucas.github.io/Garage/WGU_Notes/D480_Software_QA/D480_Software_QA/">
+      
+      
+        <link rel="prev" href="../../D387_Advanced_Java/D387_Advanced_Java/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../assets/images/dot-circles.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+  <title>Charles Young</title>
+
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Serif+4:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Source Serif 4";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#d480-software-engineering-and-quality-assurance" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Young/*" class="md-header__button md-logo" aria-label="Young/*" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 3h18v18H3zm2 2v14h14V5z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Young/*
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              D480 Software Engineering and Quality Assurance
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Young/*" class="md-nav__button md-logo" aria-label="Young/*" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 3h18v18H3zm2 2v14h14V5z"/></svg>
+
+    </a>
+    Young/*
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    { Bio }
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Garage
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Garage
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Quotes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quotes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Setting up MakeDocs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Library
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Library
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_1" id="__nav_2_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Structures and Algos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Structures and Algos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Data_Structures_and_Algos/basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Algorithms
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_2" id="__nav_2_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Frontend Masters
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Frontend Masters
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_2_1" id="__nav_2_3_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aws frontend v2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Aws frontend v2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Frontend_Masters/aws_frontend_v2/aws_frontend_v2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS for Fronted Engineers v2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_2_2" id="__nav_2_3_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    React v18
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    React v18
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Frontend_Masters/react_v18/intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    React 19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Frontend_Masters/react_v18/jsx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    JSX
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Frontend_Masters/react_v18/react/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    React
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Frontend_Masters/react_v18/testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WGU Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    WGU Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_1" id="__nav_2_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C191 Operating Systems
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C191 Operating Systems
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C191_Operating_Systems/c191_Operating_Systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1 Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_2" id="__nav_2_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C949 Data Structures I
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C949 Data Structures I
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C949_Data_Structures_I/C949_Data_Structures_I/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C949 Data Structures I
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_3" id="__nav_2_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C950 Data Structures II
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C950 Data Structures II
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C950_Data_Structures_II/C950_Data_Structures_II/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson 1 Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_4" id="__nav_2_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C951 AI
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C951 AI
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C951_AI/C951_ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C951 Artificial Intelligence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_5" id="__nav_2_4_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C960 Discrete Math II
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C960 Discrete Math II
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C960_Discrete_Math_II/C960_Discrete_Math_II/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_6" id="__nav_2_4_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D268 Communication
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D268 Communication
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D268_Communication/D268_Communication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_7" id="__nav_2_4_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D284 Software Engineering
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D284 Software Engineering
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D284_Software_Engineering/D284_Software_Engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D284 Software Engineering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8" id="__nav_2_4_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D287 Java Frameworks
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D287 Java Frameworks
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_1" id="__nav_2_4_8_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Additional Material
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Additional Material
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Additional_Material/Additional_Material/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Additional Material
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_2" id="__nav_2_4_8_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Collections
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Collections
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Collections/Collections/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Collections
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_3" id="__nav_2_4_8_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exceptions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Exceptions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Exceptions/Exceptions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exceptions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_4" id="__nav_2_4_8_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Generics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Generics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Generics/Generics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Generics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_5" id="__nav_2_4_8_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Searching and Algorithms
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Searching and Algorithms
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Searching_and_Algorithms/Search_and_Algo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Searching and Algorithm
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_6" id="__nav_2_4_8_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit Testing
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unit Testing
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Unit_Testing/Unit_Testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_9" id="__nav_2_4_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D288 Backend Programming
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D288 Backend Programming
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D288_Backend_Programming/D288_Backend_Programming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D288 Backend Programming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_10" id="__nav_2_4_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D333 Ethics in Tech
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D333 Ethics in Tech
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D333_Ethics_in_Tech/D333_ethics_in_tech/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ethics in Technology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_11" id="__nav_2_4_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D336 Business IT
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D336 Business IT
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D336_Business_IT/D336_business_it/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D336 ITIL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_12" id="__nav_2_4_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D387 Advanced Java
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D387 Advanced Java
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D387_Advanced_Java/D387_Advanced_Java/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D387 Advanced Java
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_13" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_13" id="__nav_2_4_13_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D480 Software QA
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_13_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D480 Software QA
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D480 Software Engineering and Quality Assurance
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D480 Software Engineering and Quality Assurance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#software-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software Design
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Software Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#software-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software Requirements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functional-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Functional Requirements
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Functional Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-functional-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Non-Functional Requirements
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Non-Functional Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparing-fuctional-to-non-functional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comparing fuctional to Non-functional
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modularity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modularity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coupling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Coupling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-coupling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Coupling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stamp-coupling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stamp Coupling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#control-cooupling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Control Cooupling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#external-coupling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        External Coupling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-coupling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Coupling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#content-coupling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Content Coupling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#design-cohesion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Design Cohesion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-product-vision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software Product Vision
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#product-vision-board" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Product vision board
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agile-scoping-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agile Scoping Tools
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Agile Scoping Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scoping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scoping
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-story-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Story Creation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="User Story Creation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#three-cs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Three Cs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#invest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        INVEST
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mvp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MVP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definition-of-done-dod" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definition of Done (DoD)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ux-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UX Design
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#higher-order-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Higher Order Testing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Higher Order Testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#design-phase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Design Phase:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Function Testing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Testing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acceptance-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acceptance Testing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation Testing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-planning-and-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test Planning and Control
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-completion-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test Completion Criteria
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-independent-test-agency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        THe independent Test Agency
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#capability-maturity-model-integration-cmmi-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Capability Maturity Model Integration (CMMI) Framework
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Capability Maturity Model Integration (CMMI) Framework">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chapter-13-reviews-and-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chapter 13 Reviews and Testing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-stack-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Full Stack Testing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#managing-bugs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Managing Bugs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test Strategies
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Test Strategies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#linkedin-test-strategy-doc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LinkedIn Test Strategy Doc
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usability-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usability Test
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Usability Test">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-gathering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Gathering
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agile-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agile Testing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Agile Testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extreme-programing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Extreme Programing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-internet-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testing Internet Applications
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Testing Internet Applications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#presentation-layer-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Presentation Layer Testing:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-tier-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Tier Testing:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fault-tolerance-and-recoverability-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fault Tolerance and Recoverability Testing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mobile-application-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mobile Application Testing
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="d480-software-engineering-and-quality-assurance">D480 Software Engineering and Quality Assurance</h1>
+<h2 id="software-design">Software Design</h2>
+<h3 id="software-requirements">Software Requirements</h3>
+<p>Referring to the requirements phase of the SDLC, requirements need to be 
+<strong>well-defined, clear, and measurable</strong>.  </p>
+<h3 id="functional-requirements">Functional Requirements</h3>
+<p>Define system or component function<br />
+- Calcualtions
+- Data manipulation<br />
+- Designed, coded, and tested  </p>
+<h4 id="types">Types</h4>
+<ul>
+<li>Transaction handling </li>
+<li>Business rules  </li>
+<li>Certification requirements  </li>
+<li>Reporting</li>
+<li>Administrative </li>
+<li>Authorization </li>
+<li>Audit  </li>
+<li>External Interface  </li>
+<li>Historical data management </li>
+<li>Legal and regulatory requirements  </li>
+</ul>
+<h3 id="non-functional-requirements">Non-Functional Requirements</h3>
+<p>Behaviors and limitations.  Non-functional requirements cover HOW the functional 
+requirements are performed. EX: <em>How</em> quickly will the site load, how usable is the UI?<br />
+Other names for non-functional requirements are <strong>constraints or quality attributes</strong><br />
+Usually the "illities" of a project, like usability and functionality. <br />
+Ensures compliance.<br />
+Non-functional requirements can impact multiple systems. Functional requirements 
+can be more atomic to one system.  </p>
+<h4 id="types_1">Types</h4>
+<ul>
+<li>Performance and scalability  </li>
+<li>Portability and compatibility  </li>
+<li>Reliability, availability, and maintainability  </li>
+<li>Security  </li>
+<li>Localization  </li>
+<li>Usability  </li>
+</ul>
+<h4 id="comparing-fuctional-to-non-functional">Comparing fuctional to Non-functional</h4>
+<p><img alt="function_vs_non" src="../images/function_vs_non.png" />  </p>
+<h3 id="modularity">Modularity</h3>
+<p>Module = function<br />
+Separate functions from each other, so that they test, run, and perform on their own.<br />
+Encapsulated, internal workings are private.  <br />
+Modules are exclusive responsibility, narrow and focused, no overlap/do not share 
+responsibility.  </p>
+<p><strong>Mono-dependency</strong>: only used in once instance. Since it is only used for one case,
+it may not need to be modular.  </p>
+<h3 id="coupling">Coupling</h3>
+<p>Degree of interdependence between modules. How do modules perform separately?  </p>
+<h3 id="data-coupling">Data Coupling</h3>
+<p>Data coupling happens when different modules of a program communicate to each other by sharing data (passing data to each other). They usually do this by sending data through the parameters. This form of coupling is thought to be the best.   </p>
+<p><strong>Tramp data</strong>: passing data into a module that is just being passed to the next 
+module without being used by the first.  </p>
+<h3 id="stamp-coupling">Stamp Coupling</h3>
+<p>Common data that two functions rely on. More closely connected.  </p>
+<h3 id="control-cooupling">Control Cooupling</h3>
+<p>One modules sends data that has direct influence over the receiving module. This 
+can mean the data shared is specific to the two methods.  If you see null passed 
+in as a parameter.  </p>
+<h3 id="external-coupling">External Coupling</h3>
+<p>Components are not dependent on eachother, but are dependent on an external source.<br />
+Stronger form of coupling. Ex: modules are dependent on a database.  </p>
+<h3 id="common-coupling">Common Coupling</h3>
+<p>Tight coupling.  Modules share global data/variables.  Or reading and writing to 
+the same data in a database.  </p>
+<h3 id="content-coupling">Content Coupling</h3>
+<p>One module can modify data of another.  One module cannot exist without the other.<br />
+Very tightly coupled.  </p>
+<h3 id="design-cohesion">Design Cohesion</h3>
+<p>Intra-dependency levels between module elements, how well the modules work together.  </p>
+<p><img alt="cohesion" src="../images/cohesion.png" />  </p>
+<ul>
+<li>Functional Cohesion: add two numbers </li>
+<li>Sequential: one output from a module serves as the input for the next.  </li>
+<li>Communication cohesion: Has two elements within the module that act on the same input.  </li>
+<li>Prodedural Cohesion: elements in module that must happen in order, but are not 
+dependent on the input/output of the other. EX: print() on multiple lines.  </li>
+<li>Temporal cohesion: Tasks that happen at the same time, indirect dependency.  </li>
+<li>Logical cohesion: elements are only logically related. Database connections are 
+all combined into a database class because they interact with the database. But 
+they perform completely different functions, so should be put in separate modules.  </li>
+<li>Coindicental cohesion: a file called miscellaneous that has random functions  </li>
+</ul>
+<h3 id="software-product-vision">Software Product Vision</h3>
+<p>Describes overall objective, explains the reason your product exists, and sets direction for future development.  </p>
+<ul>
+<li>Research  </li>
+<li>Create a Team  </li>
+<li>Define Core Product (MVP)  </li>
+<li>Validity  </li>
+<li>Refine and document  </li>
+</ul>
+<h3 id="product-vision-board">Product vision board</h3>
+<p>Provides a board view of what you want your product to do and how it benefits the end users.  </p>
+<ul>
+<li>Vision statement  </li>
+<li>Target Group  </li>
+<li>Needs: What the needs this product fulfills. Why will people want this product.  </li>
+<li>Product: Important features, address the needs  </li>
+<li>Business goals: Why our organization should invest in building it.  </li>
+</ul>
+<h3 id="agile-scoping-tools">Agile Scoping Tools</h3>
+<p>Consultive questioning and listenting to find the scope  </p>
+<ul>
+<li>Establish project requirements  </li>
+<li>Align Objectives  </li>
+</ul>
+<h4 id="scoping">Scoping</h4>
+<ul>
+<li>Go into product backlog.  </li>
+<li>Epics: Large pieces of scope that will not fit in a single sprint. Work towards a specific need.      </li>
+<li>Stories: self-contained, fit in single sprint<ul>
+<li>Who wants it.</li>
+<li>What they want. </li>
+<li>Why they want it.  </li>
+</ul>
+</li>
+<li>Themes: larger than Epic or story. Intangible goals. A category.    </li>
+<li>Initiatives: Multiple epics.  Not a category, but the overall goal for epics.  </li>
+</ul>
+<h3 id="user-story-creation">User Story Creation</h3>
+<p>Focus on the viewpoint of the enduser.<br />
+Not technical. Not detailed.  <br />
+Clarifies the reason for the requirement.<br />
+Example:  <code>As a &lt;role&gt; I need.... So that....</code><br />
+Written in first person.<br />
+The card as the following:<br />
+- Unique story id<br />
+- Short title<br />
+- Story<br />
+- Functional acceptance criteria<br />
+- Non-functional acceptance criteria  </p>
+<h4 id="three-cs">Three Cs</h4>
+<p>lifecycle of the user story.<br />
+- Added to a card and placed in backlog<br />
+- Conversations over the userstory, written on card.<br />
+- Confirmation that the story is complete  </p>
+<h4 id="invest">INVEST</h4>
+<p>When writing the story, follow: 
+- Independent<br />
+- Negotiable<br />
+- Valuable<br />
+- Estimable<br />
+- Small <br />
+- Testable  </p>
+<h3 id="mvp">MVP</h3>
+<h3 id="definition-of-done-dod">Definition of Done (DoD)</h3>
+<h3 id="ux-design">UX Design</h3>
+<p>UX Hierarchy:
+- Information Architecture<br />
+- Visual Heirarchy  </p>
+<p>UX Consistency:<br />
+- Standard patterns<br />
+- Design Languages  </p>
+<p>UX Confirmation:  </p>
+<p>UX User Controls:<br />
+- Navigation<br />
+- Settings<br />
+- Undo actions  </p>
+<p>UX Accessibility:<br />
+- Color for visually impaired  </p>
+<p>Note: Use dedicated UX resources. UX teams can't be spread out, they need to be 
+one team. If the responsibility is spreadout, the UX will not be unified.  </p>
+<h2 id="higher-order-testing">Higher Order Testing</h2>
+<p>Chapter 6 of Myers, Sandler, and Badgett. (2011). The Art of Software Testing (3rd) Wiley.  </p>
+<p>Higher-order testing: Above module testing.</p>
+<h3 id="design-phase">Design Phase:</h3>
+<ol>
+<li>
+<p>Translate the program user's needs into a set of written requirements. These are the goals for the product.</p>
+</li>
+<li>
+<p>Translate the requirements into specific objectives by assessing feasibility, time, and cost, resolving conflicting requirements, and establishing priorities and trade-offs.</p>
+</li>
+<li>
+<p>Translate the objectives into a precise product specification, viewing the product as a black box and considering only its interfaces and interactions with the end user. This description is called the external specification.</p>
+</li>
+<li>
+<p>If the product is a system such as an operating system, flight-control system, database system, or employee personnel management system, rather than an application (e.g., compiler, payroll program, word processor), the next process is system design. This step partitions the system into individual programs, components, or subsystems, and defines their interfaces.</p>
+</li>
+<li>
+<p>Design the structure of the program or programs by specifying the function of each module, the hierarchical structure of the modules, and the interfaces between modules.</p>
+</li>
+<li>
+<p>Develop a precise specification that defines the interface to, and function of, each module.</p>
+</li>
+<li>
+<p>Translate, through one or more substeps, the module interface specification into the source code algorithm of each module.</p>
+</li>
+</ol>
+<p><img alt="steps_design_phase" src="../images/steps_design_phase.png" />  </p>
+<ul>
+<li>
+<p><strong>Requirements</strong> specify why the program is needed.</p>
+</li>
+<li>
+<p><strong>Objectives</strong> specify what the program should do and how well the program should do it.</p>
+</li>
+<li>
+<p><strong>External specifications</strong> define the exact representation of the program to users.</p>
+</li>
+<li>
+<p><strong>Documentation</strong> associated with the subsequent processes specifies, in increasing levels of detail, how the program is constructed.</p>
+</li>
+</ul>
+<p>The design and testing cycles should be combined in a one-to-one relationship: 
+<img alt="combine_design_test" src="../images/combine_design_test.png" />  </p>
+<p>The advantages of this structure are that it avoids unproductive redundant testing and prevents you from overlooking large classes of errors.  </p>
+<h3 id="function-testing">Function Testing</h3>
+<p>Find descrpancies between the program and the external specification.<br />
+Black-box activity, the earlier module-testing process achieved white-box testing.  </p>
+<h3 id="system-testing">System Testing</h3>
+<p>Compare the system or program to its original objectives.
+System testing is not limited to systems. If the product is a program, system testing is the process of attempting to demonstrate how the program, as a whole, fails to meet its objectives.</p>
+<p>System testing, by definition, is impossible if there is no set of written, measurable objectives for the product.  </p>
+<p>Design the system test by analyzing the objectives; formulate test cases by analyzing the user documentation. This has the useful side effect of comparing the program to its objectives and to the user documentation, as well as comparing the user documentation to the objectives  </p>
+<p>The person performing a system test must be capable of thinking like an end user</p>
+<p><img alt="system_test" src="../images/system_test.png" />  </p>
+<p>Categories of Test Cases:
+- Facility: Ensure that the functionality in the objectives is implemented.
+- Volume: Subject the program to abnormally large volumes of data to process.
+- Stress: Subject the program to abnormally large loads, generally concurrent processing.
+- Usability: Determine how well the end user can interact with the program.
+- Security: Try to subvert the program's security measures.
+- Performance: Determine whether the program meets response and throughput requirements.
+- Storage: Ensure the program correctly manages its storage needs, both system and physical.
+- Configuration: Check that the program performs adequately on the recommended configurations.
+- Compatibility/Conversion: Determine whether new versions of the program are compatible with previous releases.
+- Installation: Ensure the installation methods work on all supported platforms.
+- Reliability: Determine whether the program meets reliability specifications such as uptime and MTBF.
+- Recovery: Test whether the system's recovery facilities work as designed.
+- Serviceability/Maintenance: Determine whether the application correctly provides mechanisms to yield data on events requiring technical support.
+- Documentation: Validate the accuracy of all user documentation.
+- Procedure: Determine the accuracy of special procedures required to use or maintain the program.</p>
+<h3 id="acceptance-testing">Acceptance Testing</h3>
+<p>comparing the program to its initial requirements and the current needs of its end users<br />
+performed by the program's customer or end user and normally is not considered the responsibility of the development organization.<br />
+the best way to do this is to devise test cases that attempt to show that the program does not meet the contract.  </p>
+<h3 id="installation-testing">Installation Testing</h3>
+<p>find errors that occur during the installation process.  </p>
+<h3 id="test-planning-and-control">Test Planning and Control</h3>
+<p>The components of a good test plan are as follows:</p>
+<ul>
+<li>Objectives The objectives of each testing phase must be defined.</li>
+<li>Completion criteria Criteria must be designed to specify when each testing phase will be judged to be complete. This matter is discussed in the next section.</li>
+<li>Schedules Calendar time schedules are needed for each phase. They should indicate when test cases will be designed, written, and executed. Some software methodologies such as Extreme Programming (discussed in Chapter 9) require that you design the test cases and unit tests before application coding begins.</li>
+<li>Responsibilities For each phase, the people who will design, write, execute, and verify test cases, and the people who will repair discovered errors, should be identified. And, because in large projects disputes inevitably arise over whether particular test results represent errors, an arbitrator should be identified.</li>
+<li>Test case libraries and standards In a large project, systematic methods of identifying, writing, and storing test cases are necessary.</li>
+<li>Tools The required test tools must be identified, including a plan for who will develop or acquire them, how they will be used, and when they will be needed.</li>
+<li>Computer time This is a plan for the amount of computer time needed for each testing phase. It would include servers used for compiling applications, if required; desktop machines required for installation testing; Web servers for Web-based applications; networked devices, if required; and so forth.</li>
+<li>Hardware configuration If special hardware configurations or devices are needed, a plan is required that describes the requirements, how they will be met, and when they will be needed.</li>
+<li>Integration Part of the test plan is a definition of how the program will be pieced together (e.g., incremental top-down testing). A system containing major subsystems or programs might be pieced together incrementally, using the top-down or bottom-up approach, for instance, but where the building blocks are programs or subsystems, rather than modules. If this is the case, a system integration plan is necessary. The system integration plan defines the order of integration, the functional capability of each version of the system, and responsibilities for producing “scaffolding,” code that simulates the function of nonexistent components.</li>
+<li>Tracking procedures You must identify means to track various aspects of the testing progress, including the location of error-prone modules and estimation of progress with respect to the schedule, resources, and completion criteria.</li>
+<li>Debugging procedures You must define mechanisms for reporting detected errors, tracking the progress of corrections, and adding the corrections to the system. Schedules, responsibilities, tools, and computer time/resources also must be part of the debugging plan.</li>
+<li>Regression testing Regression testing is performed after making a functional improvement or repair to the program. Its purpose is to determine whether the change has regressed other aspects of the program. It usually is performed by rerunning some subset of the program's test cases. Regression testing is important because changes and error corrections tend to be much more error prone than the original program code (in much the same way that most typographical errors in newspapers are the result of last-minute editorial changes, rather than changes in the original copy). A plan for regression testing—who, how, when—also is necessary.</li>
+</ul>
+<h3 id="test-completion-criteria">Test Completion Criteria</h3>
+<h3 id="the-independent-test-agency">THe independent Test Agency</h3>
+<h2 id="capability-maturity-model-integration-cmmi-framework">Capability Maturity Model Integration (CMMI) Framework</h2>
+<p>Chapter 3 of Chapters and Sections of Kasse, T. (2008). Practical Insight into CMMI. (2nd ed.) Artech House Publishers.  </p>
+<p>CMMI provides a framework from which to organize and prioritize engineering, people, 
+and business activities.  </p>
+<p>It is all about improving processes.</p>
+<p>Stages of CMMI:<br />
+<img alt="stages_cmmi" src="../images/stages_cmmi.png" />  </p>
+<h3 id="chapter-13-reviews-and-testing">Chapter 13  Reviews and Testing</h3>
+<p>Peer reviews are human based testing.<br />
+Why conduct reviews?:<br />
+- Detect defects<br />
+- Remove defects as close to the point of insertion as possible<br />
+- Determine products progress/status<br />
+- Identify potential improvements<br />
+- Produce technical work of a more uniform and predictable quality.<br />
+- Gain ownership by the project team.<br />
+- Assist employees with cross-training<br />
+- Reduce costs to build and maintain better products<br />
+- Reduce development time.<br />
+- Reduce testing cost and time.<br />
+- Reduce total system maintenance cost dramatically.  </p>
+<p>The sooner a defect is found, the less it will cost to fix it.  </p>
+<ul>
+<li>Project manager reviews: usually weekly </li>
+<li>Milestone Reviews: meaningful points or dates.  </li>
+<li>Senior Management OVersight Reviews: Seniors own the project. They decide if more resources need to be allocated, or any other big decision.</li>
+<li>Peer Reviews: inspections, structured walkthroughs, technical reviews, buddy checks, circulation reviews  </li>
+</ul>
+<h3 id="full-stack-testing">Full Stack Testing</h3>
+<p>Chapter 1 of Mohan, G. (2022). Full stack testing. O'Reilly Media, Incorporated.  </p>
+<p>Move Testing activities to the beginning of the SDLC so that it can produce high quality results.
+Shift testing left:
+<img alt="shift_left" src="../images/shift_left.png" /></p>
+<p>Ten fullstack testing skills:<br />
+<img alt="ten_fullstack_test_skills" src="../images/ten_fullstack_test_skills.png" />  </p>
+<h2 id="managing-bugs">Managing Bugs</h2>
+<p>A bug record contains several important elements:</p>
+<ul>
+<li>An accurate description of the problem</li>
+<li>The browser/operating system being used</li>
+<li>Steps to repeat the problem</li>
+<li>What was expected versus what actually happened</li>
+<li>Error messages (with screenshots), if applicable </li>
+</ul>
+<p>The following information is what you need to properly report a bug:</p>
+<ul>
+<li>A brief but accurate description of the problem. It is important that this description includes how and under what circumstances the problem is occurring.</li>
+<li>The environment where the problem was discovered. This is important because the environment may have been a contributing factor to the problem. Without this information, you may not be able to reproduce the problem. Environment details include:<ul>
+<li>Operating system and version</li>
+<li>Browser and version</li>
+<li>Environment URL</li>
+</ul>
+</li>
+<li>Steps describing how to recreate the problem. This is important because the tester cannot always be present with the developer to describe how the problem was found. These steps provide the developer with the means to investigate the problem. Steps should be clear and provide any credentials that may be needed to recreate the issue.</li>
+<li>Expected vs. actual result. It is important for the tester to include the expected result to ensure there is a clear understanding of the functionality under test. A comparison of expected vs. actual result will inform the developer why the actual result was flagged as a problem.</li>
+<li>Error messages and screenshots, if possible. These are important because they provide visual representations of the problem. They can also sometimes offer additional clues as to where to start looking in the program.  </li>
+</ul>
+<h2 id="test-strategies">Test Strategies</h2>
+<h3 id="linkedin-test-strategy-doc">LinkedIn Test Strategy Doc</h3>
+<ul>
+<li>Introduction: High level summary of the project. What testing and how it is carried out.  </li>
+<li>References  </li>
+<li>QA Deliverables  </li>
+<li>Test Management: test tools and environments  </li>
+<li>Scope of Testing: What types ot tests exist in the project. How much code each test convers. Who is responsible for the tests.  </li>
+</ul>
+<h3 id="usability-test">Usability Test</h3>
+<p>Chapter 7 of Myers, Sandler, and Badgett. (2011). The Art of Software Testing (3rd) Wiley.</p>
+<p>User based, black-box method.  </p>
+<p>Considerations:<br />
+- Has each user interface been tailored to the intelligence, educational background, and environmental pressures of the end user?
+- Are the outputs of the program meaningful, noninsulting to the user, and devoid of computer gibberish?
+- Are the error diagnostics, such as error messages, straightforward, or does the user need a PhD in computer science to comprehend them? For instance, does the program produce such messages as IEK022A OPEN ERROR ON FILE ‘SYSIN’ ABEND CODE=102? Messages such as these weren't all that uncommon in software systems of the 1970s and 1980s. Mass-market systems do better today in this regard, but users still will encounter unhelpful messages such as, “An unknown error has occurred,” or “This program has encountered an error and must be restarted.”
+- Programs you design yourself are under your control and should not be plagued with such useless messages. Even if you didn't design the program, if you are on the testing team, you can push for improvements in this area of the human interface.
+- Does the total set of user interfaces exhibit considerable conceptual integrity, an underlying consistency, and uniformity of syntax, conventions, semantics, format, style, and abbreviations?
+- Where accuracy is vital, such as in an online banking system, is sufficient redundancy present in the input? For example, such a system should ask for an account number, a customer name, and a personal identification number (PIN) to verify that the proper person is accessing account information.
+- Does the system contain an excessive number of options, or options that are unlikely to be used? One trend in modern software is to present to users only those menu choices they are most likely to use, based on software testing and design considerations. Then a well-designed program can learn from individual users and begin to present those menu items that they frequently access. Even with such an intelligent menu system, successful programs still must be designed so that accessing the various options is logical and intuitive.
+- Does the system return some type of immediate acknowledgment to all inputs? Where a mouse click is the input, for example, the chosen item can change color, or a button object can depress or be presented in a raised format. If the user is expected to choose from a list, the selected number should be presented on the screen when the choice is made. Moreover, if the selected action requires some processing time—which is frequently the case when the software is accessing a remote system—then a message should be displayed informing the user of what is going on. This level of testing sometimes is referred to as component testing, whereby interactive software components are tested for reasonable selection and user feedback.
+- Is the program easy to use? For example, is the input case-sensitive without making this fact clear to the user? Also, if a program requires navigation through a series of menus or options, is it clear how to return to the main menu? Can the user easily move up or down one level?
+- Is the design conducive to user accuracy? One test would be an analysis of how many errors each user makes during data entry or when choosing program options. Were these errors merely an inconvenience—errors the user was able to correct—or did an incorrect choice or action cause some kind of application failure?
+- Are the user actions easily repeated in later sessions? In other words, is the software design conducive to the user learning how to be more efficient in using the system?
+- Did the user feel confident while navigating the various paths or menu choices? A subjective evaluation might be the user response to using the application. At the end of the session did the user feel stressed by or satisfied with the outcome? Would the user be likely to choose this system for his or her own use, or recommend it to someone else?
+- Did the software live up to its design promise? Finally, usability testing should include an evaluation of the software specifications versus the actual operation. From the user perspective—real people using the software in a real-world environment—did the software perform according to its specifications?  </p>
+<p>You should establish practical, real-world, repeatable exercises for each user to conduct. Design these testing scenarios to present the user with all aspects of the software, perhaps in various or random order.  </p>
+<p>During each phase of the test, have observers document the user experience as they perform each task. When the test is complete, conduct an interview with the user or provide a written questionnaire to document other aspects of the user's experience, such as his or her perception of usage versus specification.</p>
+<p>In addition, write down detailed instructions for user tests, to ensure that each user starts with the same information, presented in the same way. Otherwise, you risk coloring some of the tests if some users receive different instructions.  </p>
+<p>A complete usability testing protocol usually involves multiple tests from the same users, as well as tests from multiple users. Why multiple tests from the same users? One area we want to test is user recall, that is, how much of what a user learns about software operation is retained from session to session.  </p>
+<h4 id="data-gathering">Data Gathering</h4>
+<ul>
+<li>Read aloud user actions  </li>
+<li>remote user testing  </li>
+<li>Questionnaire  </li>
+</ul>
+<h2 id="agile-testing">Agile Testing</h2>
+<p>Chapter 9 of Myers, Sandler, and Badgett. (2011). The Art of Software Testing (3rd) Wiley.  </p>
+<p>Relies on automated testing  </p>
+<h3 id="extreme-programing">Extreme Programing</h3>
+<p>You can group the 12 core XP practices into four concepts:</p>
+<ul>
+<li>Listening to the customer and other programmers.</li>
+<li>Collaborating with the customer to develop the application's specification and test cases.</li>
+<li>Coding with a programming partner.</li>
+<li>
+<p>Testing, and retesting, the code base.</p>
+</li>
+<li>
+<p>Planning and requirements</p>
+</li>
+<li>
+<p>Marketing and business development personnel work together to identify the maximum business value of each software feature.</p>
+</li>
+<li>
+<p>Each major software feature is written as a user story.</p>
+</li>
+<li>
+<p>Programmers provide time estimates to complete each user story.</p>
+</li>
+<li>
+<p>The customer chooses the software features based on time estimates and business value.</p>
+</li>
+<li>
+<p>Small, incremental releases</p>
+</li>
+<li>
+<p>Strive to add small, tangible, value-added features and release a new code base often.</p>
+</li>
+<li>
+<p>System metaphors</p>
+</li>
+<li>
+<p>Your programming team identifies an organizing metaphor to help with naming conventions and program flow.</p>
+</li>
+<li>
+<p>Simple designs</p>
+</li>
+<li>
+<p>Implement the simplest design that allows your code to pass its unit tests. Assume change will come, so don't spend a lot of time designing; just implement.</p>
+</li>
+<li>
+<p>Continuous testing</p>
+</li>
+<li>
+<p>Write unit tests before writing the code module. Each unit is not complete until it passes its unit test. Further, the program is not complete until it passes all unit tests, and acceptance tests are complete.</p>
+</li>
+<li>
+<p>Refactoring</p>
+</li>
+<li>
+<p>Clean up and streamline your code base. Unit tests help ensure that you do not destroy the functionality in the process. You must rerun all unit tests after any refactoring.</p>
+</li>
+<li>
+<p>Pair programming</p>
+</li>
+<li>
+<p>You and another programmer work together, at the same machine, to create the code base. This allows for real-time code review, which dramatically facilitates bug detection and resolution.</p>
+</li>
+<li>
+<p>Collective ownership of the code</p>
+</li>
+<li>
+<p>All code is owned by all programmers.</p>
+</li>
+<li>
+<p>No single programmer is dedicated to a specific code base.</p>
+</li>
+<li>
+<p>Continuous integration</p>
+</li>
+<li>
+<p>Every day, integrate all changes; after the code passes the unit tests, add it back into the code base.</p>
+</li>
+<li>
+<p>Forty-hour workweek</p>
+</li>
+<li>
+<p>No overtime is allowed. If you work with dedication for 40 hours per week, overtime will not be needed. The exception is the week before a major release.</p>
+</li>
+<li>
+<p>On-site customer presence</p>
+</li>
+<li>
+<p>You and your programming team have unlimited access to the customer, to enable you to resolve questions quickly and decisively, which keeps the development process from stalling.</p>
+</li>
+<li>
+<p>Coding standards</p>
+</li>
+<li>
+<p>All code should look the same. Developing a system metaphor helps meet this principle.</p>
+</li>
+</ul>
+<h2 id="testing-internet-applications">Testing Internet Applications</h2>
+<p>From chapter 10 of Myers, Sandler, and Badgett. (2011). The Art of Software Testing (3rd) Wiley.  </p>
+<p><img alt="three_tier_architecture" src="../images/three_tier_architecture.png" />  </p>
+<p>Components of three tier architecture:<br />
+- Web server: hosts the HTML website, also called the presentation tier  <br />
+- Business layer:  houses the application server. <br />
+- Data source  </p>
+<h3 id="presentation-layer-testing">Presentation Layer Testing:</h3>
+<ul>
+<li>Fonts the same in each browser  </li>
+<li>Confirm all links work  </li>
+<li>Grammar and spelling  </li>
+<li>Defaults are initially loaded on page  </li>
+<li>User friendly  </li>
+</ul>
+<h3 id="data-tier-testing">Data Tier Testing:</h3>
+<ul>
+<li>Meets performance goals  </li>
+<li>Verify data is accurate  </li>
+<li>Data can be recovered  </li>
+<li>Test failover redundancy  </li>
+<li>Test security and encryption  </li>
+<li>Test api from business tier, ensure CRUD  </li>
+</ul>
+<h3 id="fault-tolerance-and-recoverability-testing">Fault Tolerance and Recoverability Testing</h3>
+<p>MTBF: Mean Time Between Failures<br />
+MTTR: Mean Time to repair  </p>
+<h2 id="mobile-application-testing">Mobile Application Testing</h2>
+<p>Chapter 11 of Myers, Sandler, and Badgett. (2011). The Art of Software Testing (3rd) Wiley.  </p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/charles-lucas-young/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["toc.integrate"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../../javascripts/drawer-toggle.js"></script>
+      
+        <script src="../../../../javascripts/header-title.js"></script>
+      
+        <script src="../../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

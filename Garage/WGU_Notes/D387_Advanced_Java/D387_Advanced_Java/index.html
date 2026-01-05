@@ -1,0 +1,3743 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://youngcharleslucas.github.io/Garage/WGU_Notes/D387_Advanced_Java/D387_Advanced_Java/">
+      
+      
+        <link rel="prev" href="../../D336_Business_IT/D336_business_it/">
+      
+      
+        <link rel="next" href="../../D480_Software_QA/D480_Software_QA/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../assets/images/dot-circles.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+  <title>Charles Young</title>
+
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Serif+4:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Source Serif 4";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#docker" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Young/*" class="md-header__button md-logo" aria-label="Young/*" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 3h18v18H3zm2 2v14h14V5z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Young/*
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              D387 Advanced Java
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Young/*" class="md-nav__button md-logo" aria-label="Young/*" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 3h18v18H3zm2 2v14h14V5z"/></svg>
+
+    </a>
+    Young/*
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    { Bio }
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Garage
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Garage
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Quotes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quotes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Setting up MakeDocs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Library
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Library
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_1" id="__nav_2_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Structures and Algos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Structures and Algos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Data_Structures_and_Algos/basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Algorithms
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_2" id="__nav_2_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Frontend Masters
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Frontend Masters
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_2_1" id="__nav_2_3_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aws frontend v2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Aws frontend v2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Frontend_Masters/aws_frontend_v2/aws_frontend_v2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS for Fronted Engineers v2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_2_2" id="__nav_2_3_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    React v18
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    React v18
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Frontend_Masters/react_v18/intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    React 19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Frontend_Masters/react_v18/jsx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    JSX
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Frontend_Masters/react_v18/react/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    React
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Frontend_Masters/react_v18/testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WGU Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    WGU Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_1" id="__nav_2_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C191 Operating Systems
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C191 Operating Systems
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C191_Operating_Systems/c191_Operating_Systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1 Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_2" id="__nav_2_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C949 Data Structures I
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C949 Data Structures I
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C949_Data_Structures_I/C949_Data_Structures_I/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C949 Data Structures I
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_3" id="__nav_2_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C950 Data Structures II
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C950 Data Structures II
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C950_Data_Structures_II/C950_Data_Structures_II/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson 1 Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_4" id="__nav_2_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C951 AI
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C951 AI
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C951_AI/C951_ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C951 Artificial Intelligence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_5" id="__nav_2_4_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C960 Discrete Math II
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C960 Discrete Math II
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C960_Discrete_Math_II/C960_Discrete_Math_II/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_6" id="__nav_2_4_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D268 Communication
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D268 Communication
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D268_Communication/D268_Communication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_7" id="__nav_2_4_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D284 Software Engineering
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D284 Software Engineering
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D284_Software_Engineering/D284_Software_Engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D284 Software Engineering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8" id="__nav_2_4_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D287 Java Frameworks
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D287 Java Frameworks
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_1" id="__nav_2_4_8_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Additional Material
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Additional Material
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Additional_Material/Additional_Material/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Additional Material
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_2" id="__nav_2_4_8_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Collections
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Collections
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Collections/Collections/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Collections
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_3" id="__nav_2_4_8_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exceptions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Exceptions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Exceptions/Exceptions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exceptions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_4" id="__nav_2_4_8_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Generics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Generics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Generics/Generics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Generics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_5" id="__nav_2_4_8_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Searching and Algorithms
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Searching and Algorithms
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Searching_and_Algorithms/Search_and_Algo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Searching and Algorithm
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_6" id="__nav_2_4_8_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit Testing
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unit Testing
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Unit_Testing/Unit_Testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_9" id="__nav_2_4_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D288 Backend Programming
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D288 Backend Programming
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D288_Backend_Programming/D288_Backend_Programming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D288 Backend Programming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_10" id="__nav_2_4_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D333 Ethics in Tech
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D333 Ethics in Tech
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D333_Ethics_in_Tech/D333_ethics_in_tech/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ethics in Technology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_11" id="__nav_2_4_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D336 Business IT
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D336 Business IT
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D336_Business_IT/D336_business_it/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D336 ITIL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_12" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_12" id="__nav_2_4_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D387 Advanced Java
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_12_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D387 Advanced Java
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D387 Advanced Java
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D387 Advanced Java
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Docker
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Docker">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Commands
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#registry-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Registry Commands
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#housekeeping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Housekeeping
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commands-for-setting-up-centos-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Commands for setting up CentOS image
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contents-of-a-sample-dockerfile-to-install-java" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contents of a sample Dockerfile to install Java
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-apache-groovy-for-adding-variables-into-dockerfile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use Apache Groovy for adding variables into Dockerfile??
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#push-container-to-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Push container to Cloud
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Push container to Cloud">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deoploying-to-aws" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deoploying to AWS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploy-to-azure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deploy to Azure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CORS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keeping-the-webpage-up-to-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Keeping the webpage up to date
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-threading-in-java" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multi Threading in Java
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concurrency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concurrency
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Concurrency">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apply-atomic-variables-and-locks-ocp-objective-103" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Apply Atomic Variables and Locks (OCP Objective 10.3)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-javautilconcurrent-collections-ocp-objective-104" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use java.util.concurrent Collections (OCP Objective 10.4)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-executors-and-threadpools-ocp-objective-101" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use Executors and ThreadPools (OCP Objective 10.1)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-the-parallel-forkjoin-framework-ocp-objective-105" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use the Parallel Fork/Join Framework (OCP Objective 10.5)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-parallel-streams-including-reduction-decomposition-merging-processes-pipelines-and-performance-ocp-objective-106" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use Parallel Streams Including Reduction, Decomposition, Merging Processes, Pipelines, and Performance (OCP Objective 10.6)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kill-a-process-on-a-port" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kill a process on a port
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recursion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#java-scanner-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Java Scanner class
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#java-print-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Java print format
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Java print format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#making-angular-read-from-the-environment-not-hardwired-to-port-8080" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Making Angular read from the environment, not hardwired to port 8080
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy-a-java-application-in-a-docker-container-to-aws" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deploy a Java application in a Docker Container to AWS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-c3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task C.3
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Task C.3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dockerize-the-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dockerize the Application
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dockerize the Application">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#build-a-runnable-jar-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build a runnable .jar file
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-dockerfile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create a Dockerfile
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-a-docker-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build a Docker Image
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#push-the-docker-image-to-docker-hub" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Push the Docker Image to Docker Hub
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploy-on-an-aws-ec2-instance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deploy on an AWS EC2 Instance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deploy on an AWS EC2 Instance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-an-iam-role-for-an-ec2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create an IAM Role for an EC2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#launch-ec2-instance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Launch EC2 Instance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-a-session-under-systems-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Start a session under Systems Manager
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-docker-in-the-session" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Install Docker in the session
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pull-the-docker-image-into-the-session" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pull the Docker Image into the session
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        References
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_13" id="__nav_2_4_13_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D480 Software QA
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D480 Software QA
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D480_Software_QA/D480_Software_QA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D480 Software Engineering and Quality Assurance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h2 id="docker">Docker</h2>
+<h3 id="parts">Parts</h3>
+<ul>
+<li>Docker Daemon - program that builds Docker Images and runs and distributes 
+Docker Containers  </li>
+<li>Docker Image - templage for creating a Docker Container  </li>
+<li>Docker Container - running instance of an image, containing an application, a filesystem, and any configuration files or software needed  </li>
+<li>Docker Client - program that runs commands in a console, used to interact with the Docker Daemon  </li>
+<li>Dockerfile - file that contains instructions for building a Docker image  </li>
+<li>registry - stores Docker images  <ul>
+<li>A Docker image build on a ceveloper's computer cannot be used to create 
+containers on other computers without a registry. </li>
+<li>Docker Hub - popular registry where developers can create public or private 
+repositories that house Docker Images  </li>
+</ul>
+</li>
+</ul>
+<h3 id="commands">Commands</h3>
+<ul>
+<li><code>build</code> - Builds an image from a Dockerfile  </li>
+<li><code>run</code> - Creates and runs an image in a container. The options <code>--name</code> 
+names the container, and <code>-d</code> runs the container in the background  </li>
+<li><code>stop</code> - Stops the running container  </li>
+<li><code>ps</code> - Lists currently running containers or all containers with <code>-a</code> option  </li>
+<li><code>rm</code> - removes a container  </li>
+<li><code>images</code> - Lists images  </li>
+<li><code>--help</code> - shows help information  </li>
+<li>Mapping the Docker Host port to your Container port: <ul>
+<li><code>docker run -p 27017:27017 -d mongo</code>  </li>
+</ul>
+</li>
+<li>Viewing the docker images layer ids: <ul>
+<li><code>docker images -q --no-trunc</code> shows the list of full ids  </li>
+<li><code>docker images</code> shows the first 12 characters of the ids  </li>
+</ul>
+</li>
+<li><code>logs</code>  <ul>
+<li>Check the logs for a container with <code>docker logs containerId</code>  </li>
+<li>So if a container fails to launch, you can check the logs for it's failure  </li>
+</ul>
+</li>
+<li>Shell into a running Container<ul>
+<li><code>docker exec -it &lt;container name&gt; bash</code>  </li>
+</ul>
+</li>
+<li>Tail the console output of a running coker container  <ul>
+<li><code>docker logs -f &lt;container name&gt;</code>  </li>
+</ul>
+</li>
+<li>Share storage on the host system with a docker container  <ul>
+<li><code>docker run -v &lt;my host path&gt;:&lt;the container path&gt; &lt;image name&gt;</code></li>
+</ul>
+</li>
+<li>Specify an environment variable for a docker container  <ul>
+<li><code>docker run -e MY_VAR=my_prop &lt;image name&gt;</code></li>
+</ul>
+</li>
+</ul>
+<h4 id="registry-commands">Registry Commands</h4>
+<ul>
+<li><code>login</code> - Logs the user into Docker Hub  </li>
+<li><code>tag</code> - Create a target image tag that refers to a source image  <ul>
+<li>the full registry tag name is: registry.hub.docker.com/[username?]/[repository]:[tag]  </li>
+<li>Ex: registry.hub.docker.com/mongo:latest  </li>
+</ul>
+</li>
+<li><code>push</code> - Copies an image to a repository  </li>
+<li><code>pull</code> - Copies an image from a repository  </li>
+</ul>
+<h4 id="housekeeping">Housekeeping</h4>
+<ul>
+<li>Cleaning up a Container  <ul>
+<li>Kill all running containers: <code>docker kill $(docker ps -q)</code>  </li>
+<li>Delete all Stopped Docker Containers: <code>docker rm $(docker ps -a -q)</code>  </li>
+</ul>
+</li>
+<li>Cleaning up Images  <ul>
+<li>Remove a Docker Image: <code>docker rmi &lt;image name&gt;</code>  </li>
+<li>Delete Untagged (dangling) Images: <code>docker rmi $(docker images -q -f dangling=ture)</code>  </li>
+<li>Delete All Images: <code>docker rmi $(docker images -q)</code>  </li>
+</ul>
+</li>
+<li>Cleaning up Volumes<ul>
+<li>Once a volume is no longer associated with a container, it is considered 'dangling'.  </li>
+<li>Remove all dangling volumes:  <ul>
+<li><code>docker volume rm $(docker volume ls -f dangling=true -q)</code>  </li>
+<li>Does not remove files from host system in shared volumes.  </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="commands-for-setting-up-centos-image">Commands for setting up CentOS image</h4>
+<p>CentOS is the free version of RedHat. Enterprises may have you using RedHat for the support, so CentOS is a free way to practice.  </p>
+<ul>
+<li><code>docker run -d centos</code><ul>
+<li>Docker containers run until the last command. CentOS wasn't given a command 
+so when you run <code>docker ps</code>, you won't see anything, CentOS is not running.  </li>
+<li>You can also check the log for CentOS's quick execution <code>docker logs &lt;container name&gt;</code>  </li>
+</ul>
+</li>
+<li>Run CentOS with a never ending command so that it doesn't close  <ul>
+<li><code>docker run -d cenos tail -f /dev/null</code>  </li>
+</ul>
+</li>
+<li>Shell into the running CentOS container, using the container name  <ul>
+<li>get the container name <code>docker ps</code>  </li>
+<li><code>docker exec -it &lt;container name&gt; bash</code>  </li>
+</ul>
+</li>
+</ul>
+<h4 id="contents-of-a-sample-dockerfile-to-install-java">Contents of a sample Dockerfile to install Java</h4>
+<p><div class="language-Java highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">FROM</span><span class="w"> </span><span class="n">centos</span><span class="w">  </span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">RUN</span><span class="w"> </span><span class="n">yum</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="o">-</span><span class="n">y</span><span class="w"> </span><span class="n">java</span><span class="w"> </span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1">// the -y is for agreeing to prompts. Not agreeing will cause the container to crash  </span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">VOLUME</span><span class="w"> </span><span class="o">/</span><span class="n">tmp</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1">// This designates a storage location for persistant memory  </span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="n">ADD</span><span class="w"> </span><span class="o">/</span><span class="n">spring</span><span class="o">-</span><span class="n">boot</span><span class="o">-</span><span class="n">web</span><span class="o">-</span><span class="mf">0.0.1</span><span class="o">-</span><span class="n">SNAPSHOT</span><span class="p">.</span><span class="na">jar</span><span class="w"> </span><span class="n">myapp</span><span class="p">.</span><span class="na">jar</span><span class="w">  </span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="n">RUN</span><span class="w"> </span><span class="n">sh</span><span class="w"> </span><span class="o">-</span><span class="n">c</span><span class="w"> </span><span class="err">&#39;</span><span class="n">touch</span><span class="w"> </span><span class="o">/</span><span class="n">myapp</span><span class="p">.</span><span class="na">jar</span><span class="err">&#39;</span><span class="w">  </span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="c1">// This just updates the date of the file</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="n">ENTRYPOINT</span><span class="w"> </span><span class="o">[</span><span class="s">&quot;java, &quot;</span><span class="o">-</span><span class="n">Djava</span><span class="p">.</span><span class="na">security</span><span class="p">.</span><span class="na">egd</span><span class="o">=</span><span class="n">file</span><span class="p">:</span><span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="w"> </span><span class="p">.</span><span class="o">/</span><span class="n">urandom</span><span class="s">&quot;, &quot;</span><span class="o">-</span><span class="n">jar</span><span class="s">&quot;, &quot;</span><span class="o">/</span><span class="n">myapp</span><span class="p">.</span><span class="na">jar</span><span class="s">&quot;]</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="s">// This helps TomCat run faster</span>
+</span></code></pre></div>
+- Build the Dockerfile<br />
+    - <code>docker build -t &lt;filename?&gt; .</code></p>
+<ul>
+<li>Run the installed docker container  <ul>
+<li><code>docker run -d -p 8080:8080 spring-boot-docker</code>  </li>
+</ul>
+</li>
+</ul>
+<h4 id="use-apache-groovy-for-adding-variables-into-dockerfile">Use Apache Groovy for adding variables into Dockerfile??</h4>
+<p>Learn how you can use Docker to supercharge your enterprise Java Development!<br />
+Video 49  </p>
+<h3 id="push-container-to-cloud">Push container to Cloud</h3>
+<hr />
+<p>These are notes from the WGU instructional video "Hows to Deploy A Docker Container on AWS and Azure"  </p>
+<ul>
+<li>The start of the video covers assigning the deployed port to a variable  </li>
+<li>A Docker file was already created  </li>
+<li>cd to the directory with the Dockerfile, enter the command: <ul>
+<li><code>docker build --tag &lt;desiredTagName&gt;</code>  </li>
+</ul>
+</li>
+<li>Create a DockerHub account. You are allowed one private image in you free DockerHub account  </li>
+<li>You will have to create an access token for that one private image. This is done in DockerHub. (23:30)  </li>
+<li>To push the local image to DockerHub: (24:50)  <ul>
+<li><code>docker tag &lt;nameOfImage&gt; &lt;nameOfRepository&gt;/&lt;nameOfImage&gt;</code>  </li>
+<li><code>docker push &lt;nameOfRepository&gt;/&lt;nameOfImage&gt;</code>  </li>
+</ul>
+</li>
+</ul>
+<h4 id="deoploying-to-aws">Deoploying to AWS</h4>
+<ol>
+<li>Log into AWS and set up an IAMs account <ul>
+<li>Search IAM (30:00)</li>
+<li>Select EC2 role from IAM dashboard</li>
+<li>Use SSM permissions   </li>
+</ul>
+</li>
+<li>Launch an EC2 Linux instance  </li>
+<li>Start a session and install docker (37:30) </li>
+<li>Pull your instance from Docker hub and deploy it in a container (38:50)   </li>
+</ol>
+<h4 id="deploy-to-azure">Deploy to Azure</h4>
+<p>(44:20)
+1. Log into Azure<br />
+2. Set up a management environment<br />
+3. Create a resource and choose Container App<br />
+4. Fill out the form and deploy (choose port 8080)  </p>
+<h4 id="cors">CORS</h4>
+<p>Calling a third-party web API from the web browser requires a cross-origin HTTP request, since the web API is not hosted on the local website's web server. Two main techniques are used to make cross-origin requests:</p>
+<ul>
+<li>Cross-Origin Resource Sharing (CORS) is a W3C specification for how web browsers and web servers should communicate when making cross-origin requests.</li>
+<li>JSON with Padding (JSONP) is a technique to circumvent cross-origin restrictions by injecting <script> elements dynamically into a webpage. Script elements have no cross-origin restrictions.  </li>
+<li>CORS allows the browser to send GET, POST, PUT, and DELETE requests. JSONP limits the browser to sending only GET requests.  </li>
+</ul>
+<h4 id="keeping-the-webpage-up-to-date">Keeping the webpage up to date</h4>
+<p>Keeping a website's user interface consistent or up-to-date when multiple users are accessing the same data is a significant challenge for developers. Two general solutions exist:</p>
+<ul>
+<li>Polling - The web browser sends periodic requests to the web server asking if the data has changed.</li>
+<li>Pushing - The web server pushes updates to all web browsers as soon as the data is changed on the web server.</li>
+</ul>
+<p>Polling is typically implemented with Ajax, but can be problematic: The browser can become out of synch with the web server in the time between poll requests. Pushing keeps the browser and server better synchronized. Pushing is implemented with WebSockets or server-sent events (SSE).</p>
+<h3 id="multi-threading-in-java">Multi Threading in Java</h3>
+<p>The Java programming language is multithreaded, meaning that the program can run more than one thread (or process) simultaneously, thus maximizing the computer’s central processing unit (CPU).<br />
+the threads are independent, which means that not only can multiple operations occur simultaneously but should one of those operations fail for whatever reason, the other threads are not affected.   </p>
+<ul>
+<li>A thread consists of:  <ul>
+<li>An instance of class <code>java.lang.Thread</code>  </li>
+<li>A thrad of execution  </li>
+</ul>
+</li>
+<li>In Java, there is one thread per heap/call stack  </li>
+<li>When it comes to threads, very little is guaranteed  </li>
+<li>Calling <code>.start()</code> on a new thread will call a new stack  </li>
+<li>Then calling <code>.run()</code> will execute on that new stack. Leaving out <code>.start()</code> will just cause the method to execute on the current stack rather than start a new one.  </li>
+</ul>
+<h3 id="concurrency">Concurrency</h3>
+<hr />
+<p>DEFINE:<br />
+1. Deadlock:<br />
+2. Livelock:
+3. Starvation:<br />
+4. Race Condition:  </p>
+<ul>
+<li>The java.util.concurrent.atomic package enables multithreaded applications to safely access individual variables without locking    </li>
+<li>java.util.concurrent.locks package provides a locking framework that can be used to create locking behaviors that are the same or superior to those of Java’s synchronized keyword  </li>
+</ul>
+<p>-The reason this implementation is now thread-safe is something called CAS. CAS stands for <strong>Compare And Swap</strong>. Most modern CPUs have a set of CAS instructions. Following is a basic outline of what is happening now:</p>
+<div class="language-text highlight"><pre><span></span><code>1. The value stored in count is copied to a temporary variable.
+
+2. The temporary variable is incremented.
+
+3. Compare the value currently in count with the original value. If it is unchanged, then swap the old value for the new value.
+</code></pre></div>
+<h4 id="apply-atomic-variables-and-locks-ocp-objective-103">Apply Atomic Variables and Locks (OCP Objective 10.3)</h4>
+<ul>
+<li>
+<p>The java.util.concurrent.atomic package provides classes that are similar to volatile fields (changes to an atomic object’s value will be correctly read by other threads without the need for synchronized code blocks in your code).</p>
+</li>
+<li>
+<p>The atomic classes provide a compareAndSet method that is used to validate that an atomic variable’s value will only be changed if it matches an expected value.</p>
+</li>
+<li>
+<p>The atomic classes provide several convenience methods such as addAndGet that will loop repeatedly until a compareAndSet succeeds.</p>
+</li>
+<li>
+<p>The java.util.concurrent.locks package contains a locking mechanism that is an alternative to synchronized methods and blocks. You get greater flexibility at the cost of a more verbose syntax (such as having to manually call lock.unlock() and having an automatic release of a synchronization monitor at the end of a synchronized code block).</p>
+</li>
+<li>
+<p>The ReentrantLock class provides the basic Lock implementation. Commonly used methods are lock(), unlock(), isLocked(), and tryLock(). Calling lock() increments a counter and unlock() decrements the counter. A thread can only obtain the lock when the counter is zero.</p>
+</li>
+<li>
+<p>The ReentrantReadWriteLock class provides a ReadWriteLock implementation that supports a read lock (obtained by calling readLock()) and a write lock (obtained by calling writeLock()).</p>
+</li>
+</ul>
+<h4 id="use-javautilconcurrent-collections-ocp-objective-104">Use java.util.concurrent Collections (OCP Objective 10.4)</h4>
+<ul>
+<li>
+<p>Copy-on-write collections work well when there are more reads than writes because they make a new copy of the collection for each write. When looping through a copy-on-write collection, use an iterator (remember, for-each loops use an iterator).</p>
+</li>
+<li>
+<p>None of the concurrent collections make the elements stored in the collection thread-safe—just the collection itself.</p>
+</li>
+<li>
+<p>ConcurrentHashMap, ConcurrentSkipListMap, and ConcurrentSkipListSet should be preferred over synchronizing with the more traditional collections.</p>
+</li>
+<li>
+<p>ConcurrentHashMap and ConcurrentSkipListMap are ConcurrentMap implementations that enhance a standard Map by adding atomic operations that validate the presence and value of an element before performing an operation: putIfAbsent(K key, V value), remove(Object key, Object value), replace(K key, V value), and replace(K key, V oldValue, V newValue).</p>
+</li>
+<li>
+<p>Blocking queues are used to exchange objects between threads. Blocking queues will block (hence the name) when you call certain operations, such as calling take() when there are no elements to take. There are seven different blocking queues that have slightly different behaviors; you should be able to identify the behavior of each type.</p>
+</li>
+</ul>
+<p>Blocking Queue</p>
+<hr />
+<ul>
+<li>
+<p>ArrayBlockingQueue  </p>
+<ul>
+<li>A FIFO (first-in-first-out) queue in which the head of the queue is the oldest element and the tail is the newest. An int parameter to the constructor limits the size of the queue (itis a bounded queue).</li>
+</ul>
+</li>
+<li>
+<p>LinkedBlockingDeque  </p>
+<ul>
+<li>Similar to LinkedBlockingQueue, except itis a double-ended queue (deque). Instead of only supporting FIFO operations, you can remove from the head or tail of the queue.</li>
+</ul>
+</li>
+<li>
+<p>LinkedBlockingQueue  </p>
+<ul>
+<li>A FIFO queue in which the head of the queue is the oldest element and the tail is the newest. An optional int parameter to the constructor limits the size of the queue (itcan be bounded or unbounded).</li>
+</ul>
+</li>
+<li>
+<p>PriorityBlockingQueue</p>
+<ul>
+<li>An unbounded queue that orders elements using Comparable or Comparator. The head of the queue is the lowest value.</li>
+</ul>
+</li>
+<li>
+<p>DelayQueue  </p>
+<ul>
+<li>An unbounded queue of java.util.concurrent.Delayed instances. Objects can only be taken once their delay has expired. The head of the queue is the object that expired first.</li>
+</ul>
+</li>
+<li>
+<p>LinkedTransferQueue   </p>
+<ul>
+<li>Added in Java 7. An unbounded FIFO queue that supports the features of a ConcurrentLinkedQueue, SynchronousQueue, and LinkedBlockingQueue.</li>
+</ul>
+</li>
+<li>
+<p>SynchronousQueue  </p>
+<ul>
+<li>A blocking queue with no capacity. An insert operation blocks until another thread executes a remove operation. A remove operation blocks until another thread executes an insert operation.</li>
+</ul>
+</li>
+<li>
+<p>Some blocking queues are bounded, meaning they have an upper bound on the number of elements that can be added, and a thread calling put(e) may block until space becomes available.</p>
+</li>
+<li>
+<p>CyclicBarrier creates a barrier at which threads must wait until all participating threads reach that barrier. Once all of the threads have reached the barrier, they can continue running. You can use CyclicBarrier to coordinate threads so that an action occurs only after another action is complete or to manage data in Collections that are not thread-safe.</p>
+</li>
+<li>
+<p>CyclicBarrier takes the number of threads that can wait at the barrier and an optional Runnable that is run after all threads reach the barrier, but before they continue execution. The last thread to reach the barrier is used to run this Runnable.</p>
+</li>
+</ul>
+<h4 id="use-executors-and-threadpools-ocp-objective-101">Use Executors and ThreadPools (OCP Objective 10.1)</h4>
+<ul>
+<li>
+<p>An Executor is used to submit a task for execution without being coupled to how or when the task is executed. Basically, it creates an abstraction that can be used in place of explicit thread creation and execution.</p>
+</li>
+<li>
+<p>An ExecutorService is an enhanced Executor that provides additional functionality, such as the ability to execute a Callable instance and to shut down (nondaemon threads in an Executor may keep the JVM running after your main method returns).</p>
+</li>
+<li>
+<p>The Callable interface is similar to the Runnable interface, but adds the ability to return a result from its call method and can optionally throw an exception.</p>
+</li>
+<li>
+<p>The Executors (plural) class provides factory methods that can be used to construct ExecutorService instances, for example: ExecutorService ex = Executors.newFixedThreadPool(4);.</p>
+</li>
+</ul>
+<h4 id="use-the-parallel-forkjoin-framework-ocp-objective-105">Use the Parallel Fork/Join Framework (OCP Objective 10.5)</h4>
+<ul>
+<li>
+<p>Fork/Join enables work stealing among worker threads in order to keep all CPUs utilized and to increase the performance of highly parallelizable tasks.</p>
+</li>
+<li>
+<p>A pool of worker threads of type ForkJoinWorkerThread is created when you create a new ForkJoinPool(). By default, one thread per CPU is created.</p>
+</li>
+<li>
+<p>To minimize the overhead of creating new threads, you should create a single Fork/Join pool in an application and reuse it for all recursive tasks.</p>
+</li>
+<li>
+<p>A Fork/Join task represents a large problem to solve (often involving a collection or array).</p>
+</li>
+<li>
+<p>When executed by a ForkJoinPool, the Fork/Join task will subdivide itself into Fork/Join tasks that represent smaller segments of the problem to be solved.</p>
+</li>
+<li>
+<p>A Fork/Join task is a subclass of the ForkJoinTask class, either RecursiveAction or RecursiveTask.</p>
+</li>
+<li>
+<p>Extend RecursiveTask when the compute() method must return a value, and extend RecursiveAction when the return type is void.</p>
+</li>
+<li>
+<p>When writing a ForkJoinTask implementation’s compute() method, always call fork() before join() or use one of the invokeAll() methods instead of calling fork() and join().</p>
+</li>
+<li>
+<p>You do not need to shut down a Fork/Join pool before exiting your application because the threads in a Fork/Join pool typically operate in daemon mode.</p>
+</li>
+</ul>
+<h4 id="use-parallel-streams-including-reduction-decomposition-merging-processes-pipelines-and-performance-ocp-objective-106">Use Parallel Streams Including Reduction, Decomposition, Merging Processes, Pipelines, and Performance (OCP Objective 10.6)</h4>
+<ul>
+<li>
+<p>Parallel streams are built on top of the Fork/Join pool.</p>
+</li>
+<li>
+<p>Parallel streams provide an easier syntax for creating tasks in the Fork/Join pool.</p>
+</li>
+<li>
+<p>You can use the default Fork/Join pool, or create a custom pool and submit tasks expressed as parallel streams via a Callable.</p>
+</li>
+<li>
+<p>Parallel streams split the stream into subtasks that represent portions of the problem to be solved. Each subtask solution is then combined to produce a final result for the terminal operation of the parallel stream.</p>
+</li>
+<li>
+<p>Create a parallel stream by calling parallel() on a stream object or parallelStream() on a Collection object.</p>
+</li>
+<li>
+<p>Make a parallel stream sequential again by calling the sequential() method.</p>
+</li>
+<li>
+<p>Test to see if a stream is parallel with the isParallel() method.</p>
+</li>
+<li>
+<p>Parallel stream pipelines should be stateless, and for optimum performance, parallel streams should be unordered. Reduction operations on parallel streams should be associative and stateless.</p>
+</li>
+<li>
+<p>Stateful parallel stream pipelines will either create an error or unexpected results.</p>
+</li>
+<li>
+<p>Nonassociative reductions on streams will produce unexpected results.</p>
+</li>
+<li>
+<p>Just like sequential streams, parallel streams can have multiple intermediate operations and must have one terminal operation to produce a result.</p>
+</li>
+<li>
+<p>Test your parallel streams to verify you are getting the performance benefits you expect. The performance overhead of creating threads can be greater than the performance gain of a parallel stream in some situations.</p>
+</li>
+<li>
+<p>Stateful stream operations, such as distinct(), limit(), skip(), and sorted(), will limit the performance of your parallel streams.</p>
+</li>
+<li>
+<p>Collect results from a parallel stream pipeline with collect(), just as we did with sequential streams. The collecting happens in a thread-safe way, so you can use collect() with Collectors.toList(), toSet(), and toMap() safely.</p>
+</li>
+</ul>
+<h2 id="kill-a-process-on-a-port">Kill a process on a port</h2>
+<p><code>netstat -ano | findstr :8080</code><br />
+Take the port id and use that to kill the task<br />
+<code>taskkill /PID 15828 /F</code>  </p>
+<h2 id="recursion">Recursion</h2>
+<ul>
+<li>A recursive algorithm is an algorithm that breaks the problem into smaller subproblems and applies the same algorithm to solve the smaller subproblems.</li>
+<li>Recursion may be direct, such as f() itself calling f(), or indirect, such as f() calling g() and g() calling f().  </li>
+<li>Each method call places a new <strong>stack frame</strong> on the stack, for local parameters, local variables, and more method items. Upon return, the frame is deleted.  </li>
+<li>Deep recursion could fill the stack region and cause a <strong>stack overflow</strong>, meaning a stack frame extends beyond the memory region allocated for stack.</li>
+</ul>
+<h2 id="java-scanner-class">Java Scanner class</h2>
+<ul>
+<li>Is used to convert the bytes from a System.In to the desired data types  </li>
+<li>As seen from previous examples, a programmer often needs a way to extract strings or integers from an input stream. Instead of directly reading bytes from System.in, a program typically uses the Scanner class as a wrapper that augments System.in by automatically scanning a sequence of bytes and converting those bytes to the desired data type.  </li>
+<li><code>Scanner scnr = new Scanner(System.in);</code>  </li>
+</ul>
+<h2 id="java-print-format">Java print format</h2>
+<ul>
+<li>
+<p>The first argument of the <strong>printf()</strong> method, the format string, specifies the format of the text to print along with any number of placeholders for printing values. The placeholders are known as format specifiers. A format specifier specifies the type of value to print in its place. A format specifier begins with the % character followed by another character that indicates the value type to be printed. Ex: <strong>%d</strong> indicates an integer type, and <strong>%s</strong> indicates a string type.</p>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;The %s account saved you $%f over %d years\n&quot;</span><span class="p">,</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">account</span><span class="p">,</span><span class="w"> </span><span class="n">total</span><span class="p">,</span><span class="w"> </span><span class="n">years</span><span class="p">);</span><span class="w">  </span>
+</span></code></pre></div>
+</li>
+<li>
+<p>To preserve resources, the system may wait until the buffer is full, or at least has a certain number of characters before moving them to the output device. Or, with fewer characters in the buffer, the system may wait until the resources are not busy. Sometimes a programmer does not want the system to wait. Ex: In a very processor-intensive program, waiting could cause delayed and/or jittery output.</p>
+</li>
+<li>
+<p>The PrintStream method flush() flushes the stream's buffer contents. Ex: The statement System.out.flush(); writes the contents of the buffer for System.out to the computer screen.  </p>
+</li>
+<li>
+<p>Most Java implementations make System.out flush when a newline character is output or println() method is called.  </p>
+</li>
+</ul>
+<h3 id="making-angular-read-from-the-environment-not-hardwired-to-port-8080">Making Angular read from the environment, not hardwired to port 8080</h3>
+<p>In app.components.ts<br />
+- Import {Location, LocationStrategy} from "@angular/common";
+- Add location and locationStrategy to the constructor<br />
+    - Constructor(private httpClient:HttpClient, private location: Location, private locationStrategy: LocationStrategy){}
+- Comment out<br />
+    - private baseURL:string='http://localhost:8080';
+- replace with<br />
+    - private baseURL:string=this.location.path();</p>
+<h1 id="deploy-a-java-application-in-a-docker-container-to-aws">Deploy a Java application in a Docker Container to AWS</h1>
+<h1 id="task-c3">Task C.3</h1>
+<blockquote>
+<p>Describe how you would deploy the current multithreaded Spring 
+application to the cloud. Include the name of the cloud service 
+provider you would use.  </p>
+</blockquote>
+<p>The following instructions are for deploying a Java Web Application 
+to an AWS Cloud EC2 instance.  The Java application will be dockerized
+and deployed from the EC2 instance as a Docker container. The final 
+application can be accessed through the EC2 instance IPv4 number. 
+The Docker Container's port :8080 will be mapped through the EC2 
+port :80.  </p>
+<ol>
+<li>Dockerize the application<ul>
+<li>Build a runnable .jar file    </li>
+<li>Create a Dockerfile  </li>
+<li>Build a Docker Image  </li>
+<li>Push the Docker Image to Docker Hub  </li>
+</ul>
+</li>
+<li>Deploy on an AWS EC2 Instance  <ul>
+<li>Create an IAM Role for an EC2  </li>
+<li>Launch EC2 Instance  </li>
+<li>Start a session under Systems Manager  </li>
+<li>Install Docker in the session  </li>
+<li>Pull the Docker Image into the session  </li>
+</ul>
+</li>
+</ol>
+<h2 id="dockerize-the-application">Dockerize the Application</h2>
+<p>A .jar file is an archived file in ZIP format of bundled Java 
+class files.  A runnable .jar has an entrypoint into the application's 
+main method. To create a Docker image, the application will first need 
+to create the .jar file that will be the first layer of the image.<br />
+Next, a Dockerfile will be added under the project's root directory. 
+The Dockerfile has no extension. It contains the instructions for 
+building the image. With a Dockerfile added, the docker image can be 
+built and pushed up to Docker Hub. Placing the image into Docker Hub 
+allows the image to be pulled down to other machines, like the AWS EC2.  </p>
+<h3 id="build-a-runnable-jar-file">Build a runnable .jar file</h3>
+<p>This project used Maven. There are other ways to build a runnable .jar, 
+but the instructions here will be directed towards Maven.  </p>
+<ol>
+<li>Add the <em>maven-jar-plugin</em> to the <em>pom.xml</em> file. In the code snippet
+below, substitute 'com.baeldung.HelloWorld' for the path to the project's 
+file containing the <em>main</em> method.  </li>
+</ol>
+<div class="language-xml highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">&lt;plugin&gt;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="nt">&lt;groupId&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupId&gt;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="nt">&lt;artifactId&gt;</span>maven-jar-plugin<span class="nt">&lt;/artifactId&gt;</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="nt">&lt;version&gt;</span>${maven-jar-plugin.version}<span class="nt">&lt;/version&gt;</span><span class="w">             </span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="nt">&lt;configuration&gt;</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">        </span><span class="nt">&lt;archive&gt;</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">            </span><span class="nt">&lt;manifest&gt;</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">                </span><span class="nt">&lt;mainClass&gt;</span>com.baeldung.HelloWorld<span class="nt">&lt;/mainClass&gt;</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">            </span><span class="nt">&lt;/manifest&gt;</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">        </span><span class="nt">&lt;/archive&gt;</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">    </span><span class="nt">&lt;/configuration&gt;</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="nt">&lt;/plugin&gt;</span>
+</span></code></pre></div>
+<ol>
+<li>Navigate a command terminal to the project's root directory. Build the 
+.jar file by running the command <code>mvn clean package</code> in the terminal. </li>
+</ol>
+<h3 id="create-a-dockerfile">Create a Dockerfile</h3>
+<p>The Dockerfile will be located just within the root directory. It 
+will contain the instructions for building the Docker Image.  </p>
+<ol>
+<li>
+<p>The simplest way, since this project uses IntelliJ IDEA, is to 
+right-click on the project root directory, select 'new' from the listed 
+options, then choose 'Dockerfile'. Another way would be to create a 
+file called 'Dockerfile' with no extension inside of the root directory.  </p>
+</li>
+<li>
+<p>The Dockerfile should contain the following content:  </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>FROM openjdk:17-jdk-alpine
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>COPY target/applicationName-0.0.1-SNAPSHOT.jar app.jar
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>ENTRYPOINT [&quot;java&quot;,&quot;-jar&quot;,&quot;/app.jar&quot;]
+</span></code></pre></div>
+<ul>
+<li>The path listed next to 'COPY' can be found in the project target 
+directory. Replace the .jar file called 'applicationName' with the 
+name of the project to be placed in the Docker Image.  </li>
+</ul>
+</li>
+</ol>
+<h3 id="build-a-docker-image">Build a Docker Image</h3>
+<ol>
+<li>
+<p>In a command terminal, navigate to the root directory where the 
+Dockerfile is located. Run the following command but replace 'imageName' 
+with the intended name of the image: </p>
+<ul>
+<li><code>docker image build -t imageName:latest .</code>  </li>
+</ul>
+</li>
+<li>
+<p>Test the image, run a container (Optional)  </p>
+<ul>
+<li>
+<p>Build the image into a container with the following command. 
+Use the <code>-p</code> tag to map the container's port to the running 
+machine's port.</p>
+</li>
+<li>
+<p><code>docker run --name containerName -d -p 8080:8080 imageName</code>  </p>
+</li>
+<li>
+<p>Check that the container is running with <code>docker ps</code>  </p>
+</li>
+<li>
+<p>Stop the running container with <code>docker stop containerName</code>  </p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="push-the-docker-image-to-docker-hub">Push the Docker Image to Docker Hub</h3>
+<ol>
+<li>
+<p>This step creates an access token to the Docker Hub repository. 
+Keep this token later for signing into Docker Hub from the AWS EC2 
+Instance.  </p>
+<ul>
+<li>Log into Docker Hub. Find the Security tab, click 
+'New Access Token'. Save this token for later use.  </li>
+</ul>
+</li>
+<li>
+<p>Push the Docker Image to a Docker Hub repository.  </p>
+<ul>
+<li>
+<p>Run the following command, replacing 'nameOfImage' with the 
+name of the Docker Image to be pushed. Also replace nameOfRepository 
+with the name of the Docker Hub repository that the image is being 
+pushed to.  </p>
+</li>
+<li>
+<p><code>docker tag nameOfImage nameOfRepository/nameOfImage</code>  </p>
+</li>
+<li>
+<p><code>docker push nameOfRepository/nameOfImage</code>  </p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="deploy-on-an-aws-ec2-instance">Deploy on an AWS EC2 Instance</h2>
+<p>Create/Login to an AWS Account. </p>
+<h3 id="create-an-iam-role-for-an-ec2">Create an IAM Role for an EC2</h3>
+<ol>
+<li>
+<p>Search for and select IAM service.  </p>
+</li>
+<li>
+<p>Create a Role for the EC2 instance by selecting a new EC2 role.  </p>
+</li>
+<li>
+<p>Search in Permission Policies for SSM. The returned results should 
+have the option for AmazonSSMManagedInstanceCore. Select this option 
+then click 'next'.  </p>
+</li>
+<li>
+<p>Give the role a name, then click 'Create Role'  </p>
+</li>
+</ol>
+<h3 id="launch-ec2-instance">Launch EC2 Instance</h3>
+<ol>
+<li>
+<p>Go to the 'Instances' option in the side bar.  </p>
+</li>
+<li>
+<p>Click on 'Launch an Instance'  </p>
+</li>
+<li>
+<p>Make the following selections for the new instance: </p>
+<ul>
+<li>
+<p>Give a name to the instance  </p>
+</li>
+<li>
+<p>Choose Linux as the Operating System  </p>
+</li>
+<li>
+<p>Under 'Key pair (login)' choose 'launch'  </p>
+</li>
+<li>
+<p>Create a Security Group and allow HTTP and HTTPS  </p>
+</li>
+<li>
+<p>Configure Store to <code>1x 8 GiB gp2</code>  </p>
+</li>
+<li>
+<p>In 'Advanced Details' choose the IAM instance profile just 
+created.  </p>
+</li>
+<li>
+<p>Launch the instance.  </p>
+</li>
+</ul>
+</li>
+<li>
+<p>Go back to the 'Instances' option on the left side bar and 
+select the newly running EC2 Instance. Under details, copy and save 
+the IPv4 address for accessing the EC2 later.  </p>
+</li>
+</ol>
+<h3 id="start-a-session-under-systems-manager">Start a session under Systems Manager</h3>
+<ol>
+<li>
+<p>Search for 'Session Manager' service and open a session  </p>
+</li>
+<li>
+<p>Start a session  </p>
+</li>
+<li>
+<p>Use the instance just created.</p>
+</li>
+</ol>
+<h3 id="install-docker-in-the-session">Install Docker in the session</h3>
+<p>Inside the instance session the following commands will need to be 
+run to install Docker:  </p>
+<ul>
+<li><code>sudo sh</code>  </li>
+<li><code>yum install -y docker</code>  </li>
+<li><code>service docker start</code>  </li>
+<li><code>docker info</code> (This is to check on the status of Docker)  </li>
+</ul>
+<h3 id="pull-the-docker-image-into-the-session">Pull the Docker Image into the session</h3>
+<ol>
+<li>
+<p>Login to Docker from the EC2 Instance session. The value for 
+'password' requires the access token that was created in step 1 
+of 'Push the Docker Image to Docker Hub'.  </p>
+<ul>
+<li>
+<p>Enter <code>docker login</code> into the session. </p>
+</li>
+<li>
+<p>The prompts will ask for 'Username' and 'Password'. Enter 
+the requested values, using the Docker Hub access key for the 
+password.  </p>
+</li>
+</ul>
+</li>
+<li>
+<p>Pull the Docker Image with the following command. Replace 
+nameOfRepository and nameOfImage with the respective values.  </p>
+<ul>
+<li><code>docker pull nameOfRepository/nameOfImage</code>  </li>
+</ul>
+</li>
+<li>
+<p>Run <code>docker images</code> to see if the image pulled from the repository.  </p>
+</li>
+<li>
+<p>Run the Docker image inside the EC2 instance, replacing the respective<br />
+values  </p>
+<ul>
+<li><code>docker run -name desiredContainerName -d -p 80:8080 nameOfRepository/nameOfImage</code>  </li>
+</ul>
+</li>
+<li>
+<p>Take the IPv4 number that was saved in step 4 of 'Launch EC2 Instance' 
+and place it into a web browser. The Java web application should appear.  </p>
+</li>
+</ol>
+<h2 id="references">References</h2>
+<ol>
+<li>
+<p>Piwowarek, Grzegorz. <em>Dockerizing a Java Application</em>. January 16, 2024.<br />
+    https://www.baeldung.com/java-dockerize-app. Accessed July 7th, 2024.  </p>
+</li>
+<li>
+<p>Sher-DeCusatis, Carolyn. "D387 Packaging a Jar". <em>Panopto</em>, May 5, 2023.  </p>
+</li>
+<li>
+<p>Sher-DeCusatis, Carolyn. "D387 How To Deploy A Docker Container on AWS<br />
+    and Azure". <em>Panopto</em>, November 19, 2022.  </p>
+</li>
+<li>
+<p>Lizarraga, A., &amp; Lysecky, R. (2022). D387: Advanced Java. zyBooks,<br />
+    a Wiley brand. https://learn.zybooks.com/zybook/WGUD387v1 (accessed July 2024).</p>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/charles-lucas-young/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["toc.integrate"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../../javascripts/drawer-toggle.js"></script>
+      
+        <script src="../../../../javascripts/header-title.js"></script>
+      
+        <script src="../../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

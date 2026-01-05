@@ -1,0 +1,4070 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://youngcharleslucas.github.io/Garage/WGU_Notes/D268_Communication/D268_Communication/">
+      
+      
+        <link rel="prev" href="../../C960_Discrete_Math_II/C960_Discrete_Math_II/">
+      
+      
+        <link rel="next" href="../../D284_Software_Engineering/D284_Software_Engineering/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../assets/images/dot-circles.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+  <title>Charles Young</title>
+
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Serif+4:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Source Serif 4";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#section-1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Young/*" class="md-header__button md-logo" aria-label="Young/*" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 3h18v18H3zm2 2v14h14V5z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Young/*
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Section 1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Young/*" class="md-nav__button md-logo" aria-label="Young/*" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 3h18v18H3zm2 2v14h14V5z"/></svg>
+
+    </a>
+    Young/*
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    { Bio }
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Garage
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Garage
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Quotes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quotes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Setting up MakeDocs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Library
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Library
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_1" id="__nav_2_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Structures and Algos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Structures and Algos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Data_Structures_and_Algos/basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Algorithms
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_2" id="__nav_2_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Frontend Masters
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Frontend Masters
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_2_1" id="__nav_2_3_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aws frontend v2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Aws frontend v2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Frontend_Masters/aws_frontend_v2/aws_frontend_v2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS for Fronted Engineers v2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_2_2" id="__nav_2_3_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    React v18
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    React v18
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Frontend_Masters/react_v18/intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    React 19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Frontend_Masters/react_v18/jsx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    JSX
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Frontend_Masters/react_v18/react/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    React
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Frontend_Masters/react_v18/testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WGU Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    WGU Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_1" id="__nav_2_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C191 Operating Systems
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C191 Operating Systems
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C191_Operating_Systems/c191_Operating_Systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1 Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_2" id="__nav_2_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C949 Data Structures I
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C949 Data Structures I
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C949_Data_Structures_I/C949_Data_Structures_I/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C949 Data Structures I
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_3" id="__nav_2_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C950 Data Structures II
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C950 Data Structures II
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C950_Data_Structures_II/C950_Data_Structures_II/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson 1 Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_4" id="__nav_2_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C951 AI
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C951 AI
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C951_AI/C951_ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C951 Artificial Intelligence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_5" id="__nav_2_4_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C960 Discrete Math II
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C960 Discrete Math II
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C960_Discrete_Math_II/C960_Discrete_Math_II/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_6" id="__nav_2_4_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D268 Communication
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D268 Communication
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 1
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lesson-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lesson 1
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lesson 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#12-communication-interactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Communication Interactions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-message-and-channel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4 Message and Channel
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5 Feedback
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-interference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.7 Interference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-communication-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.8 Communication Models
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-types-of-communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.9 Types of Communication
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lesson-2-communication-types-and-styles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lesson 2 Communication Types and Styles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lesson 2 Communication Types and Styles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-types-of-converstion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Types of Converstion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-five-stages-of-conversation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Five stages of Conversation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-communication-styles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Communication Styles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-adapting-communiation-to-others" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 Adapting Communiation to others
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#31-one-message-and-many-recievers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 One Message and Many Recievers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-tailoring-the-message" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Tailoring the Message
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-analysis-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Analysis Tool
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#41-verbal-communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Verbal Communication
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-reflective-attitude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Reflective Attitude
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-types-of-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Types of Language
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-types-of-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 Types of Language
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-improve-language-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 Improve language skills
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#51-written-communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Written Communication
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-plain-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Plain Language
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-put-the-reader-first" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Put the reader first
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-email" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 Email
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_7" id="__nav_2_4_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D284 Software Engineering
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D284 Software Engineering
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D284_Software_Engineering/D284_Software_Engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D284 Software Engineering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8" id="__nav_2_4_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D287 Java Frameworks
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D287 Java Frameworks
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_1" id="__nav_2_4_8_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Additional Material
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Additional Material
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Additional_Material/Additional_Material/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Additional Material
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_2" id="__nav_2_4_8_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Collections
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Collections
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Collections/Collections/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Collections
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_3" id="__nav_2_4_8_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exceptions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Exceptions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Exceptions/Exceptions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exceptions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_4" id="__nav_2_4_8_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Generics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Generics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Generics/Generics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Generics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_5" id="__nav_2_4_8_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Searching and Algorithms
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Searching and Algorithms
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Searching_and_Algorithms/Search_and_Algo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Searching and Algorithm
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_6" id="__nav_2_4_8_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit Testing
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unit Testing
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Unit_Testing/Unit_Testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_9" id="__nav_2_4_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D288 Backend Programming
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D288 Backend Programming
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D288_Backend_Programming/D288_Backend_Programming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D288 Backend Programming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_10" id="__nav_2_4_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D333 Ethics in Tech
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D333 Ethics in Tech
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D333_Ethics_in_Tech/D333_ethics_in_tech/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ethics in Technology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_11" id="__nav_2_4_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D336 Business IT
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D336 Business IT
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D336_Business_IT/D336_business_it/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D336 ITIL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_12" id="__nav_2_4_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D387 Advanced Java
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D387 Advanced Java
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D387_Advanced_Java/D387_Advanced_Java/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D387 Advanced Java
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_13" id="__nav_2_4_13_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D480 Software QA
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D480 Software QA
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D480_Software_QA/D480_Software_QA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D480 Software Engineering and Quality Assurance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="section-1">Section 1</h1>
+<h2 id="lesson-1">Lesson 1</h2>
+<h3 id="12-communication-interactions">1.2 Communication Interactions</h3>
+<ul>
+<li>
+<p>Communication Processes involves  </p>
+<ul>
+<li>Sender<br />
+    -Written communication is best created when the sender keeps in mind the 
+    intended audience and purpose of the communication.</li>
+<li>Message  </li>
+<li>Receiver  </li>
+<li>Channel  </li>
+<li>Feedback  </li>
+<li>Environment  </li>
+</ul>
+</li>
+<li>
+<p>Can be interrupted by <strong>Interferencen</strong>  </p>
+</li>
+<li>
+<p>Synchronouse Communication and Asynchronous  </p>
+<ul>
+<li>Synch (Real-time): Video, phone, face-to-face  </li>
+<li>Async: Email, text, voicemail  </li>
+</ul>
+</li>
+</ul>
+<h3 id="14-message-and-channel">1.4 Message and Channel</h3>
+<ul>
+<li>Verbal messages</li>
+<li>Non-verbal messages: body gesture  <ul>
+<li><strong>Vocalics</strong> or paralanguage: refers to tones, speed, and ptich  </li>
+</ul>
+</li>
+<li>Written message  </li>
+<li>
+<p>Visual Message</p>
+</li>
+<li>
+<p>Consider the amount of information, receiver's emotions, and timeliness  </p>
+</li>
+</ul>
+<h3 id="15-feedback">1.5 Feedback</h3>
+<ul>
+<li>Positive Feedback - receiver acknowledges receipt, and makes it clear that the 
+message was understood    </li>
+<li>Negative Feedback - did not receive/understand the message  </li>
+<li>Ambiguous Feedback - neither  </li>
+</ul>
+<h3 id="17-interference">1.7 Interference</h3>
+<p>Four types of interference<br />
+- Physical: background noise<br />
+- Psychological: thoughts impact the construction of the message<br />
+- Semantic Interference: Creating a message that the reciever does not understand,
+with jargon<br />
+- Physiological Interference: Headache, faitigue, not wearing glasses  </p>
+<h3 id="18-communication-models">1.8 Communication Models</h3>
+<ul>
+<li>Linear Model: one way process between sender and receiver. The sender does 
+not receive feedback  </li>
+<li>Interaction Model: adds the reciever's feedback   </li>
+<li>Transactional Model: The two parties are both the sender and receiver  </li>
+</ul>
+<h3 id="19-types-of-communication">1.9 Types of Communication</h3>
+<ul>
+<li>Intrapersonal Communication: communicate with the self  </li>
+<li>Interpersonal Communication: Two people  </li>
+<li>Group Communication: 3 to 15 people talking at once</li>
+<li>Public Communication: One person broadcasting to a group  </li>
+<li>Mass Communication: broadcasting out to the masses  </li>
+</ul>
+<h2 id="lesson-2-communication-types-and-styles">Lesson 2 Communication Types and Styles</h2>
+<h3 id="21">2.1</h3>
+<ul>
+<li>Converstions are categorized by 1) direction and 2) tone/purpose  <ul>
+<li>One-way or two-way  </li>
+<li>Cooperative or competetive  </li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: center;">Cooperative</th>
+<th style="text-align: center;">Competetive</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">two-way</td>
+<td style="text-align: center;">Dialogue</td>
+<td style="text-align: center;">Debate</td>
+</tr>
+<tr>
+<td style="text-align: left;">One-way</td>
+<td style="text-align: center;">Discourse</td>
+<td style="text-align: center;">Diatribe</td>
+</tr>
+</tbody>
+</table>
+<h3 id="22-types-of-converstion">2.2 Types of Converstion</h3>
+<ul>
+<li>Discourse is one-way, cooperative undertones   </li>
+<li>Dialogue is a conversation with cooperative undertones  </li>
+<li>Debate: two-way conversation with competetive undertones  </li>
+<li>Diatribe: one-way and competetive  </li>
+</ul>
+<h3 id="23-five-stages-of-conversation">2.3 Five stages of Conversation</h3>
+<ol>
+<li>Initiation: Make sure parties are ready to interact  </li>
+<li>Preview: Introduce what the conversation will be about. Establish eachother's 
+relationship, like worker and manager   </li>
+<li>Talking Points: Central or main goals are established  </li>
+<li>Feedback: mutual understanding of all main points are achieved  </li>
+<li>Closing: Good bye. It could also mean the start of a new conversation  </li>
+</ol>
+<h3 id="24-communication-styles">2.4 Communication Styles</h3>
+<ul>
+<li>Analytical Communication: data, hard facts, substantiate claims. To the point 
+leave out emotions  </li>
+<li>Intuitive: Listen to gut. Look at big picture, may not care for details.  </li>
+<li>Functional Communication: Detail Oriented, follow order, one-step at a time. 
+May follow a check list  </li>
+<li>Personal Communication: value emotions and feelings. Generally good listeners  </li>
+</ul>
+<h3 id="25-adapting-communiation-to-others">2.5 Adapting Communiation to others</h3>
+<ul>
+<li>Analytic: Use logic, hard facts, data. Written communication with loaded detail 
+Expect blunt, honest feedback. Avoid small-talk  </li>
+<li>Intuitive: Brain-storm or creative sessions. Visual presentation. Don't send too
+many details. Answer follow up questions over time.  </li>
+<li>Functional: Answer a lot of questions, plan out extensively. Do not rush them 
+when they are focusing on the details  </li>
+<li>Personal: Create a personal connection. Be honest and open. Send a follow up 
+email with the details of the meeting because they don't tend to focus on them.  </li>
+</ul>
+<h3 id="31-one-message-and-many-recievers">3.1 One Message and Many Recievers</h3>
+<ul>
+<li>Primary Recievers: may require reciever action  </li>
+<li>Secondary Recievers: See the message but do not require action. Take as information  </li>
+<li>Hidden Receivers: Unintentionally recieve the message.  </li>
+</ul>
+<h3 id="32-tailoring-the-message">3.2 Tailoring the Message</h3>
+<h3 id="33-analysis-tool">3.3 Analysis Tool</h3>
+<p>AUDIENCE  </p>
+<ol>
+<li>A = Analyze: Kinds of people that will receive message  </li>
+<li>U = Understand: What knowledge does the audience have about the message  </li>
+<li>D = Demographics: Age, gender, education, position  </li>
+<li>I = Interest: Level of interest in the message  </li>
+<li>E = Environment: What perception does the audience have on the topic  </li>
+<li>N = Need: What information does the audience need  </li>
+<li>C = Customize: Adjust message to Audience  </li>
+<li>E = Expectation: of the audience  </li>
+</ol>
+<p><strong>Demographic traits</strong>: demographic traits refer to the characteristics that make 
+someone an individual, but that he or she has in common with others. 
+<strong>Stereotyping</strong>: generalizing about a group of people and assuming that because 
+a few people in the group have a characteristic, all of them do.
+<strong>Totalizing</strong>: taking one characteristic of a group or person and making that 
+the “totality” or sum total of what the person or group is.  </p>
+<h3 id="41-verbal-communication">4.1 Verbal Communication</h3>
+<p>Verbal communication helps people:
+- Define reality<br />
+- Organize complex ideas and experiences into meaningful categories<br />
+- Think critically<br />
+- Reason abstractly<br />
+- Access Memories<br />
+- Shape attitudes  </p>
+<p>Meaning of words:
+- syntactic<br />
+- Pragmatic<br />
+- semantic  </p>
+<h3 id="42-reflective-attitude">4.2 Reflective Attitude</h3>
+<ul>
+<li>Verbal communication: a channel of communication that uses spoken words 
+between a source (i.e., speaker) and a receiver (i.e., listener)</li>
+<li>Connotation: the subjective definition of a word</li>
+<li>Denotation: the dictionary definition of a word  </li>
+</ul>
+<h3 id="43-types-of-language">4.3 Types of Language</h3>
+<p>Formal vs Informal Language  </p>
+<h3 id="44-types-of-language">4.4 Types of Language</h3>
+<p>Informal Language<br />
+- Jargon<br />
+- Colloquialisms<br />
+- Slang<br />
+- Idioms - avoid in professional communication<br />
+- Cliches - idea or expression that is so overused that the original meaning is lost  </p>
+<h3 id="45-improve-language-skills">4.5 Improve language skills</h3>
+<h3 id="51-written-communication">5.1 Written Communication</h3>
+<h3 id="52-plain-language">5.2 Plain Language</h3>
+<p>Three Cs of Effective Written Communication<br />
+- Clear<br />
+- Collaborative<br />
+- Concise  </p>
+<h3 id="53-put-the-reader-first">5.3 Put the reader first</h3>
+<h3 id="54-email">5.4 Email</h3>
+<ul>
+<li>Subject Line  </li>
+<li>Salutation  </li>
+<li>Email Body  </li>
+<li><strong>Valediction</strong>: Tie everything together with a short phrase or paragraph that 
+gives your entire message an appropriate finish. A thoughtful last sentence 
+or two can help give your email message a polished finish and make the receiver 
+feel appreciated at the same time.  </li>
+<li>Complimentary Close  </li>
+<li>Signatures<ul>
+<li>Title  </li>
+<li>Name  </li>
+<li>Organizational role/position  </li>
+<li>Department name  </li>
+<li>company  </li>
+<li>Address  </li>
+<li>Email  </li>
+<li>Phone number  </li>
+<li>Links</li>
+</ul>
+</li>
+</ul>
+<p>Advantages of Email<br />
+- Send a message to one or multiple receivers, including secondary audiences.
+- Send information anywhere in the world for free.
+- Make it possible to attach documents or images.
+- Indefinitely save/store/archive email messages.
+- Access emails from any device with an internet connection
+- Use the “Reply” feature to carry on email conversations of any length.  </p>
+<p>Disadvantages of Email<br />
+- Any number of people may have access to your messages, including area administrators in your office, home, or the offices and homes of the receivers.
+- Sensitive information may be accidentally forwarded to individuals or groups.
+- You might send by mistake with incomplete or incorrect information.
+- You might “Reply all” by mistake and send the message to unintended receivers.
+- You will have limited attachment space.
+- SPAM filters may prevent the message from being received.  </p>
+<p>Email Expectations<br />
+- you reply to an email within 24 hours,
+- the email has an appropriate subject line,
+- all expected secondary audiences have been included,
+- proper email etiquette is followed, and the email content is neatly organized,
+- the message is clearly about the subject stated in the subject line and only includes the information the recipient needs,
+- the message has been carefully reviewed for spelling and grammar to demonstrate the credibility of the email sender,
+- the email is direct and clear to eliminate the need for follow-up responses or misinterpretations, and
+- the email has a positive overall tone.  </p>
+<p>Using an active voice in the second person (you, your) with positive language and 
+active words will help ensure that your message will be well received and acted 
+upon as you expect.  </p>
+<p>Do a double check of formatting and spelling before sending  </p>
+<h1 id="section-2-conflict-management-and-professional-conversations">Section 2 Conflict Management and Professional Conversations</h1>
+<h2 id="lesson-11">Lesson 1.1</h2>
+<ul>
+<li>
+<p>Disagreement: arise when two people have different views on something. A 
+disagreement is not the same as a conflict. </p>
+</li>
+<li>
+<p>Argument: has negative connotation. Giving reasons and citing evidence 
+for the opinion. Trying to change the other's point of view. </p>
+</li>
+<li>
+<p>Conflict: opposing or incompatible values or beliefs.  </p>
+</li>
+</ul>
+<h2 id="lesson-12-types-of-conflict-1">Lesson 1.2 Types of Conflict 1</h2>
+<ul>
+<li>
+<p>Conflict of Process: disagreement about a process or way to reach a common 
+goal  </p>
+</li>
+<li>
+<p>Conflict of Substance: difference in perception of worth or investment related
+to achieving a goal.  </p>
+</li>
+</ul>
+<h2 id="lesson-13-types-of-conflict-2">Lesson 1.3 Types of Conflict 2</h2>
+<ul>
+<li>
+<p>Conflict of Values: Clash in a belief system  </p>
+</li>
+<li>
+<p>Conflict of Misperceived Differences: misrepresented messages.  </p>
+</li>
+<li>
+<p>Conflict of Personalities (Relationship Conflict): Self-worth is questioned  </p>
+</li>
+</ul>
+<h2 id="14-interpersonal-and-small-group-conflict">1.4 Interpersonal and small group conflict</h2>
+<ul>
+<li>
+<p>Interpersonal Conflict - When two people have a disagreement over an idea,
+thought, or desire over a period of time  </p>
+</li>
+<li>
+<p>Intragroup Conflict: when conflict starts within a group  </p>
+</li>
+</ul>
+<h2 id="15-the-positives-and-negatives-of-conflict">1.5 The Positives and Negatives of Conflict</h2>
+<h2 id="16-stages-of-conflict">1.6 Stages of Conflict</h2>
+<p>Five Stages of Conflict:<br />
+1) Underlying Conflict - When a person has just begun to experience feelings of 
+contention.<br />
+2) Conflict Development - When those feelings of contention or conflict are 
+triggered and take shape in the form of arguing, avoiding people, or refusing to follow procedures. 
+3) Conflict Stalemate - When no party concerned wants to yield or resolve the 
+conflict. 
+4) Conflict Resolution - When all parties concerned come together to resolve the 
+conflict.
+5) Reconciliation - When all parties concerned come together to work through 
+their differences.  </p>
+<h2 id="21-the-iceburg-of-conflict">2.1 The Iceburg of Conflict</h2>
+<p>Below the waterline: 
+- Personality differences<br />
+- Emotions<br />
+- Differing interests, needs, and desires<br />
+- Differing self-perceptions and self-esteem<br />
+- Hidden expectations 
+- Unresolved past issues  </p>
+<h2 id="22-sources-of-conflict">2.2 Sources of Conflict</h2>
+<h2 id="23-part-2">2.3 Part 2</h2>
+<p>T.R.I.P: acronym to identify and discuss four types of goals individuals experience<br />
+- Topic goals: Conflicts due to topic goals arise when the parties have differing 
+ideas about what to do or what decision to make.<br />
+- Relational goals:  Conflicts due to relational goals arise when there are 
+differences in the way each party wants to be treated.<br />
+- Identity goals: Conflicts due to identity arise when there is a misalignment 
+between how an individual feels they are perceived by others versus how they perceive their true identity. 
+- Process goals: Conflicts due to process goals arise when there are different 
+perceptions as to how communication should be used to manage conflict.  </p>
+<h2 id="25-sources-of-conflict-differing-goals">2.5 Sources of Conflict: Differing Goals</h2>
+<p>Conflict episodes can change:<br />
+- <strong>Prospective</strong> Goals are those that people hold before a conflict. In other words, 
+these are the types of goals, or intentions, that people have before a conflict begins.  </p>
+<ul>
+<li>
+<p><strong>Transactive</strong> Goals are those that people hold during a conflict. While a conflict 
+episode is ongoing, involved parties may change what they want and what is important to them. </p>
+</li>
+<li>
+<p><strong>Retrospective</strong> Goals are those that people hold after conflict. Once the 
+conflict is over and all involved parties have time to reflect, goals might change 
+based on what did or didn’t happen.  </p>
+</li>
+</ul>
+<h2 id="26-sources-of-conflict-power">2.6 Sources of Conflict: Power</h2>
+<p><strong>Power</strong> is the degree to which a social agent (A) can get another person(s) (P) 
+to alter their thoughts, feelings, and/or behaviors.  </p>
+<p>Five bases of power:  </p>
+<p>1) <strong>Information</strong> -  a social agent’s ability to bring about a change in thought, 
+feeling, and/or behavior through information—or to cause conflict by withholding 
+information to gain influence.  </p>
+<p>2) <strong>Coercive Power</strong> - ability to punish an individual who does not comply with 
+one’s attempts to influence them.  </p>
+<p>3) <strong>Legitimate Power</strong> - the social agent (A) has a valid right to influence 
+them, and they have an obligation to accept A’s attempt to influence their thoughts, 
+feelings, and/or behaviors.  </p>
+<p>4) <strong>Expert Power</strong> - perceived knowledge and expertise.   </p>
+<p>5) <strong>Referent Power</strong> -  is about relationship building and the desire to keep 
+and maintain positive relationships.  </p>
+<h2 id="27-escalating-conflict-emotions">2.7 Escalating Conflict: Emotions</h2>
+<ul>
+<li>
+<p>Emotions are natural reactions to stimuli in the outside environment.  </p>
+</li>
+<li>
+<p>Although emotions are not the initial cause of a conflict, they can escalate a 
+conversation into a conflict episode.  </p>
+</li>
+<li>
+<p>To prevent conflict, it is important to refrain from negating others’ emotions. 
+Avoid phrases like "don’t feel that way" or "they have no right to feel that way."  </p>
+</li>
+</ul>
+<h2 id="31-conflict-resolution-strategies-negotiation">3.1 Conflict-Resolution Strategies: Negotiation</h2>
+<p><strong>Negotiation</strong>: A discussion aimed at reaching an agreement. </p>
+<ul>
+<li>
+<p>Negotiation is an approach to conflict resolution in which the parties involved 
+aim to reach a mutual agreement.  </p>
+</li>
+<li>
+<p>Negotiation requires good persuasion, bargaining, and active listening skills. </p>
+</li>
+</ul>
+<p><strong>Mediation</strong>: A structured, interactive process in which an impartial third-party 
+assists disputing parties in resolving conflict through specialized communication.  </p>
+<h2 id="32-curture-and-conflict-resoluction">3.2 Curture and Conflict Resoluction</h2>
+<ul>
+<li>
+<p><strong>Face-Detracting Strategy</strong>: Attributes blame to an individual, making that person 
+feel responsible for things going wrong.  </p>
+</li>
+<li>
+<p><strong>Face-Saving Strategy</strong>: Focuses on what went wrong rather than attributing blame 
+to an individual. All parties involved in the task thus feel supported in trying 
+to understand what went wrong and correct it.  </p>
+</li>
+</ul>
+<h2 id="33-when-to-neotiate">3.3 When to Neotiate</h2>
+<p><strong>4 Essential Characteristics For Negotiation</strong>  </p>
+<table>
+<thead>
+<tr>
+<th>Characteristic</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Interdependent</td>
+<td>The parties somehow need each other.  For example, Alex and her team were working in the same department. They all had a stake in the outcome of their discussions. This is why negotiation is important to them.</td>
+</tr>
+<tr>
+<td>Seeking the best possible result for all</td>
+<td>The parties are each looking to achieve the best possible result for all. Although Alex wants a change and her team wants to keep the status quo, they are both acting in what they perceive to be their department’s best interest.</td>
+</tr>
+<tr>
+<td>Motivated and capable of influencing one another</td>
+<td>Both parties have enough power to influence and sway the other’s decisions. The team knows that Alex needs them to get her work done. Alex knows that her assignment to the team indicates that it needs her guidance and expertise.</td>
+</tr>
+<tr>
+<td>Belief in the value of a mutual agreement</td>
+<td>The parties believe that it is important to reach a mutual agreement. Both parties believe a middle ground may be reached. They may also be sensitive to the fact that without the other’s cooperation or support, things can actually become more difficult.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="34-the-five-steps-of-negotiation-1">3.4 The Five Steps of Negotiation 1</h2>
+<p><strong>Steps</strong>:  </p>
+<ul>
+<li>
+<p><strong>Prenegotiation</strong>: The first step in the negotiation process where you prepare for 
+negotiating.  </p>
+<ul>
+<li>bring clarity to the conflict, comprehensively analyze the issue, identify 
+the stakeholders, and try to determine what each party requires and wants.   </li>
+</ul>
+</li>
+<li>
+<p><strong>Opening</strong> step: ensure that the tone and style of your opening statement are
+ positive and objective. Try to avoid offering anything, but state the core issues 
+ present, demonstrate how they are affecting all parties, and suggest that everyone 
+ move forward with an open mind, focusing on the long-term benefits. Actively 
+ listen to others’ opening statements as well to make sure you understand their 
+ concerns.  </p>
+</li>
+<li>
+<p><strong>Exploration</strong>: explore all options with an unbiased and objective mind. 
+Approach the phase with a spirit of collaboration and cooperation. Interrogate 
+and investigate all options to ensure that all perspectives are heard.  </p>
+</li>
+<li>
+<p><strong>Bargaining</strong>: try to avoid an aggressive, negative, or argumentative tone or 
+style. Do not impose your thoughts and opinions on the other party. Do not try to 
+assert control, but rather be humble and sensitive to what the other person is 
+saying. Applying bullying tactics at this step will only aggravate the conflict 
+and may take you farther away from the agreement step.  </p>
+</li>
+<li>
+<p><strong>Agreement</strong>: make sure that everyone’s conditions have been met (even through 
+compromise) so that no one complains later and backs down on what was agreed upon.  </p>
+</li>
+</ul>
+<h2 id="36-avoid-common-negotiations-mistakes">3.6 Avoid Common Negotiations Mistakes</h2>
+<ul>
+<li>
+<p>Collaborative, not competitive  </p>
+</li>
+<li>
+<p>Avoid getting stuck on a 'Thorny Point'  </p>
+</li>
+<li>
+<p>Be specific in the Agreement  </p>
+</li>
+<li>
+<p>Check your emotions  </p>
+</li>
+</ul>
+<h2 id="41-interpersonal-communication">4.1 Interpersonal Communication</h2>
+<ul>
+<li>
+<p><strong>Interpersonal Communication</strong>: The exchange of information between two or more 
+people with mutual, unique connections.  </p>
+</li>
+<li>
+<p><strong>Interpersonal Conflict</strong>: Occurs between two or more people when there are 
+perceived or real goals that are not compatible with each other. This type of 
+conflict can be expressed verbally or nonverbally.  </p>
+</li>
+</ul>
+<h2 id="42-interpersonal-communication-behavior-1">4.2 Interpersonal Communication Behavior 1</h2>
+<h2 id="43-interpersonal-communiation-behavior-2">4.3 Interpersonal Communiation Behavior 2</h2>
+<p>Bad Listening Practices:  </p>
+<ul>
+<li>
+<p>Interrupting  </p>
+</li>
+<li>
+<p>Unintentional Interruptions  </p>
+</li>
+<li>
+<p>Eavesdropping  </p>
+</li>
+<li>
+<p>Aggressive listening: Listen attentively to attack someone  </p>
+</li>
+<li>
+<p>Narcissistic Listening: Make the interaction about themselves  </p>
+</li>
+<li>
+<p>Defensive Listenting: Being defensive, for no reason  </p>
+</li>
+<li>
+<p>Insensitive Listening: Ignoring the emotion in the conversation  </p>
+</li>
+<li>
+<p>Pseudo-listening: Pretending to pay attention  </p>
+</li>
+</ul>
+<h2 id="44-interpersonal-communication-behaviors-3">4.4 Interpersonal Communication Behaviors 3</h2>
+<ul>
+<li>
+<p>Mindfulness: being aware  </p>
+</li>
+<li>
+<p>Attention  </p>
+</li>
+<li>
+<p>Intention  </p>
+</li>
+<li>
+<p>Attitude  </p>
+</li>
+</ul>
+<p>\5 Facets of Mindfulness:  </p>
+<ul>
+<li>
+<p>Observing  </p>
+</li>
+<li>
+<p>Describing  </p>
+</li>
+<li>
+<p>Acting with Awareness  </p>
+</li>
+<li>
+<p>Nonjudging of Inner Experience  </p>
+</li>
+<li>
+<p>Nonreactivity to Inner Experience  </p>
+</li>
+</ul>
+<h2 id="45-active-listening-skills-1">4.5 Active Listening Skills 1</h2>
+<ul>
+<li>
+<p>Listen vs Hear: </p>
+<ul>
+<li>
+<p>Concentrate on the speaker  </p>
+</li>
+<li>
+<p>Make eye contact with the speaker  </p>
+</li>
+<li>
+<p>Acknowledge the speech sounds and/or body language of the speaker </p>
+</li>
+<li>
+<p>Understand what the speaker is saying  </p>
+</li>
+<li>
+<p>Ask clarifying questions  </p>
+</li>
+<li>
+<p>Confirm your understanding with a response  </p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="46-active-listenting-skills-2">4.6 Active Listenting Skills 2</h2>
+<p>Active Listening Indicators  </p>
+<p>Nonverbal:  </p>
+<ul>
+<li>
+<p>Making eye contact  </p>
+</li>
+<li>
+<p>Smiling  </p>
+</li>
+<li>
+<p>Slightly raising an eyebrow  </p>
+</li>
+<li>
+<p>Having an upright posture  </p>
+</li>
+<li>
+<p>Having a slight lean toward the speaker  </p>
+</li>
+<li>
+<p>Head nods  </p>
+</li>
+<li>
+<p>Lack of distraction  </p>
+</li>
+</ul>
+<p>Verbal:  </p>
+<ul>
+<li>
+<p>Referencing past statements  </p>
+</li>
+<li>
+<p>Not interrupting or interjecting  </p>
+</li>
+<li>
+<p>Ask probing questions for both clarification and elaboration  </p>
+</li>
+<li>
+<p>Using simple phrases of understanding like "ok"  </p>
+</li>
+</ul>
+<h2 id="47-active-listening-skills-3">4.7 Active Listening Skills 3</h2>
+<p><strong>Empathetic</strong> Listening: The practice of suspending judgment and seeking 
+clarification and connection with the sender when receiving a message.</p>
+<ul>
+<li>
+<p>Paraphrasing – when you put the other person’s words into your frame of 
+experience without making it about you.  </p>
+</li>
+<li>
+<p>Mirroring – when you replicate the nonverbal signals of a speaker.  </p>
+</li>
+<li>
+<p>Questioning – specifically when you ask reflective questions that invite 
+elaboration from the speaker, which helps to demonstrate that you are listening.  </p>
+</li>
+</ul>
+<h2 id="49-listening-styles-2">4.9 Listening Styles 2</h2>
+<ul>
+<li>People-oriented<ul>
+<li>Use stories, images, or other visuals to share your message.</li>
+<li>Share your emotions and be open to the speaker sharing theirs.</li>
+</ul>
+</li>
+<li>Action-oriented<ul>
+<li>Keep your presentations concise.</li>
+<li>Share step-by-step plans and have an actionable item at each step.</li>
+<li>Maintain control of your speech.</li>
+</ul>
+</li>
+<li>Content-oriented<ul>
+<li>Use credible evidence and hard data.</li>
+<li>Appeal to logic and reasoning, and share clear plans.</li>
+<li>Use charts or graphs when possible.</li>
+</ul>
+</li>
+<li>Time-oriented<ul>
+<li>Begin by asking how much time the receiver has to listen.</li>
+<li>Be on the lookout for nonverbal cues of disinterest or a desire to end 
+the conversation.  </li>
+<li>Let the listener know that the time they spend in open communication will 
+save time in the long run.  </li>
+</ul>
+</li>
+</ul>
+<h2 id="410-effective-feedback-skills-1">4.10 Effective Feedback Skills 1</h2>
+<ul>
+<li>
+<p>Feedback: Information about the quality, process, or product of a group or an 
+individual’s work.  </p>
+</li>
+<li>
+<p>Descriptive Feedback: Feedback that objectively shares what has been observed.  </p>
+</li>
+<li>
+<p>Evaluative Feedback: Feedback that provides an assessment of a group or an 
+individual’s work.  </p>
+</li>
+<li>
+<p>Prescriptive Feedback: Feedback that provides next steps based on observation 
+and evaluation.  </p>
+</li>
+</ul>
+<h2 id="411-effective-feedback-skills-2">4.11 Effective Feedback Skills 2</h2>
+<p><strong>Listenable</strong> messages are ones that are delivered orally to another person and 
+are crafted in such a way as to be heard and received by the person you are 
+talking to. This is feedback that isn't meant to be mean, such as sarcastic or abrasive  </p>
+<ul>
+<li>
+<p>Short sentences</p>
+</li>
+<li>
+<p>Active verbs as much as possible  </p>
+</li>
+<li>
+<p>“I” statements and personal pronouns (e.g. I, me, my, mine)  </p>
+</li>
+<li>
+<p>Lists or other organizational structures  </p>
+</li>
+<li>
+<p>Transitions and previews of what’s to come  </p>
+</li>
+<li>
+<p>Examples that are relevant to your listener  </p>
+</li>
+</ul>
+<h3 id="6-components-of-effective-feedback">6 Components of Effective Feedback</h3>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Be Specific</td>
+<td>Tory will need to tell Taylor specifically what they are struggling with. Telling Taylor the documents are frustrating is not helpful, as Taylor will not know how to improve them. To be specific, Tory should say, "the documents you have been sending are not organized well and the formatting is inconsistent."</td>
+</tr>
+<tr>
+<td>Be Descriptive</td>
+<td>Tory will also need to be more detailed in her explanation. For example, she could add to the previous specific sentence by sharing, "when I look through the documents, I am not able to see your flow of ideas because the formatting is inconsistent."</td>
+</tr>
+<tr>
+<td>Be Positive</td>
+<td>The feedback will be better received if Tory is able to add a positive message to her feedback. For example, adding to the above by saying, "I really appreciate your ideas on this team, and I want to be able to take them all into consideration."</td>
+</tr>
+<tr>
+<td>Be Constructive</td>
+<td>Taking it another step forward and providing a constructive, actionable step for Taylor is recommended. For example, Tory could ask Taylor to look over the way a few other team members format their documents and see which ones might feel best to them to try out.</td>
+</tr>
+<tr>
+<td>Be Realistic</td>
+<td>Additionally, it is important to be realistic in the feedback you give. Imagine, for example, that Tory said to Taylor, "I don’t really understand what your documents are trying to say." This might be true, but it could have more to do with Tory’s complex literacy skills or the amount of time she is taking to understand Taylor’s work, than with the work itself.</td>
+</tr>
+<tr>
+<td>Be Relevant</td>
+<td>Lastly, it is critical for Tory to provide feedback that is directly relevant to Taylor’s work. For example, it would not be productive for Tory to share that she liked the 'subject lines' of Taylor’s emails. It is certainly something she could share with Taylor at another time, but for the purposes of effective formal feedback, this is not appropriate or helpful.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="412-emotions-and-conflict-1">4.12 Emotions and Conflict 1</h2>
+<h2 id="414-emotional-intelligence">4.14 Emotional Intelligence</h2>
+<p><strong>Emotional Intelligence</strong>: Your ability to assess and manage your own emotions and 
+use them positively.</p>
+<ul>
+<li>"Emotional intelligence is an individual’s appraisal and expression of their emotions and the emotions of others in a manner that enhances thought, living, and communicative interactions."  </li>
+</ul>
+<h2 id="51-what-is-a-group">5.1 What is a Group</h2>
+<p><strong>Group dynamics</strong> govern how the group members behave within the group, their attitudes, and their overall performance on a regular basis. Group “health” depends largely on whether group dynamics are positive or if there is friction negatively impacting them.  </p>
+<p><strong>Intragroup Conflict</strong>: Conflict that occurs among members of a group that share common goals, interests, or other identifying characteristics.</p>
+<h2 id="52-group-characteristics-and-confilct-management">5.2 Group Characteristics and Confilct Management</h2>
+<ul>
+<li><strong>Group Norms</strong>: The set of behaviors or rules that individuals follow within a group.</li>
+<li><strong>Role</strong>: An assigned identity within the group defining an individual’s responsibilities.</li>
+<li><strong>Status</strong>: An individual’s position across group relationships.</li>
+</ul>
+<h2 id="53-stage-1-the-group-forms">5.3 Stage 1: The Group "Forms"</h2>
+<p><strong>Forming Stage</strong>: The first stage of group formation is the forming stage. At this stage, the group is being formed and members may feel discomfort because they don’t yet know each other.</p>
+<h2 id="54-stage-2-the-group-storms">5.4 Stage 2: The Group "Storms"</h2>
+<ul>
+<li>
+<p><strong>Storming Stage</strong>: The second stage of group formation, in which group members vie for roles, begin taking sides against others in the group, and resist being managed by self-appointed leaders. Members communicate with each other, but group cohesiveness is overshadowed by individual goals.  </p>
+</li>
+<li>
+<p><strong>Assigned Role</strong>: The role assigned to an individual within a group or team.</p>
+</li>
+<li>
+<p><strong>Assumed Role</strong>: When a role or responsibility is not assigned to an individual, but they assume it as part of the group dynamic.</p>
+</li>
+<li>
+<p><strong>Mismatched Expectations</strong>: When an individual’s expectations do not match what they are told.</p>
+</li>
+<li>
+<p><strong>Competition</strong>: When individuals vie for positions over other group members.  </p>
+</li>
+</ul>
+<h2 id="55-active-listening-in-groups">5.5 Active Listening in Groups</h2>
+<p><strong>DO:</strong><br />
+- Determine their purpose for listening and keep it in mind. 
+- Identify the levels at which group members are communicating their messages—e.g., emotional, positional, or intellectual.
+- Assess the relative significance of people’s comments and listen for main ideas.
+- When possible and appropriate, urge other members of the group to speak, especially those who are less dominant. Speaking can be encouraged with statements like “Please go on,” “Tell me more,” and “Care to expand on that?” 
+- Observe others’ body language and other nonverbal cues.
+- Show interest in others’ messages through nonverbal actions such as nodding your head. 
+- Use "interactive questioning." Ask open-minded and open-ended questions to clarify ideas and information, to probe a speaker’s reasoning and evidence, and to expand incomplete information. Use and ask for examples so that the speaker can connect your questions with their own world of experiences.
+- Use tentative clarifying and confirming statements: e.g., "It sounds like . . . ," "You seem to think that . . . ," and "As I understand it, you . . . ."
+- Make polite, "targeted" interruptions. Be judicious with interruptions.
+- Paraphrase back to the speaker. Don’t just see if you can accurately repeat what a person is saying.
+- Respond after listening, sincerely, and constructively. Focus on content, ideas, and analysis rather than on personal matters.
+- Allow for, and be careful how you interpret, silence. Keep in mind that people may have many reasons, positive or otherwise, for not speaking at a particular time.</p>
+<p><strong>Do NOT:</strong>
+- Let listening be a dead end, in which you receive messages and don’t react at all.
+- Allow the listening behavior of others to sway your own.
+- Cut off or put down a speaker.
+- Interrupt excessively.
+- Pose "counterfeit questions"—belligerent statements masquerading as questions simply because they end with question marks.
+- Allow the tone of someone’s message to influence your interpretation or reactions to it.
+- Express your interpretations of other people’s messages excessively.</p>
+<h2 id="56-decision-making-in-groups-1">5.6 Decision Making in Groups 1</h2>
+<p><strong>Decision Making Continuum:</strong>  </p>
+<ul>
+<li>In a <strong>consensus</strong> approach, all group members work together to make a decision.</li>
+<li><strong>Voting</strong> allows each group member to make a single choice. </li>
+<li>In a <strong>compromise</strong>, group members reach a mutually beneficial decision. </li>
+<li>Under <strong>authority rule</strong>, a single person makes a decision and the other group members follow it and work accordingly.  </li>
+</ul>
+<h2 id="57-decision-making-in-groups-2">5.7 Decision Making In Groups 2</h2>
+<h2 id="58-stage-3-the-group-norms">5.8 Stage 3: The Group "Norms"</h2>
+<h2 id="59-stage-4-the-group-performs">5.9: Stage 4: The Group "Performs"</h2>
+<ul>
+<li><strong>Performing Stage</strong>: The fourth stage of group formation, when the members of the group start to perform as one cohesive unit.</li>
+<li><strong>Cooperation</strong>: When people come together to work toward a common goal, which may not include working toward their personal or individual goals.</li>
+<li><strong>Collaboration</strong>: When people come together to work toward goals that may be related to their individual goals.  </li>
+</ul>
+<h2 id="510-stage-5-the-group-adjourns">5.10 Stage 5: The Group "Adjourns"</h2>
+<h3 id="strategies-to-manage-intragroup-conflict">Strategies to Manage Intragroup Conflict</h3>
+<p>1) Emphasizing group goals and effectiveness. Focusing on group goals and objectives helps prevent group conflict. If larger goals are emphasized, group members are more likely to see the big picture and work together to achieve them.</p>
+<p>2) Providing stable, well-structured tasks. When work activities are clearly defined, understood, and accepted, conflict is less likely to occur. Conflict is most likely to occur when task uncertainty is high; specifying or structuring roles and tasks minimizes ambiguity.</p>
+<p>3) Facilitating dialogue. Misperception of the abilities, goals, and motivations of others often leads to conflict, so efforts to increase dialogue among group members and to share information can help eliminate conflict. As group members come to know more about one another, suspicions often diminish, and greater intergroup teamwork becomes possible.</p>
+<p>4) Avoiding win-lose situations. If win-lose situations are avoided, less potential for conflict exists.  </p>
+<h3 id="eight-strategies-to-prevent-conflict-episodes">Eight Strategies to prevent Conflict Episodes</h3>
+<table>
+<thead>
+<tr>
+<th>Strategy</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Physical separation</td>
+<td>The quickest and easiest solution to resolve the conflict is physical separation. Separation is useful when conflicting individuals or groups are not working on a joint task or do not need a high degree of interaction. Although this approach does not encourage members to change their attitudes, it does provide time to seek better accommodation.</td>
+</tr>
+<tr>
+<td>Use of rules and regulations</td>
+<td>Conflict can also be reduced by clearly specifying rules, regulations, and procedures. Again, however, basic attitudes are not modified in this case.</td>
+</tr>
+<tr>
+<td>Use of integrators</td>
+<td>Integrators are individuals who are assigned a boundary-spanning role between two people or groups. In this scenario, the project manager was the integrator. To be trusted, integrators must be perceived as legitimate and knowledgeable by both groups. The integrator often takes the “shuttle diplomacy” approach, moving from one person or group to another, identifying areas of agreement, and attempting to find areas of future cooperation.</td>
+</tr>
+<tr>
+<td>Confrontation and negotiation</td>
+<td>In this approach, competing parties are brought together face to face to discuss their basic areas of disagreement. The hope is that through open discussion and negotiation, a means can be found to resolve problems. Contract negotiations between union and management represent one such example. If a “win-win” solution can be identified through these negotiations, the chances of an acceptable resolution of the conflict increase.</td>
+</tr>
+<tr>
+<td>Rotation of members</td>
+<td>By rotating from one group to another, individuals come to understand the frames of reference, values, and attitudes of other members, and communication is thus increased. When those rotated are accepted by the receiving groups, a change in attitudes as well as behavior becomes possible. This is clearly a long-term technique, as it takes time to develop good interpersonal relations and understanding among group members.</td>
+</tr>
+<tr>
+<td>Identification of shared tasks and goals</td>
+<td>A further strategy is to establish goals that require groups to work together to achieve overall success.</td>
+</tr>
+<tr>
+<td>Use of training</td>
+<td>The final technique on the continuum is training. Outside training experts are retained on a long-term basis to help groups develop relatively permanent mechanisms for working together. Structured workshops and training programs can help forge more favorable intergroup attitudes and, as a result, more constructive group behavior.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Adjourning</strong> Stage: The fifth stage in group forming, when group goals have been met and the group may disintegrate or start on a new project.  </p>
+<h2 id="section-2-lesson-5-quiz">Section 2, Lesson 5 Quiz</h2>
+<p><strong>Groupthink</strong> is a <strong>negative group phenomenon</strong> characterized by a lack of critical evaluation of proposed courses of action that results from high levels of cohesion and/or high conformity pressures.  </p>
+<h2 id="61-conflict-management-styles-1">6.1 Conflict Management Styles 1</h2>
+<p><strong>Competing</strong>: Individuals who employ a competing style of conflict management exhibit a low concern for the other and a high concern for self. This is a winner-takes-all attitude. Coercion—either through threats or through persuasion—is a strategy adopted in this style.  </p>
+<p><strong>Avoiding</strong>: Individuals who use avoidance as a conflict-management style often indicate a low concern for both self and others. Not addressing the issue and choosing instead to avoid it is one strategy used by this style. Usually, but not always, a strategy of passive-aggressive behavior is used to avoid conflict.  </p>
+<p><strong>Accommodating</strong>: An individual with an accommodating style is inclined to have a low concern for self and a high concern for others. While this is often viewed as a submissive and counterproductive position, context and motivation will help determine whether this is an appropriate strategy.  </p>
+<p><strong>Compromising</strong>: A compromising approach to conflict indicates a low concern for self and others. While a compromise may look like a reasonable approach, it may arise from indifference and low investment in the outcome, in which case it is not advisable. For it to be equitable, both parties must give up and gain something.  </p>
+<p><strong>Collaborating</strong>: A collaborating style of managing conflict indicates high concern for self and others and investment in the outcome. This is an ideal approach, as everyone’s needs are optimally met. However, this may not be feasible in many situations, and hence, the other styles of conflict resolution are used.  </p>
+<h2 id="62-conflict-management-styles-2">6.2 Conflict Management Styles 2</h2>
+<h1 id="section-3-influencing-others">Section 3 Influencing Others</h1>
+<h2 id="11-can-you-influence-others">1.1 Can you influence others?</h2>
+<p><strong>Influence</strong>: When an individual or group of people alters another person’s thinking, feelings, and/or behaviors through accidental, expressive, or rhetorical communication.  </p>
+<h2 id="12-what-is-infulential-communication">1.2 What is Infulential Communication?</h2>
+<h2 id="13-styles-of-influence">1.3 Styles of Influence</h2>
+<p>Five styles of Influence:  </p>
+<ul>
+<li>
+<p><strong>Rationalizing</strong>: focusing on facts, objective data, and expertise</p>
+</li>
+<li>
+<p><strong>Asserting</strong>: stating ideas forcefully and directly </p>
+</li>
+<li>
+<p><strong>Negotiating</strong>: looking for ways to collaborate</p>
+</li>
+<li>
+<p><strong>Inspiring</strong>: using passion to excite people for change</p>
+</li>
+<li>
+<p><strong>Bridging</strong>: listening to others to build personal connections  </p>
+</li>
+</ul>
+<h2 id="14-persuasion-power-motivation-and-influencer-1">1.4 Persuasion, Power, Motivation, and Influencer 1</h2>
+<p><strong>Power</strong>: The ability to change what someone thinks, feels or does.</p>
+<h2 id="15-persuasion-power-motivation-and-influencer-2">1.5 Persuasion, Power, Motivation, and Influencer 2</h2>
+<h2 id="16-alternative-ways-to-think-about-influence-12">1.6: Alternative Ways to Think about Influence (1/2)</h2>
+<h2 id="17-alternative-ways-to-think-about-influence-22">1.7: Alternative Ways to Think about Influence (2/2)</h2>
+<p><strong>Perspectives</strong>: A point of view or a particular attitude toward or way of regarding something.  </p>
+<h2 id="18-levels-of-influence-12">1.8: Levels of Influence (1/2)</h2>
+<p><strong>Compliance Level of Influence</strong>: The shallowest level of influence. Change occurs because the person is rewarded if they do change and punished if they do not change. </p>
+<p><strong>Identification Level of Influence</strong>: The second level of influence. Change occurs because they want to fit in or be like the person or group that is attempting to influence them.  </p>
+<h2 id="19-levels-of-influence-22">1.9: Levels of Influence (2/2)</h2>
+<p><strong>Internalization Level of Influence</strong>: the longest-lasting type of influence because the person influenced incorporates the change into their own sense of self and their values.  </p>
+<h2 id="110-influence-in-a-professional-setting">1.10: Influence in a Professional Setting</h2>
+<h2 id="21-defining-your-audience">2.1: Defining Your Audience</h2>
+<p><strong>Implied Audience</strong>: The broader audience that your actual audience represents, but might not be present.</p>
+<p><strong>Explicit Audience</strong>: The people the message is directly sent to.  </p>
+<h2 id="22-audience-demographics-and-knowledge">2.2 Audience: Demographics and Knowledge</h2>
+<p>"Demographics" can be defined as socio-cultural characteristics that identify and characterize populations.  </p>
+<p>Consider these key questions about the audience’s relationship to the topic. </p>
+<ul>
+<li>
+<p>K = Knowledge: Do audience members already know a lot about the topic? A little? Nothing at all?</p>
+</li>
+<li>
+<p>R = Relevance: Why does this or should this topic matter to the audience? Do they already understand its importance, or does it need to be pointed out?</p>
+</li>
+<li>
+<p>I = Interest level: Is your audience likely to want to know about this topic? Are they curious about it, or will you have to get them interested in it?</p>
+</li>
+<li>
+<p>P = Point of view: Is this a topic your audience likely already has an opinion on?  </p>
+</li>
+</ul>
+<h2 id="23-audience-willingness-and-connectiveness">2.3 Audience: Willingness and Connectiveness</h2>
+<p>Ask yourself the following questions to examine your connection to the audience:</p>
+<ul>
+<li>
+<p><strong>Insider/outsider</strong>: Am I part of the same group as my audience? Am I "one of them," or am I speaking to them as an outsider?</p>
+</li>
+<li>
+<p><strong>Common traits</strong>: What qualities or traits do I share with the audience that might be relevant? </p>
+</li>
+<li>
+<p><strong>History</strong>: Does this audience know me? How well? How will my past interactions with them affect how they respond to me? If they don’t know me, what can I do to gain their trust?</p>
+</li>
+<li>
+<p><strong>Trustworthy or skeptical</strong>: Is the audience likely to assume I am a trustworthy source of information and ideas, or are they likely to be distrustful? </p>
+</li>
+<li>
+<p><strong>Agenda</strong>: What will the audience assume is my purpose in speaking with them? Is their assumption accurate? In either case, how will this affect my interaction with them?</p>
+</li>
+<li>
+<p><strong>Shared goals</strong>: What goals do the audience and I share? What are things that we all would hope would happen? What might we all want to come out of this interaction?   </p>
+</li>
+</ul>
+<h2 id="24-audience-expectations">2.4 Audience: Expectations</h2>
+<p>To meet the audience’s expectations, consider the following variables and questions:  </p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Questions to Consider</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Purpose of presentation</td>
+<td>Is the audience expecting the message to be primarily informational, persuasive, entertaining, or perhaps some combination of these?</td>
+</tr>
+<tr>
+<td>Length</td>
+<td>How long is the audience expecting to listen?</td>
+</tr>
+<tr>
+<td>Style</td>
+<td>What kind of language and tone will the audience be expecting? Serious? Humorous? Casual? Formal? Technical?</td>
+</tr>
+<tr>
+<td>Organization</td>
+<td>How does the audience expect the message to be organized? Are they going to assume you’ll mention the main point right away or work up to it gradually? Are they expecting a narrative (i.e., story)? Are they expecting you to present two sides of an issue and then side with one or the other?</td>
+</tr>
+<tr>
+<td>Preparation</td>
+<td>Does the audience expect you to have a clearly prepared message that’s been scripted out? Something that’s prepared but not written out word-for-word? Or do they expect you to be speaking casually and impromptu?</td>
+</tr>
+<tr>
+<td>Technology</td>
+<td>Will the audience expect this to be a message you’ll deliver in person or via the media? If you are using technology, what kind would be acceptable in this situation?</td>
+</tr>
+<tr>
+<td>Sensory aids</td>
+<td>Will the audience expect visual aids? If so, what kind? Will they expect handouts or notes to go along with what you’re saying?</td>
+</tr>
+</tbody>
+</table>
+<h2 id="25-audience-values">2.5 Audience: Values</h2>
+<h2 id="26-audience-perspectives-12">2.6 Audience Perspectives (1/2)</h2>
+<p>There are people that are "For" and "Against" a perspective, then there is 
+the <strong>Third side</strong> which represents the people in the middle that are neither  </p>
+<h2 id="lesson-27-audience-perspectives-22">Lesson 2.7 Audience Perspectives (2/2)</h2>
+<p>Advantages of seeing additional perspectives  </p>
+<h2 id="28-factors-affecting-your-message-12">2.8 Factors Affecting Your Message (1/2)</h2>
+<p>Physical Environment and Messsages: </p>
+<ul>
+<li>Physical locations of speaker and audience</li>
+<li>Body language, position, and movement</li>
+<li>Use of visual aids and technology</li>
+<li>Lighting  </li>
+</ul>
+<p><strong>Message Context</strong>: The overall situation a message is being communicated in.  </p>
+<h2 id="29-factors-affecting-your-message-22">2.9 Factors Affecting Your Message (2/2)</h2>
+<p>The Communication Channel   </p>
+<p><strong>Genre</strong>: A category of artistic composition, as in literature, characterized by similarities in form, style, or subject matter.  </p>
+<h2 id="31-influential-messages-12">3.1: Influential Messages (1/2)</h2>
+<h2 id="32-influential-messages-22">3.2: Influential Messages (2/2)</h2>
+<p>“why” is probably the most important message an organization or individual can communicate, as this is what inspires others to take action.  </p>
+<h2 id="33-appealing-to-your-audience-12">3.3: Appealing to Your Audience (1/2)</h2>
+<p>Three Ways to Appeal to the Audience:</p>
+<ul>
+<li>
+<p>Reason  </p>
+</li>
+<li>
+<p>Emotion  </p>
+</li>
+<li>
+<p>Personal Credibiity  </p>
+</li>
+</ul>
+<p>Also called the Rhetorical Triangle  </p>
+<h2 id="34-appealing-to-your-audience-22">3.4: Appealing to Your Audience (2/2)</h2>
+<h2 id="35-organization-of-your-message-12">3.5: Organization of Your Message (1/2)</h2>
+<p>Five ways to structure the message:  </p>
+<ul>
+<li>
+<p>Topical: divide your larger point it into a few subpoints  </p>
+</li>
+<li>
+<p>Comparison/Contrast: focuses on similarities and differences between two or more things to help make a point.  </p>
+</li>
+<li>
+<p>Spatial: focuses on physical space or geography.  </p>
+<ul>
+<li>
+<p>Advantages to the local community when residents register to vote.  </p>
+</li>
+<li>
+<p>Advantages to the city/state when residents register to vote.  </p>
+</li>
+</ul>
+</li>
+<li>
+<p>Cause/Effect</p>
+<ul>
+<li>When you register to vote (cause), it is recorded in a voter database (effect).  </li>
+</ul>
+</li>
+<li>
+<p>Problem/Solution: first defining a problem or need facing the audience and then suggesting a potential solution.  </p>
+</li>
+</ul>
+<h2 id="36-organization-of-your-message-22">3.6: Organization of Your Message (2/2)</h2>
+<p>Openers for a message: </p>
+<ul>
+<li>
+<p>Humor  </p>
+</li>
+<li>
+<p>A startling fact or statistic  </p>
+</li>
+<li>
+<p>Use a quotation  </p>
+</li>
+<li>
+<p>Ask a question  </p>
+</li>
+<li>
+<p>Brief story or anecdote  </p>
+</li>
+</ul>
+<p>Effective Closing:  </p>
+<ul>
+<li>The most effective conclusions do this in a way that’s memorable and connects the audience to the speaker and topic. Many communicators also use the "hook" approach in their conclusion.  </li>
+</ul>
+<h2 id="37-fine-tuning-your-message">3.7: Fine Tuning Your Message</h2>
+<h2 id="38-five-mistakes-to-avoid">3.8: Five Mistakes to Avoid</h2>
+<ul>
+<li>
+<p>Mistake #1: Deceiving Your Audience  </p>
+</li>
+<li>
+<p>Mistake #2: Making Your Audience Come to a False Conclusion  </p>
+</li>
+<li>
+<p>Mistake #3: Making It All About You  </p>
+</li>
+<li>
+<p>Mistake #4: Failing to Prepare  </p>
+</li>
+<li>
+<p>Mistake #5: Failing to Care  </p>
+</li>
+</ul>
+<h2 id="41-visual-communication">4.1: Visual Communication</h2>
+<p>Visual communication is used when you need to:</p>
+<ul>
+<li>
+<p>Link raw data to usable knowledge</p>
+</li>
+<li>
+<p>Save space</p>
+</li>
+<li>
+<p>Be persuasive</p>
+</li>
+<li>
+<p>Speak in a universal language</p>
+</li>
+<li>
+<p>Provide quick, concrete representations  </p>
+</li>
+</ul>
+<h2 id="42-using-visual-aids-12">4.2: Using Visual Aids (1/2)</h2>
+<p>Research has demonstrated that people remember only about 10% of what they hear. However, they remember close to 80% of what they see.  </p>
+<h2 id="43-using-visual-aids-22">4.3: Using Visual Aids (2/2)</h2>
+<h2 id="44-four-rules-for-using-visual-aids">4.4: Four Rules for Using Visual Aids</h2>
+<p>The four key "don’ts" of visual aids are:</p>
+<ul>
+<li>
+<p>Don’t crowd your slides with text, visuals, or both.</p>
+</li>
+<li>
+<p>Don’t use distracting or inconsistent colors or themes.</p>
+</li>
+<li>
+<p>Don’t use small or complicated fonts.</p>
+</li>
+<li>
+<p>Don’t use distracting animations.  </p>
+</li>
+</ul>
+<h2 id="45-relevant-messages-with-images-12">4.5: Relevant Messages with Images (1/2)</h2>
+<p>Checkout Inkscape for infographic creation on linux</p>
+<h2 id="46-relevant-messages-with-images-22">4.6 Relevant Messages with Images (2/2)</h2>
+<p>Choose simplicity. 
+When in doubt, add words  </p>
+<h2 id="47-visual-slideshow-design-principles">4.7: Visual Slideshow Design Principles</h2>
+<p>The 10/20/30 Rule for Presentations:</p>
+<ul>
+<li>
+<p>10 Slides  </p>
+</li>
+<li>
+<p>20 Minutes  </p>
+</li>
+<li>
+<p>30 point font  </p>
+</li>
+</ul>
+<p>The 6 x 6 Rule:  </p>
+<ul>
+<li>
+<p>Six words per line  </p>
+</li>
+<li>
+<p>Six bullet points per slide  </p>
+</li>
+</ul>
+<h2 id="48-the-multimedia-principles-12">4.8: The Multimedia Principles (1/2)</h2>
+<p>Five principles that help reduce extraneous loads for viewers:  </p>
+<ul>
+<li>
+<p><strong>Coherence Principle</strong>: Avoid or exclude extraneous information or images. Less is more.  </p>
+</li>
+<li>
+<p><strong>Signaling Principle</strong>: Use cues to highlight important material and draw the viewer’s attention to it.  </p>
+</li>
+<li>
+<p><strong>Redundancy Principle</strong>: Avoid repetitive and extraneous on-screen text. Provide voice-over narration rather than putting your entire presentation on the screen.  </p>
+</li>
+<li>
+<p><strong>Spatial Contiguity Principle</strong>: Place related content (images and words) in close proximity to each other.  </p>
+</li>
+<li>
+<p><strong>Temporal Contiguity Principle</strong>: Align spoken words with the visuals to which they correspond.  </p>
+</li>
+</ul>
+<h2 id="49-the-multimedia-principles-22">4.9: The Multimedia Principles (2/2)</h2>
+<p>There are four principles that help viewers process the essential message:  </p>
+<ul>
+<li>
+<p><strong>Segmenting Principle</strong>: Break complex ideas into manageable pieces.  </p>
+</li>
+<li>
+<p><strong>Pretraining Principle</strong>: Provide key information viewers will need, such as terms or concepts, early on.  </p>
+</li>
+<li>
+<p><strong>Modality Principle</strong>: Present words as speech rather than on-screen text when possible.  </p>
+</li>
+<li>
+<p><strong>Multimedia Principle</strong>: Use both images and words together to promote processing.  </p>
+</li>
+</ul>
+<p>There are three principles that help viewers interpret the message:  </p>
+<ul>
+<li>
+<p><strong>Personalization Principle</strong>: Use a conversational tone that welcomes viewers into the presentation.  </p>
+</li>
+<li>
+<p><strong>Voice Principle</strong>: Regulate your voice to sound more human than machine.  </p>
+</li>
+<li>
+<p><strong>Image Principle</strong>: Don’t assume that because the speaker’s image is on screen the viewers will pay more attention.  </p>
+</li>
+</ul>
+<h2 id="51-digital-media">5.1: Digital Media</h2>
+<ul>
+<li>
+<p>Digital Media: Created with code on a computer using various applications.</p>
+</li>
+<li>
+<p>Multimedia: The integration of multiple forms of media, including print, images, and animations.  </p>
+</li>
+</ul>
+<h2 id="52-video-as-a-digital-communication-tool">5.2: Video as a Digital Communication Tool</h2>
+<h2 id="53-video-best-practices-12">5.3: Video Best Practices (1/2)</h2>
+<h2 id="54-video-best-practices-22">5.4: Video Best Practices (2/2)</h2>
+<p>Panopto recording software  </p>
+<h2 id="55-audio-as-a-digital-communication-tool-12">5.5: Audio as a Digital Communication Tool (1/2)</h2>
+<h2 id="56-audio-as-a-digital-communication-tool-22">5.6: Audio as a Digital Communication Tool (2/2)</h2>
+<p>Audacity as a voice recorder  </p>
+<p>How to record a Presentation in PowerePoint or Google Slides  </p>
+<h2 id="57-digital-audio-best-practices">5.7: Digital Audio Best Practices</h2>
+<h2 id="58-using-digital-images">5.8: Using Digital Images</h2>
+<p>Finding images online:</p>
+<ul>
+<li>
+<p>Openverse</p>
+</li>
+<li>
+<p>Pixabay  </p>
+</li>
+<li>
+<p>Flickr  </p>
+</li>
+<li>
+<p>Pexels  </p>
+</li>
+</ul>
+<p>Guide to Copyrighted images  </p>
+<p>Creative Commons: Just want artistic credit<br />
+Creative Commons.org  </p>
+<h2 id="59-how-to-create-presentations-using-powerpoint">5.9: How to Create Presentations using PowerPoint</h2>
+<p>PowerPoint training  </p>
+<h2 id="510-how-to-create-presentations-using-panopto">5.10: How to Create Presentations Using Panopto</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/charles-lucas-young/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["toc.integrate"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../../javascripts/drawer-toggle.js"></script>
+      
+        <script src="../../../../javascripts/header-title.js"></script>
+      
+        <script src="../../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

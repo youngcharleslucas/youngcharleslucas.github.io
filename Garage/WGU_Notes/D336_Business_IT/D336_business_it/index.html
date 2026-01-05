@@ -1,0 +1,3372 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://youngcharleslucas.github.io/Garage/WGU_Notes/D336_Business_IT/D336_business_it/">
+      
+      
+        <link rel="prev" href="../../D333_Ethics_in_Tech/D333_ethics_in_tech/">
+      
+      
+        <link rel="next" href="../../D387_Advanced_Java/D387_Advanced_Java/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../assets/images/dot-circles.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+  <title>Charles Young</title>
+
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Serif+4:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Source Serif 4";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#d336-itil" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Young/*" class="md-header__button md-logo" aria-label="Young/*" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 3h18v18H3zm2 2v14h14V5z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Young/*
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              D336 ITIL
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Young/*" class="md-nav__button md-logo" aria-label="Young/*" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 3h18v18H3zm2 2v14h14V5z"/></svg>
+
+    </a>
+    Young/*
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    { Bio }
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Garage
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Garage
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Quotes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quotes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Setting up MakeDocs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Library
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Library
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_1" id="__nav_2_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Structures and Algos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Structures and Algos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Data_Structures_and_Algos/basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Algorithms
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_2" id="__nav_2_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Frontend Masters
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Frontend Masters
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_2_1" id="__nav_2_3_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aws frontend v2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Aws frontend v2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Frontend_Masters/aws_frontend_v2/aws_frontend_v2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS for Fronted Engineers v2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_2_2" id="__nav_2_3_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    React v18
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    React v18
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Frontend_Masters/react_v18/intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    React 19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Frontend_Masters/react_v18/jsx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    JSX
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Frontend_Masters/react_v18/react/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    React
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Frontend_Masters/react_v18/testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WGU Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    WGU Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_1" id="__nav_2_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C191 Operating Systems
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C191 Operating Systems
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C191_Operating_Systems/c191_Operating_Systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1 Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_2" id="__nav_2_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C949 Data Structures I
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C949 Data Structures I
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C949_Data_Structures_I/C949_Data_Structures_I/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C949 Data Structures I
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_3" id="__nav_2_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C950 Data Structures II
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C950 Data Structures II
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C950_Data_Structures_II/C950_Data_Structures_II/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson 1 Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_4" id="__nav_2_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C951 AI
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C951 AI
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C951_AI/C951_ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C951 Artificial Intelligence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_5" id="__nav_2_4_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C960 Discrete Math II
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C960 Discrete Math II
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C960_Discrete_Math_II/C960_Discrete_Math_II/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_6" id="__nav_2_4_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D268 Communication
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D268 Communication
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D268_Communication/D268_Communication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_7" id="__nav_2_4_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D284 Software Engineering
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D284 Software Engineering
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D284_Software_Engineering/D284_Software_Engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D284 Software Engineering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8" id="__nav_2_4_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D287 Java Frameworks
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D287 Java Frameworks
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_1" id="__nav_2_4_8_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Additional Material
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Additional Material
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Additional_Material/Additional_Material/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Additional Material
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_2" id="__nav_2_4_8_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Collections
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Collections
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Collections/Collections/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Collections
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_3" id="__nav_2_4_8_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exceptions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Exceptions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Exceptions/Exceptions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exceptions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_4" id="__nav_2_4_8_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Generics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Generics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Generics/Generics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Generics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_5" id="__nav_2_4_8_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Searching and Algorithms
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Searching and Algorithms
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Searching_and_Algorithms/Search_and_Algo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Searching and Algorithm
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_6" id="__nav_2_4_8_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit Testing
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unit Testing
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Unit_Testing/Unit_Testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_9" id="__nav_2_4_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D288 Backend Programming
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D288 Backend Programming
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D288_Backend_Programming/D288_Backend_Programming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D288 Backend Programming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_10" id="__nav_2_4_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D333 Ethics in Tech
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D333 Ethics in Tech
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D333_Ethics_in_Tech/D333_ethics_in_tech/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ethics in Technology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_11" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_11" id="__nav_2_4_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D336 Business IT
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_11_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D336 Business IT
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D336 ITIL
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D336 ITIL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#service-value-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Service Value System
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-concepts-of-service-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Concepts of Service Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Concepts of Service Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#value-co-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Value co-creation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Value co-creation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#service-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Service Relationships
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#value-outcomes-costs-risks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Value: outcomes, costs, risks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utility-and-warranty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Utility and Warranty
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_12" id="__nav_2_4_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D387 Advanced Java
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D387 Advanced Java
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D387_Advanced_Java/D387_Advanced_Java/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D387 Advanced Java
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_13" id="__nav_2_4_13_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D480 Software QA
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D480 Software QA
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D480_Software_QA/D480_Software_QA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D480 Software Engineering and Quality Assurance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="d336-itil">D336 ITIL</h1>
+<p>Dion Training practice exams<br />
+CyberVista </p>
+<p>7,6,2,1 are the order of the most important chapters  </p>
+<h2 id="service-value-system">Service Value System</h2>
+<p><em>What describes..</em> is a question that leads to the SVS<br />
+- <strong>Service Value Chain</strong>: flexible model for the creation, delivery, and 
+continual improvement of services<br />
+    - Is the departments or people in an organization  </p>
+<h2 id="key-concepts-of-service-management">Key Concepts of Service Management</h2>
+<ul>
+<li>
+<p>1.1 Recall definition of: </p>
+<ul>
+<li>Service: facilitates outcomes for customer with limited cost to them  <ul>
+<li>The means of enabling value co-creation by facilitating outcomes that customers want to achieve without the customer having to manage specific costs and risks.  </li>
+</ul>
+</li>
+<li>Utility: What the service does  </li>
+<li>Warranty: How the service performs  </li>
+<li>Customer: Person who defines requirement for service  </li>
+<li>User: End user of services  </li>
+<li>Service Management: Set of specialized organizational capabilities for enabling value to customers in the form of services. (Like Microsoft providing email or drive for a company)    </li>
+<li>Sponsor: Person who authorizes budget for service  </li>
+</ul>
+</li>
+<li>
+<p>1.2 Describe key concepts of creating value with services:  </p>
+<ul>
+<li>Cost: Amount spent     </li>
+<li><strong>Value</strong>: PERCEIVED benefits, usefulness, or importance  </li>
+<li>Organization: Person or group with its own functions  </li>
+<li>Outcome: Result for stakeholder (The outcome of the output below is that emails are sent and communication is enhanced)      </li>
+<li>Output: Deliverable of an activity (You are given a product, like email service)  </li>
+<li>Risk: Possibile events that could cause harm or loss    </li>
+<li>Utility: Functionality to meet a need (An airconditioner will cool 5,000sqf)     </li>
+<li>Warranty: Assurance that requirements will be met (The airconditioner is lowering the temp in a 4,000 sqf room)    </li>
+</ul>
+</li>
+<li>
+<p>1.3 Describe key concepts of service relationship:  </p>
+<ul>
+<li>Service offering (The offer of the provision)<ul>
+<li>A formal description of one or more services, designed to address the needs 
+of a target consumer group.  Aservice offering may include goods, access to resources, 
+and service actions.  </li>
+</ul>
+</li>
+<li>Service relationship management (Usually the negotiations of all this)   </li>
+<li>Service provision (The person offering)    </li>
+<li>Service consumption (Who is receiving the offer)    </li>
+</ul>
+</li>
+</ul>
+<p><img alt="SVS" src="../images/svs.png" />  </p>
+<ul>
+<li>
+<p>Guiding principles: </p>
+<ul>
+<li>create the organization's culture  </li>
+<li>Comman principles across organization  </li>
+</ul>
+</li>
+<li>
+<p>Governance  </p>
+<ul>
+<li>organization align operations with stategic direction  </li>
+</ul>
+</li>
+</ul>
+<p>Four dimensions of Sevice Management:<br />
+    - Organizations and people<br />
+    - Information and technology<br />
+    - partners and suppliers<br />
+    - value streams and processes  </p>
+<p><strong>Value</strong>: the percieved benefits, usefulness, and importance of something<br />
+- Values is subject to perception of the stakeholders  </p>
+<h3 id="value-co-creation">Value co-creation</h3>
+<p>Mono-directional: a provider delivers the service without involvement of the consumer on the creation of the service  </p>
+<p>Stake holders and consumers need to provide feedback to help build the service  </p>
+<p>Stakeholders involved in value co-creation:<br />
+- Organization  </p>
+<p>Service Consumption involves:<br />
+- Customer: role that defines the requirements for a service and takes 
+responsibility for the outcomes of service consumption. The person negotiating the contract.    <br />
+- Users: the person using the service from the contract<br />
+- Sponsors  </p>
+<p><img alt="benefit_stakeholders" src="../images/benefit_stakeholders.png" />  </p>
+<p><strong>Services</strong>: A means of enabling value co-creationg by facilitation outcomes that customers 
+want to achieve, without the customer having to manage specific costs and risks.<br />
+<strong>Product</strong>: A configuration of an organization's resources designed to offer 
+value for a customer.  </p>
+<p>Service offerings are a specific mix of services and products sold ot a specific customer.<br />
+<strong>Service offerings</strong> can be under the control of:<br />
+- Prividers gives control to consumer (Goods)  <br />
+- (Access to resources) Provider keeps control of service, but grants access to consumer<br />
+- <em>Service actions</em> performed to address needs of consumer on demand ( customer service, patch updates, for a good that was purchased)  </p>
+<p><img alt="service_offerings" src="../images/service_offerings.png" />  </p>
+<h4 id="service-relationships">Service Relationships</h4>
+<p>Service relationships are established between two or more organizations to co-create 
+value. In a service relationship, organizations will take on the orles of service 
+providers or service consumers. The two roles are not mutually exclusive, and 
+organizations typically both provide and consume a number of services at any given time.  </p>
+<p><strong>Service Relationship</strong>: A cooperation between a service provider and service 
+consumer. Service relationships include service provision, service consumption, and 
+service relationship management.<br />
+<strong>Service provision</strong>: Activities performed by an organization to provide services.<br />
+- management of the provider's resources, configured to deliver the service<br />
+- ensuring access to these resources for users<br />
+- fulfillment of the agreed service actions<br />
+- service level management and continual improvement<br />
+- may also include the suppling of goods  </p>
+<p><strong>Service consumption</strong>: Activities performed by and organization to consume services.<br />
+- management of the consumer's resources needed to use the service<br />
+- service actions performed by users, including utilizing the provider's resources, and 
+requesting service actions to be fulfilled<br />
+- may also include the receiving of goods<br />
+<strong>Service relationship management</strong>: Joint activities performed by a service provider<br />
+and a service consumer to ensure continual value co-creation based on agreed and
+available service offerings.  </p>
+<h4 id="value-outcomes-costs-risks">Value: outcomes, costs, risks</h4>
+<p>The resources needed to provide services have cost. This equates to risk. </p>
+<p><strong>Output</strong>: A tangible or intangible deliverable of an activity.<br />
+<strong>Outcome</strong>: A result for a stakeholder enabled by one or more outputs.<br />
+<strong>BRM (Business Relationship Manager)</strong>: </p>
+<p>Two types of costs from a consumer's perspective in service relationship:<br />
+- cost removed from consumer by service<br />
+- Cost imposed on the consumer by service  </p>
+<p><strong>Risk</strong>: a possible event that could cause harm or loss, or make it more difficult 
+to achieve objectives. Can also be defined as uncertainty of outcome, and can 
+be used in the context of measuring the probability of positive outcomes as well as 
+negative outcomes.<br />
+- Risks removed from consumer by teh service<br />
+- Risks imposed on the consumer by the service<br />
+The provider manages the detailed level of risk on behalf of the consumer.  </p>
+<p>The consumer contributes to the reduction of risk through: 
+- Actively participating in the definition of the requirements of the service<br />
+- clear communication of the <strong>critical success factors (CSF)</strong> and constraints<br />
+- ensuring the provider has access tot he necessary resources  </p>
+<h4 id="utility-and-warranty">Utility and Warranty</h4>
+<p>Utility and Warranty ensure consumers get their expected outcome.  </p>
+<p><strong>Utility</strong>: the functionality offered by a product or service to meet a particular 
+need. Utility can be summarized as 'what the servie does' and can be used to 
+determine whether a service is 'fit for urpose'. To have utility, a service must either
+support the performance of the consumer or remove constraints from the consumer.<br />
+Many services do both.  </p>
+<p><strong>Warranty</strong>: assurance that a product or service will meet agreed requirements.<br />
+Warranty can be summarixed as 'how the service performs' and can be used to 
+determine whether a service is 'fit for use'. Warranty often relates to <strong>service levels</strong> 
+aligned with the needs of service consumers.  This may be based on a formal agreement, or it 
+may be marketing message or brand image.  Warranty typically addresses such areas as 
+the <strong>availability</strong> of the service, its capacity, levels of security and continuity.<br />
+A service may be said to provide acceptable assurance, or 'warranty', if all defined 
+and agreed conditions are met.  </p>
+<p><strong>These two equal expected value</strong><br />
+Utility is getting from point A to point B.<br />
+Warranty is HOW to get from point A to point B.</p>
+<h1 id="video-2">Video 2</h1>
+<h3 id="itil-7-guiding-principles">ITIL 7 Guiding Principles</h3>
+<p>Allows organizations to integrate them into an overall approach to service management.<br />
+Engourage and support organizations in continual improvement.  <br />
+Use the principles that are relevant to the situation.  </p>
+<ol>
+<li>Focus on Value </li>
+<li>all activities conducted by an organization should link back - directly or 
+indirectly - to value for its customers, for its stakeholders, and for the organization itself.   </li>
+<li>What gives the most customer satisfaction  </li>
+<li>What brings customers back to you  </li>
+<li>Start where you are  </li>
+<li>consider what is already available instead of starting from scratch  </li>
+<li>Progress iteratively with feedback  </li>
+<li>break down the work into manageable components that can be executed 
+iteratively to accomplish the objective  </li>
+<li>Collaborate and promote visibility  </li>
+<li>efforts benefit from better buy-in  </li>
+<li>better information is available for decision making  </li>
+<li>Creative solutions, enthusiastic contributions, and important perspectives  </li>
+<li>Involve the right people at the right time and gather factual data to make the right decisions. <br />
+can be obtained from unexpected sources  </li>
+<li>inclusion is generally a better policay than exclusion   </li>
+<li>Think and work holistically  </li>
+<li>no service, practice process, department, or supplier stands alone  </li>
+<li>Think as a whole  </li>
+<li>Keep it simple and practical  </li>
+<li>use the minimum number of steps necessary to accomplish an objective  </li>
+<li>Optimize and automate  </li>
+<li>organizations should streamline activities and automate work, so that minimal human 
+intervention is required.  </li>
+</ol>
+<h3 id="four-dimensions-of-service-management">Four dimensions of service management:</h3>
+<p>VOIP, like voice over ip<br />
+1. <strong>O</strong>rganizations and people<br />
+2. <strong>I</strong>nformation and technology<br />
+3. <strong>P</strong>artners and suppliers<br />
+4. <strong>V</strong>alue streams and processes   </p>
+<p><img alt="4d" src="../images/4d.png" />    </p>
+<h4 id="partners-and-suppliers">Partners and Suppliers</h4>
+<p>Factors that may influence an organization's stategy when using suppliers:<br />
+- Stategic focus: may outsource non-core supporting functions<br />
+- Corporate culture: longstanding cultural bias<br />
+- Resource scacity:<br />
+- Cost concern:<br />
+- Subject matter expertise:<br />
+- External constraints:<br />
+- Demand patterns:  </p>
+<h3 id="value-streams-and-processes">Value Streams and Processes</h3>
+<ul>
+<li>A value stream is a series of steps undertaken by and organization to create 
+and deliver products and services to consumers. It's implemented as a combination 
+of the organization's value chain activities.  </li>
+<li>A process descibes what is done to accomplish an objective. Inputs into outputs.</li>
+<li>Activities the organization undertakes      </li>
+</ul>
+<p><strong>Service value chain</strong>: converts demand into value, can be used for mapping value streams   <br />
+- <strong>P</strong>lan: ensures shared understanding of vision, current status and direction  <br />
+- <strong>I</strong>mprove: continual improvment of products and services  <br />
+- <strong>E</strong>ngage: understand stakeholder needs and demands  <br />
+- <strong>D</strong>esign and Transition: make sure that services meet stakeholder needs  <br />
+- <strong>O</strong>btain/Build: ensure components are available when needed  <br />
+- <strong>D</strong>eliver and Support: ensure sla comform service delivery</p>
+<p><img alt="service_value_chain" src="../images/service_value_chain.png" /></p>
+<h4 id="external-factors-pestle">External factors (PESTLE)</h4>
+<ul>
+<li>Political  </li>
+<li>Economic  </li>
+<li>Social  </li>
+<li>Technological  </li>
+<li>Legal  </li>
+<li>Environmental </li>
+</ul>
+<h3 id="organizations-and-people">Organizations and People</h3>
+<ul>
+<li>Roles and responsibilities  </li>
+<li>Formal organizational structure  </li>
+<li>Culture  </li>
+<li>Staffing and competencies  </li>
+</ul>
+<h3 id="information-and-technology">Information and Technology</h3>
+<ul>
+<li>Information created, managed, and used in the course of service provision and consumption  </li>
+<li>Technologies that support and enable that service  </li>
+</ul>
+<h3 id="partners-and-suppliers_1">Partners and Suppliers</h3>
+<ul>
+<li>Some organizations might believe they can be best served by focusing their attention 
+on developing core competencies, using partners and suppliers to provide other 
+needs.  </li>
+<li>Other organizations might rely on their own resources, thus using partners and 
+suppliers as little as necessary. Both these approaches represent extremes.  </li>
+</ul>
+<h3 id="service-value-chain-svc">Service Value Chain (SVC)</h3>
+<ul>
+<li>It is an operating model  </li>
+<li>Outlines activities needed to transform demand into value  </li>
+<li>Universally applicable  </li>
+<li>Can be used for mapping value streams  </li>
+<li>practices include specific sequences of SVC activities  </li>
+</ul>
+<p>Value chain activity (persons and departments): PIE-DOD <br />
+- Plan<br />
+- Imporve<br />
+- Engage<br />
+- Design and Transition<br />
+- Obtain/Build<br />
+- Deliver and Support  </p>
+<h3 id="engage-sales-representative">Engage (Sales representative)</h3>
+<p>Provide a good understanding of relationships with all stakeholders.<br />
+Key inputs to the Engage Activity:<br />
+- A product and service portfolio provided by plan<br />
+- High-level demand for services and products provided by internal and external customers<br />
+- Detailed requirements for services and products provided by customers<br />
+- Request and feedback from customers<br />
+- Incidents, service requests, and feedback from users<br />
+- Information on the completion of user support tasks from deliver and support<br />
+- Marketing opportunities from current and potential customers and users<br />
+- Cooperation opportunities and feedback provided by partners and suppliers 
+- Contract and agreement requirements from all value chain activities<br />
+- Knowledge and information about new and changed products and services from design 
+and trasition and objtain/build<br />
+- Knowledge and information about third-party service components from suppliers and partners<br />
+- Product and service performance information from deliver and support  </p>
+<p>Key outputs of the Engage activity:<br />
+- Consolidated demands and opportunities for plan<br />
+- Product and service requirements for design and transition<br />
+- User support tasks for delivery and support<br />
+- Improvement opportunities and stakeholders feedback for improve<br />
+- Change or project initiation requests for obtain/build<br />
+- Contracts and agreements with external and internal suppliers and partners for design and transition 
+and obtain/build<br />
+- Knowledge and information about third-party service components for all value chain activities<br />
+- Service performance reports for customers  </p>
+<h3 id="plan">Plan</h3>
+<p>Shared understanding of the vision<br />
+Key inputs to the plan activity are:<br />
+- Policies, requirements, and constraints provided by the organization's governing body<br />
+- Consolidated demands and opportunities provided by Engage<br />
+- Value chain performance information, improvement status reports, and improvement initiatieves 
+from Improve<br />
+- Knowledge and information about new and changed products and services from Design and Transition, and Obtain/Build<br />
+- Knowledge and information about third-party service components from Engage  </p>
+<p>Key outputs to the plan activity:<br />
+- Stategic, tactical, and operational plans<br />
+- Portfolio decisions for Design and Transition<br />
+- Architectures and policies for Design and Transition<br />
+- Improvement opportunities for Improve<br />
+- A product and service portfolio for Engage<br />
+- Contract and agreement requirements for Engage  </p>
+<h3 id="obtainbuild-goes-out-and-procures-stuff">Obtain/Build (Goes out and procures stuff)</h3>
+<p>Service components are available when and where they are needed and that they meet 
+agreed specifications.<br />
+The key inputs to the Obtain/Build activity are:<br />
+- Architectures an policies provided by Plan<br />
+- Contracts and agreements with external and internal suppliers and pertners provided 
+by engage<br />
+- Goods and services provided by external and internal suppliers and partners<br />
+- Requirements and specifications provided by Design and Transition <br />
+- Improvement initiatives provided by Improve<br />
+- Improvement status reports from Improve<br />
+- Change requests provided by Deliver and Support<br />
+- Knowledge and Information about new and changed products and services from Desing and Transition<br />
+- Knowledge and Information about third-party service components from Engage  </p>
+<p>The key Outputs:<br />
+- Service components for Deliver and Suppoert<br />
+- Service components for Design and Transition<br />
+- Knowledge and Information about new and changed service components to all value chain activities<br />
+- Contract and agreement requirement for Engage<br />
+- Performance information and improvement opportunities for Improve  </p>
+<h3 id="design-and-transition-the-developers">Design and Transition (The developers)</h3>
+<p>Products and services meet expectations for quality, costs, and time to market.<br />
+Key inputs:<br />
+- Portfolio decisions provided by Plan<br />
+- Architectures and policies provided by Plan<br />
+- Product ans service requirements provided by Engage<br />
+- Improvement initiatives provided by Improve<br />
+- Improvement status reports from Improve<br />
+- Service performance information provided b Deliver and Support and Improve<br />
+- Service components from Obtain/Build<br />
+- Knowledge and information About third-party service components from Engage<br />
+- Knowledge and information about new and changed products and services from Obtain/Build<br />
+- Contract and agreements with external and internal suppliers and partners provided 
+by Engage<br />
+Key outputs:<br />
+- Requirements and specifications for Obtain/Build<br />
+- Contract and agreement requirements for Engage<br />
+- New and changed products and services for Deliver and Support<br />
+- Knowledge and information about new and changed products and services to all value 
+chain activities<br />
+- Performance information and improvement opportunities for Improve  </p>
+<h3 id="improve">Improve</h3>
+<p>Continual improvement of products, services, and practices<br />
+Key inputs:<br />
+- Product and service performance information provided by Deliver and Support<br />
+- Stakeholders' feedback provided by Engage<br />
+- Performance information and improvement opportunities provided by all value chain activities<br />
+- Knowledge and information about new and changed products and services from Design and Transition and Obtain/Build<br />
+- Knowledge and information about third-party service components from Engage  </p>
+<p>Key outputs:<br />
+- Improvement initiatives for all chain activities 
+- Value chain performance information for Plan and governing body<br />
+- Improvement status reports for all value chain activities<br />
+- Contract and agreement requirements for Engage<br />
+- Service performance information for Design and Transition  </p>
+<h2 id="service-value-system_1">Service Value System</h2>
+<p><strong>Service Value System (SVS)</strong>: Describes how all the components and activities of the 
+organization work together as a system to enable value co-creation  </p>
+<ul>
+<li>
+<p>Require <strong>integration</strong> and <strong>coordination</strong> of activities, practices, teams, 
+authorities, and responsibilities.  </p>
+</li>
+<li>
+<p>Ensures continued co-create value  </p>
+</li>
+<li>
+<p>Engage: All incoming and outgoing interactions </p>
+</li>
+<li>All new resources are obtained through the obtain/build activity  </li>
+<li>Planning at all levels is performed via Plan activity  </li>
+</ul>
+<h3 id="continual-improvement">Continual Improvement</h3>
+<p>Align the organization's practices and services with changing business needs through 
+the ongoing indentification and improvement of services, service components, 
+practices, or any element involved in the efficient and effective management of products
+and services.  </p>
+<h3 id="practices">Practices</h3>
+<p><strong>Practice</strong>: set of organized resources designed for performing work or accomplishing 
+and objective  </p>
+<p>There are 34 of them, divided into 3 categories.<br />
+- General Management. (14 practices) General management practices have been adapted 
+from wider business domain.<br />
+    - Architecture management<br />
+    - Continual improvement<br />
+    - Information security<br />
+    - Knowledge management<br />
+    - Measurement and reporting<br />
+    - Organization change management<br />
+    - Portfolio management<br />
+    - Project management<br />
+    - Relationship management<br />
+    - Risk management<br />
+    - Service financial management<br />
+    - Strategy management<br />
+    - Supplier management<br />
+    - Workforce and talent management<br />
+- Service Management. (17 practices) Service management practices have been created/adapted 
+from the service management industry.<br />
+    - Availability management<br />
+    - Business analysis<br />
+    - Capacity and performance management<br />
+    - Change enablement<br />
+    - Incident management<br />
+    - IT asset management<br />
+    - Monitoring and event management<br />
+    - Problem management<br />
+    - Release management<br />
+    - Service catalog management<br />
+    - Service configuration management<br />
+    - Service continuity management<br />
+    - Service design<br />
+    - Service desk<br />
+    - Service level management<br />
+    - Service request management<br />
+    - Service valication and testing<br />
+- Technical Management. (3 practices) Technical functions which have been elevated to the 
+level of a service.<br />
+    - Deployment Management<br />
+    - Infrastructure and Platform Management<br />
+    - Software Development and Management  </p>
+<p>Key inputs to the SVS are opportunity and demand.<br />
+Opportunity represent options or ppossibilities to add value for stakeholders or 
+otherwise improve the organization.<br />
+Demand is the need or desire for products and services among internal and external consumers.  </p>
+<p><strong>Guiding Principles</strong>: Recommendations that can guide an organization in all 
+circumstances, regardless of changes in its goals, stategeries, type of work, or 
+management structure.  </p>
+<p><strong>Governance</strong>: The means by which an organization is directed and controlled.  </p>
+<p><strong>Service value chain</strong>: A set of interconnected activities that an organization performs 
+to deliver a valuable product or service to its consumers and to facilitate value 
+realization.  </p>
+<p><strong>Practices</strong>: Sets of oranizational resources designed for performing work or 
+accomplishing an objective.  </p>
+<p><strong>Continual improvement</strong>: A recurring organizational activity performed at all
+levels to ensure that an organization's performance continually meets stakeholders'
+expectations. ITIL 4 supports continual improvement with the ITIL continual Improvement
+model.  </p>
+<p><strong>Organizational Silos</strong>: prevent easy access to information, resistant to change<br />
+<strong>Organizational resilience</strong>: thrive in changing external circumstances. anticipate, prepare for,
+respond to changes and sudden disruptions.  <br />
+<strong>Organizational agility</strong>: move and adapt quickly  </p>
+<ul>
+<li>Opportunity and demand trigger activities within SVS, lead to creation of value<br />
+<strong>Opportunity</strong>: options or posibilities to add value for stakeholders.<br />
+<strong>Demand</strong>: need or desire for service.  </li>
+</ul>
+<p>Guiding Principles:<br />
+<img alt="guiding_p" src="../images/guiding_p.png" />  </p>
+<h4 id="focus-on-value">Focus on value</h4>
+<h5 id="agile-and-itil-together">Agile and ITIL together:</h5>
+<ul>
+<li>streamlining practices such as change enablement  </li>
+<li>establishing procedures to incorporate and prioritize the management of unplanned
+interruptions (incidents), and to investigate the causes of failure.  </li>
+<li>separating interactions, if necessary, between systems of record (configuration 
+management database), needed to manage services from system of engagement (collaboration
+tools) used by software development teams.  </li>
+</ul>
+<p><strong>DevOps</strong>: builds on agile, close collaboration between developement and technical 
+operations, use automation to free up time of skilled professionals to focus on 
+value-adding activities. Combines Agile for software development, ITIL for 
+value co-creation, improving the way value is generated with LEAN.<br />
+- creating fast feedback loops<br />
+- Streamlining value chain activities and value streams so that demand for work 
+can be quickly converted to value for multiple stakeholders.<br />
+- differentiating deployment management from release management<br />
+- advocating a 'system view' that emphasizes close collaboration between enterprise 
+governance, service teams, software development, and technology operations.  </p>
+<p>Customer experience (CX) is both objective and subjective.  </p>
+<p>Applying principles for achieving <strong>Focus on Value</strong>:<br />
+- Know how service consumers use each service<br />
+- Encourage a focus on value among all staff<br />
+- Focus on value during normal operational activities as well as during improvment 
+initiatives<br />
+- Include focus on value in every step of any improvement initiative  </p>
+<h4 id="start-where-you-are">Start Where you are</h4>
+<p>The role of measurement:  </p>
+<blockquote>
+<p>When a measurement becomes a target, it ceases to be a good measure, Goodhart's Law  </p>
+</blockquote>
+<h4 id="progress-interatively-with-feedback">Progress interatively with feedback</h4>
+<p>Benefits of Iteration and feedback together:<br />
+- greater flexibility<br />
+- faster responses to customer and business needs<br />
+- the ability to discover and respond to failure<br />
+- overall improvement in quality  </p>
+<p>To apply this principle:<br />
+- Comprehend the whole, but do something. Don't fall to 'analysis paralysis'<br />
+- The ecosystem is constantly changing, so feedback is essential<br />
+- Fast does not mean incomplete  </p>
+<h4 id="collablorate-and-promote-visibility">Collablorate and promote visibility</h4>
+<p>Discuss important issues/tasks, not talking about them can appear that they are not 
+important.<br />
+Critical analysis of:<br />
+- understanding flow of work in progress<br />
+- identifying bottlenecks, as well as excess capacity<br />
+- uncovering waste  </p>
+<p>Advice for this principle:<br />
+- collaboration does not mean consensus<br />
+- Communicate is a way the audience can hear<br />
+- Decisions can only be made on visible data  </p>
+<h4 id="think-about-work-holistically">Think about work holistically</h4>
+<p>Applying this principle:<br />
+- Recognize the complexity of the systems<br />
+- Collaboration is key to thinking and working holistically<br />
+- Where possible, look for patterns in the needs of and interactions between 
+system elements<br />
+- Automation can facilitate working holistically  </p>
+<h4 id="keep-it-simple-and-practical">Keep it simple and practical</h4>
+<p>Always use the minimum steps to accomplish an objective.  </p>
+<p>Applying this value:<br />
+- Ensure value<br />
+- Simplicity is the ultimate sophistication<br />
+- Do fewer things, but do them better<br />
+- Respect the time of the people involved<br />
+- Easier to understand, more likely to adopt<br />
+- simplicity is the best route to achieving quick wins  </p>
+<h4 id="optimize-and-automate">Optimize and automate</h4>
+<p>Make something as effective and useful as it needs to be.<br />
+Steps to optimization:<br />
+- Understand and agree the context in which the proposed optimization exists.<br />
+- Assess the current state of the proposed optimization<br />
+- Agree what the future state and priorities of the organiztion should be, focusing
+on simplification and value.<br />
+- Ensure the optimization has the appropriate level of stakeholder engagement and commitment.<br />
+- Execute the improvements in an iterative way.<br />
+- Continually monitor the impact of optimization.  </p>
+<p>Steps to automation:<br />
+- simplify and/or optimize before automating<br />
+- Define your metrics<br />
+- Use the other guiding principles when applying this one.<br />
+    - Progress iteratively with feedback<br />
+    - Keep it simple and practical<br />
+    - Focus on value<br />
+    - Start where you are   </p>
+<h2 id="videos">Videos</h2>
+<h4 id="continual-improvement_1">Continual Improvement</h4>
+<p>Ongoing improvement of products, services, and practices, or any element involved 
+in management of products and services.  </p>
+<p>Continual Improvement Model:<br />
+- Provides approach for continual improvement<br />
+- Applies to SVS in its entirety<br />
+- Supports iterative approach<br />
+- Improvement efforts linked to organization's vision  </p>
+<p><img alt="continual_improvement" src="../images/continual_improvement.png" />  </p>
+<h4 id="change-enablement">Change Enablement</h4>
+<p>Maximize the number of successful changes through proper risk assessment and minimize 
+the negative impact of failed changes<br />
+Types:<br />
+- Standard: Pre-authorized, low risk, low cost, basically Service Request. No additional authorization.  <br />
+- Normal: authorization depends on what kind of change it is. Goes through the normal 
+change workflow. Authorization based on change type.  <br />
+- Emergency: needs rapid action. May have a separate change authority  </p>
+<p><strong>Imporve</strong>: Many improvements will require changes to be made, and these should 
+be assessed and authorized in the same way as all other changes.<br />
+<strong>Design and transition</strong>: Many changes are initiated as a result of new or 
+changed services. Change control activity is a mahor contributor to transiton.<br />
+<strong>Obtain/build</strong>: Changes to components are subject to change control, whether 
+they are built in house or obtained from suppliers.<br />
+<strong>Deliver and Support</strong>: Changes may have an impact on delivery and support, and 
+information about changes must be communicated to personnel who carry out this value 
+chain activity. These people may also play a part in assessing and authorizing changes.  </p>
+<h4 id="incident-management">Incident Management</h4>
+<p>Minimize negative impact of incidents by restoring normal operation as soon as 
+possible.  </p>
+<p><strong>Incident</strong>: unplanned interruption or reduction of quality. Must be logged, prioritized 
+and managed through their lifecycle. Uses same categorization as Problem Tickets. 
+Swarming may help with complex issues. Normal is defined in the SLA.  <br />
+<strong>Major Incidents</strong>: need a <em>separate procedure</em>. Swarming can be used for quicker 
+solutions.  </p>
+<p><strong>Imporvement</strong>: Incident record are a key input to improvement activities, and are 
+prioritized both in terms of incident frequency and severity.<br />
+<strong>Engage</strong>: Incidents are visible to users, and significant incidents are also visible 
+to customers.  Good incident management requires regular communication to understand 
+the issues, set expectations, provide status updates, and agree that the issue has 
+been resolved so the incident can be closed.<br />
+<strong>Design and transition</strong>: Incidents may occur in test environments, as well as 
+during service release and deployment. The practice ensures these incidents are resolved 
+in a timely and controlled manner.<br />
+<strong>Obtain/build</strong>: Incidents may occur in development environments. Incident management 
+practice ensures these incidents are resolved in a timely and controlled manner.<br />
+<strong>Deliver and support</strong>: Incident management makes a significant contribution to 
+support. THis value chain activity includes resolving incidents and problems.  </p>
+<p><strong>Swarmming!!</strong>  </p>
+<h4 id="problem-management">Problem Management</h4>
+<p>Reduce likelihood of recurring incidents by identifying actual and potential 
+causes of incidents, manages workarounds and known errors.  </p>
+<ul>
+<li>Problem: unknown cause of one or more incidents  </li>
+<li>Known Error: a problem with a known root cause but no solution yet  </li>
+<li>Workaround: alternate solution, reducing the impact of the problem</li>
+</ul>
+<p><strong>Phases</strong>: problem identification =&gt; problem control =&gt; error control  </p>
+<p><strong>Imporve</strong>: This is the main focus area for problem management. Effective problem 
+management provides the understanding needed to reduce the number of incidents and 
+the impact of incidents that can't be prevented.<br />
+<strong>Deliver and support</strong>: Problem management makes a significant contribution by 
+preventing incident repetition and supporting timely incident resolution.<br />
+<strong>Engage</strong>: Problems that have a significant impact on services will be visible to 
+customers and users. In some cases, customers may wish to be involved in problem 
+prioritization, and the status and plans for managing problems should be communicated.<br />
+Workarounds are often presented to users via a serviceportal.  </p>
+<h4 id="service-desk">Service Desk</h4>
+<p>Capture demand for incidents and service requests. Single point of contact between 
+service provider and users.  </p>
+<p><img alt="service_desk" src="../images/service_desk.png" /><br />
+SPOC: single point of contatct </p>
+<p>A service desk:<br />
+- has a practical understanding of the wider, organization, the business processes, and the 
+users.<br />
+- have a major influence on the user experience and how the service provider is 
+perceived.  </p>
+<p>What services should a good service desk deliver:<br />
+- Add value by understanding and acting on the business actions<br />
+- Should provide empathetic and informed links between the service provider and its 
+users.  </p>
+<p>What skills should service desk staff have?<br />
+- exellent customer service skills<br />
+- empathy<br />
+- incident analysis and prioritization<br />
+- effective communication<br />
+- emotional intelligence  </p>
+<p><strong>Engage</strong>: service desk is the main channel for tactical and operational engagement with users.<br />
+<strong>Deliver and support</strong>: The service desk is the coordination point for managing incidents and servic requests.<br />
+<strong>Design and transition</strong>: provides a channel for communicating with users about new 
+and changed services. Service desk staff participate in release planning, testing, 
+and early life support.<br />
+<strong>Improve</strong>: activities are constantly monitored and evaluated to support continula 
+improvement, alignment, and value creation. Feedback from users is collected by the 
+service desk to support continual improvement.  </p>
+<h4 id="service-level-management">Service Level Management</h4>
+<p>To set clear business-based targets for service performance, so that the delivery of
+a service can be measured properly  </p>
+<ul>
+<li>SLA: agreement between customer and service provider  </li>
+<li>OLA(operational level agreements): agreement between different units of the same organization  </li>
+<li>UC(Underpinning Contracts): agreement between service provider and external supplier  </li>
+</ul>
+<p>Recommendations:<br />
+- clear language, no jargon<br />
+- simply written, easy to understand<br />
+- Should relate to defined outcomes<br />
+- Listen actively to customer needs  </p>
+<p><strong>Plan</strong>: supports planning of the product and service portfolio and service offerings 
+with information about the actual service performance and trends.<br />
+<strong>Engage</strong>: ensures ongoing engagement with customers and users through geedback processing 
+and continual service review.  </p>
+<h4 id="service-request-management">Service Request Management</h4>
+<p>To support the agreed quality of services by handling all pre-defined, user-initiated 
+service requests.  </p>
+<p><strong>Service Request</strong>: a formal request for something other than incident resolution 
+(information, advice, how-to questions)  </p>
+<p>Steps to fulfill requests should be well known (for both simple and complex requests) 
+When defining new workflows, try to reuse already existing ones.<br />
+User expectations must be managed in regards of what can be delivered  </p>
+<ol>
+<li>Steps should be well known and proven, <strong>agree times for fulfillemnt</strong>, and provide clear communication 
+of the status.  </li>
+<li>Requests and their fulfilment should be standardized and automated to the greatest 
+degree possible.  </li>
+<li>Policies should be established regarding what service requests will be fulfilled with 
+limited or even no additional approvals so that fulfilment can be streamlined.  </li>
+<li>Expectations of users regarding times clearly set, based on what organiztion can 
+realistically deliver.  </li>
+<li>Opportunities for improvement identified and implemented to produce faster fulfillment 
+times and benefit from automation.  </li>
+</ol>
+<p>Policies and workflows included for documenting and redirecting any requests 
+submitted as service requests, but which should actually be managed as incidents
+or changes.  </p>
+<p>Request Examples:<br />
+- Report<br />
+- Toner cartridge<br />
+- Office hours<br />
+- Phone<br />
+- Laptop<br />
+- Access to files<br />
+- Feedback<br />
+- Compliments  </p>
+<h4 id="information-security-management">Information Security Management</h4>
+<p>Protects information needed by organizations to conduct business.   </p>
+<p>Ensures appropriate levels of:<br />
+- Confidentiality<br />
+- Integrity<br />
+- Availability<br />
+- Authentication<br />
+- Non-repudiation  </p>
+<p>Protect the information needed by the organization to conduct its business.  This 
+includes understanding and managing risks to the confidentiality, integrity, and 
+availability of information, as well as other spects of information security 
+such as authentication (ensuring someone is who they claim to be) and nonrepudiation 
+(ensuring that someone can't deny that they took an action).<br />
+- Prevention: ensuring security incidents do not occur<br />
+- Detection: Rapidly and reliably detecting incidents that can't be prevented<br />
+- Correction: Recovering from incidents after they are detected.  </p>
+<h4 id="relationship-management">Relationship Management</h4>
+<p>Establishes and nurtures links between organizations and stakeholders at strategic and 
+tactical levels.<br />
+Makes sure we find the best possible ways to communicate and collaborate with different 
+internal and external stakeholders.  </p>
+<p>Relationships are identified =&gt; Analyzed =&gt; Monitored =&gt; Improved  </p>
+<h4 id="supplier-management">Supplier Management</h4>
+<p>Ensures that suppliers of the organization and their performances are managed 
+to support seamless service provision to customers.  </p>
+<p>The goal is to make sure "we get what we paid for" from our vendors and suppliers.  </p>
+<p>Agreements and contracts are made in the form of UCs (Underpinning Contracts). </p>
+<p>Includes creating closer, more collaborative relationships with key 
+suppliers to uncover and realize new value and reduce the risk of failure.  </p>
+<h4 id="it-asset-management">IT Asset Management</h4>
+<p>Assets that have monetary value.<br />
+Plans and manages the full lifecycle of IT assets to:<br />
+- Maxamize their value<br />
+- Control their costs<br />
+- Support decisions about reusing or purchasing new assets  </p>
+<p><strong>IT Asset</strong>: any financially valuable component that can contribute to the 
+delivery of IT products or services.  </p>
+<h4 id="monitoring-event-management">Monitoring &amp; Event Management</h4>
+<p>Observes services and components and records changes in their state. Identifies 
+those events, categorizes them and establishes standard responses.  </p>
+<p>Systematically observes services an service components. Records and reports selected changes 
+of state identified as events.<br />
+Identifies and prioritizes infrastructure, services, business processes, and 
+information security events.  Establish the appropriate reponse to those events, 
+including to conditions that could lead to potential faults or incidents.   </p>
+<p><strong>Event</strong>: any change of state that has a significance for the management of 
+a configuration item or service.  </p>
+<p><strong>Types</strong>: Informational, Warning, Exception  </p>
+<h4 id="release-management">Release Management</h4>
+<p>Makes new and changed services and features available for use.  </p>
+<p><strong>Release</strong>: a version of a service or other configuration items, or a collection of 
+configuration items, that is made available for use.  </p>
+<p>Releases have been disconnected from deployments with <strong>canary/dark release</strong><br />
+(Canary/dark release is pushing something to production, but not showing it to end users. Some sort of toggle exists for using it)  </p>
+<h4 id="service-configuration-management">Service Configuration Management</h4>
+<p>Ensures accurate information is available when needed about services, configuration 
+items and their relationships.  </p>
+<p>**Configuration Item (CI): any component that needs to be managed to deliver an IT 
+service.  </p>
+<p><strong>Configuration Management Database (CMDB)</strong>: a database or collection of databases 
+holding CIs and their connections.<br />
+<strong>CMS (Configuration Management System)</strong>: a frontend / user interface for CMDBs  </p>
+<h4 id="deployment-management">Deployment Management</h4>
+<p>Moves new or changed hardware, software documentation or any other components from 
+one environment to the next.<br />
+Move to a live environment. <br />
+With the help of DevOps we can reach continuous delivery, where the developer 
+build the change in DEV, which is automatically tested and moved to the next environment 
+until it arrives in PROD. <strong>Deployment is not equal to Release</strong>.  </p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/charles-lucas-young/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["toc.integrate"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../../javascripts/drawer-toggle.js"></script>
+      
+        <script src="../../../../javascripts/header-title.js"></script>
+      
+        <script src="../../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

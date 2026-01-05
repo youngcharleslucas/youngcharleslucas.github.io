@@ -1,0 +1,5604 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://youngcharleslucas.github.io/Garage/WGU_Notes/D284_Software_Engineering/D284_Software_Engineering/">
+      
+      
+        <link rel="prev" href="../../D268_Communication/D268_Communication/">
+      
+      
+        <link rel="next" href="../../D287_Java_Frameworks/Additional_Material/Additional_Material/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../assets/images/dot-circles.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+  <title>Charles Young</title>
+
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Serif+4:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Source Serif 4";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#d284-software-engineering" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Young/*" class="md-header__button md-logo" aria-label="Young/*" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 3h18v18H3zm2 2v14h14V5z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Young/*
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              D284 Software Engineering
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Young/*" class="md-nav__button md-logo" aria-label="Young/*" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 3h18v18H3zm2 2v14h14V5z"/></svg>
+
+    </a>
+    Young/*
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    { Bio }
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Garage
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Garage
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Quotes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quotes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Setting up MakeDocs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Library
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Library
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_1" id="__nav_2_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Structures and Algos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Structures and Algos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Data_Structures_and_Algos/basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Algorithms
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_2" id="__nav_2_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Frontend Masters
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Frontend Masters
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_2_1" id="__nav_2_3_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aws frontend v2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Aws frontend v2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Frontend_Masters/aws_frontend_v2/aws_frontend_v2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS for Fronted Engineers v2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_2_2" id="__nav_2_3_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    React v18
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    React v18
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Frontend_Masters/react_v18/intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    React 19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Frontend_Masters/react_v18/jsx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    JSX
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Frontend_Masters/react_v18/react/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    React
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Frontend_Masters/react_v18/testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WGU Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    WGU Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_1" id="__nav_2_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C191 Operating Systems
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C191 Operating Systems
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C191_Operating_Systems/c191_Operating_Systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1 Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_2" id="__nav_2_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C949 Data Structures I
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C949 Data Structures I
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C949_Data_Structures_I/C949_Data_Structures_I/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C949 Data Structures I
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_3" id="__nav_2_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C950 Data Structures II
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C950 Data Structures II
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C950_Data_Structures_II/C950_Data_Structures_II/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson 1 Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_4" id="__nav_2_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C951 AI
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C951 AI
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C951_AI/C951_ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C951 Artificial Intelligence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_5" id="__nav_2_4_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C960 Discrete Math II
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C960 Discrete Math II
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C960_Discrete_Math_II/C960_Discrete_Math_II/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_6" id="__nav_2_4_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D268 Communication
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D268 Communication
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D268_Communication/D268_Communication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_7" id="__nav_2_4_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D284 Software Engineering
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D284 Software Engineering
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D284 Software Engineering
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D284 Software Engineering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#crm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CRM
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sdlc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SDLC??
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SDLC??">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirements-gathering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requirements gathering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Change Control
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#executive-sponsor-executive-champion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Executive sponsor/ Executive Champion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project manager
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pert-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PERT Chart
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PERT Chart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#critical-paths" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Critical paths
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gantt-charts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gantt Charts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risk-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Risk Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deployment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deployment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deployment_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deployment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scope
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#planning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Planning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cutover" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cutover
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#staged-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Staged Deployment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gradual-cutover" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gradual Cutover
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#incremental-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Incremental Deployment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parallel-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parallel Testing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deployment-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deployment Tasks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deployment-mistakes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deployment Mistakes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#process-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Process Models
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Process Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#predictive-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Predictive Models
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#waterfall" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Waterfall
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#waterfall-with-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Waterfall with Feedback
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shashimi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shashimi
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Shashimi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#shashimi-series" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shashimi Series
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#incremental-waterfall" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Incremental Waterfall
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        V-Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sdlc-software-development-life-cycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SDLC Software Development Life Cycle
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SDLC Software Development Life Cycle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sub-steps-of-the-sdlc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sub steps of the SDLC
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iterative-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Iterative Models
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Iterative Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comparison:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prototypes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prototypes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prototype-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prototype types:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spiral" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spiral
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unified-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unified Process
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Unified Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rational-unified-process-rup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rational Unified Process (RUP)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cleanroom-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cleanroom model
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rapid-appplication-developement-rad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rapid Appplication Developement (RAD)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Rapid Appplication Developement (RAD)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#techniques-used-in-rad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Techniques used in RAD
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rad-advantages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RAD Advantages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rad-disadvantages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rad Disadvantages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#james-martin-rad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        James Martin RAD
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agile
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-agile-traits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Agile traits
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Agile traits">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#versioning-shcemes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Versioning shcemes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        XP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scrum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SCRUM
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SCRUM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scrum-spirits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scrum spirits
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lean-software-development-lsd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lean Software Development (LSD)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crystal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crystal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feature-driven-development-fdd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature Driven Development (FDD)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agile-unified-process-aup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agile Unified Process (AUP)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disciplined-agile-delivery-dad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Disciplined Agile Delivery (DAD)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dynamic-sytem-development-mehtod-dsdm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dynamic Sytem Development Mehtod (DSDM)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kanban" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kanban
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gathering-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gathering Requirements
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gathering Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#furps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FURPS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-gather-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to gather requirements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refine-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Refine Requirements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recording-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recording Requirements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requirement-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requirement Validation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requirement-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requirement Verification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Change Requirements
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#high-level-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        High-Level Design
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="High-Level Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#security" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Security
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hardware
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Interface
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#internal-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Internal Interfaces
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#external-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        External Interfaces
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reports" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reports
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#databases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Databases
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#audit-trails" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Audit trails
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Access
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#database-maintenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Database Maintenance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-flows-and-states" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Flows and States
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#training" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Training
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UML
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="UML">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#structural-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Structural Diagram
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Development
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Development">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-right-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Right Tools
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Right Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#profilers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Profilers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#static-analysis-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Static Analysis Tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testing Tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#source-code-formatters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Source code formatters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refactoring-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Refactoring Tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selecting-algorithms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Selecting Algorithms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#top-down-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Top-Down Design
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#testing-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testing Goals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#levels-of-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Levels of Testing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Levels of Testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unit-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unit Testing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integration-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integration Testing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automated-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automated Testing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component-interface-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Component Interface Testing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Testing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acceptance-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acceptance Testing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alpha-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alpha Testing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beta-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beta Testing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#and-others" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        And others....
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testing Techniques
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Testing Techniques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exhaustive-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exhaustive Testing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#black-box-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Black-box testing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#white-box-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        White-box testing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gray-box-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gray-box Testing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-habits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testing Habits
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Testing Habits">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-and-debug-when-you-are-alert" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test and Debug when you are Alert
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-your-own-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test Your Own Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#have-someone-else-test-your-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Have Someone else test your code
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-rules-of-egoless-programming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Rules of Egoless Programming:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fix-your-own-bugs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fix your own bugs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#think-before-you-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Think before you change
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lincoln-index" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lincoln Index
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metrics
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Metrics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defect-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Defect Analysis
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Defect Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ishikawa-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ishikawa Diagram
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software Metrics
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Software Metrics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#attributes-of-a-metric" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attributes of a Metric
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Process Metrics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project Metrics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#things-to-measure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Things to measure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#measuring-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Measuring Metrics
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Measuring Metrics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#function-point-normalization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Function Point Normalization
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uml_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UML
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="UML">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-users-of-uml-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Users of UML Diagrams:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#building-blocks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Building blocks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structural-modeling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Structural Modeling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#class-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Class Diagrams
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Class Diagrams">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Classes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relationships
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Component Diagram
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#package-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Package Diagram
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deployment-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deployment Diagram
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#behavoral-modeling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Behavoral Modeling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-case-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use Case Diagram
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sequence-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sequence Diagram
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        State Diagram
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Activity Diagrams
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relational-database-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relational Database Design
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Relational Database Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-modeling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Modeling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#er-modeling-entity-relation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ER Modeling (Entity-Relation)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ER Modeling (Entity-Relation)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entity-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entity Types
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attributes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relationship" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relationship
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-data-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create a Data Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-the-er-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating the ER model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#converting-to-relational-database-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Converting to Relational database Design
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Converting to Relational database Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#relational-db-representation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relational DB representation:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#normalization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Normalization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Normalization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#functional-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Functional Dependencies
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#first-normal-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        First Normal Form
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agile_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agile
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8" id="__nav_2_4_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D287 Java Frameworks
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D287 Java Frameworks
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_1" id="__nav_2_4_8_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Additional Material
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Additional Material
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Additional_Material/Additional_Material/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Additional Material
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_2" id="__nav_2_4_8_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Collections
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Collections
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Collections/Collections/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Collections
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_3" id="__nav_2_4_8_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exceptions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Exceptions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Exceptions/Exceptions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exceptions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_4" id="__nav_2_4_8_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Generics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Generics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Generics/Generics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Generics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_5" id="__nav_2_4_8_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Searching and Algorithms
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Searching and Algorithms
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Searching_and_Algorithms/Search_and_Algo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Searching and Algorithm
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_6" id="__nav_2_4_8_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit Testing
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unit Testing
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Unit_Testing/Unit_Testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_9" id="__nav_2_4_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D288 Backend Programming
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D288 Backend Programming
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D288_Backend_Programming/D288_Backend_Programming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D288 Backend Programming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_10" id="__nav_2_4_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D333 Ethics in Tech
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D333 Ethics in Tech
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D333_Ethics_in_Tech/D333_ethics_in_tech/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ethics in Technology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_11" id="__nav_2_4_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D336 Business IT
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D336 Business IT
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D336_Business_IT/D336_business_it/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D336 ITIL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_12" id="__nav_2_4_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D387 Advanced Java
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D387 Advanced Java
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D387_Advanced_Java/D387_Advanced_Java/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D387 Advanced Java
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_13" id="__nav_2_4_13_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D480 Software QA
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D480 Software QA
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D480_Software_QA/D480_Software_QA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D480 Software Engineering and Quality Assurance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="d284-software-engineering">D284 Software Engineering</h1>
+<p>Resource: Stephens, R. (2015). Beginning software engineering. Wrox. ISBN: 978-1-118-96914-4  </p>
+<h2 id="crm">CRM</h2>
+<ul>
+<li>Leads, Opportunities, Close Rates</li>
+<li>Forecasting</li>
+<li>Market Feedback </li>
+<li>Analysis by Channel </li>
+<li>Teamwork and Engagement </li>
+</ul>
+<h2 id="sdlc">SDLC??</h2>
+<h4 id="requirements-gathering">Requirements gathering</h4>
+<h4 id="change-control">Change Control</h4>
+<h4 id="executive-sponsor-executive-champion">Executive sponsor/ Executive Champion</h4>
+<p>Highest ranking executive supporting the project  </p>
+<h4 id="project-manager">Project manager</h4>
+<p>Highest ranking person on the team<br />
+Interface between customers and rest of team  </p>
+<h4 id="pert-chart">PERT Chart</h4>
+<p>Program Evaluation and Review Technique 
+- Introduced by the Navy in the 50s
+- AOA, activity on arrow, arrow is task and node is a milestone 
+- AON, activity on node, node is the task and arrows represent precedence relations 
+- Each task lists the time to complete and the predecessor</p>
+<h5 id="critical-paths">Critical paths</h5>
+<p>is the longest possible path through the network. The network is usually formed by 
+a PERT chart  </p>
+<h4 id="gantt-charts">Gantt Charts</h4>
+<h4 id="risk-management">Risk Management</h4>
+<p>Rather than wait for an inssue to happen, be proactive and plan:<br />
+- Likelihood<br />
+- Severity<br />
+- Consequences<br />
+- Work-arounds <br />
+    - Dificulty<br />
+    - Impact<br />
+    - Pros<br />
+    - Cons  </p>
+<h2 id="deployment">Deployment</h2>
+<h4 id="deployment_1">Deployment</h4>
+<p>Puting the project in the customer's hands <br />
+Can also have the terms:
+- Implementation, installation, release  </p>
+<h4 id="scope">Scope</h4>
+<h4 id="planning">Planning</h4>
+<p>List the steps that you hoe to follow, describe eac in detail<br />
+List the ways that the step could fail. Describe the actions that you will 
+take. Describe work-arounds.  </p>
+<h4 id="cutover">Cutover</h4>
+<p>Process of moving customers over to the new appliation  </p>
+<h4 id="staged-deployment">Staged Deployment</h4>
+<p>Reduce catastrophic failures of cutover by doing staged development. Create a
+staging area, a fully functional environment for practicing deployment.<br />
+Get a power user involved in the testing, someone that is an expert at the previous
+issues.  </p>
+<h4 id="gradual-cutover">Gradual Cutover</h4>
+<p>Only give the new application to some customer until it is verified that the
+deployment worked  </p>
+<h4 id="incremental-deployment">Incremental Deployment</h4>
+<p>Release features gradually.  </p>
+<h4 id="parallel-testing">Parallel Testing</h4>
+<p>Have some users perform their normal tasks on the test application for a while 
+as if it were the real thing, while other users are actually doing the tasks 
+on the old system. The test system does not count.   </p>
+<h4 id="deployment-tasks">Deployment Tasks</h4>
+<ul>
+<li>Physical Environment  </li>
+<li>Hardware  </li>
+<li>Documentation  </li>
+<li>Training  </li>
+<li>Database  </li>
+<li>Other people's Software  </li>
+<li>Your software  </li>
+</ul>
+<h4 id="deployment-mistakes">Deployment Mistakes</h4>
+<ul>
+<li>Assume everything will work  </li>
+<li>Have no rollback plan  </li>
+<li>Allow insufficient time  </li>
+<li>Don't know when to surrender  </li>
+<li>Skip staging  </li>
+<li>Install lots of updates all at once  </li>
+<li>Use an unstable environment  </li>
+<li>Set an early point of no return  </li>
+</ul>
+<h2 id="process-models">Process Models</h2>
+<h3 id="predictive-models">Predictive Models</h3>
+<p><strong>Predictive models</strong> predict in advance what needs to be done.<br />
+A different approach is <strong>Adaptive Development Models</strong>, that enable you to change 
+the project's goals if necessay during development.  </p>
+<p>When Predictive Models maybe successful:<br />
+- User Involvement: when users help define the requirements, they're more likely 
+to be correct.<br />
+- Clear vision: Customer and develpers have the same clear vision.<br />
+- Limited size: Small size make it easier to see the whole picture<br />
+- Experienced Team:<br />
+- Realistic: 
+- Established Technology:  </p>
+<p>When Predictive Models won't work:<br />
+- Incomplete requirements<br />
+- Unclear requirements<br />
+- Changing Requirements<br />
+- No resources  </p>
+<p>Advantages of Predictive Models:<br />
+- Predictability<br />
+- Stability<br />
+- Cost-savings<br />
+- Detailed design<br />
+- Less refactoring<br />
+- Fix bugs early<br />
+- Better documentation<br />
+- Easy maintenance  </p>
+<p>Disadvantages of Predictive Models: 
+- Inflexible<br />
+- Later initial release<br />
+- Big Design Up Front (BDUF): Can't design until everything is known.</p>
+<h3 id="waterfall">Waterfall</h3>
+<p>Predictive model. Finish each step before moving on to the next step.  </p>
+<h3 id="waterfall-with-feedback">Waterfall with Feedback</h3>
+<p>Allows you to move back a step.  </p>
+<h3 id="shashimi">Shashimi</h3>
+<p>Predictive.  Steps are allowed to overlap.<br />
+- Requirements 
+- Design 
+- Implementation - code writing
+- Verification - testing<br />
+- Deployment 
+- Maintenance<br />
+You could have people working on requirements, desing, implementation, and testing
+all at the same time.  </p>
+<h4 id="shashimi-series">Shashimi Series</h4>
+<p>Multiple shashimi series overlapping. It is incremental. Similar to an incremental 
+waterfall below. </p>
+<h3 id="incremental-waterfall">Incremental Waterfall</h3>
+<p>Incremental waterfall (multi-waterfall) uses a seris of separate waterfall 
+cascases. Each cascade ends with the delivery of a useable application called an 
+increment. Build the project incrementally rather than try to tackle the whole 
+thing at once.<br />
+This is somewhat adaptive  </p>
+<h3 id="v-model">V-Model</h3>
+<p><img alt="v_model" src="../images/v_model.png" />  </p>
+<p>Decomposition- breaks the application down into peices that you can use. This is 
+the left side of the diagram.  </p>
+<p>Integration - the right side of the diagram. Working towards complettion of the 
+delivery.  </p>
+<h3 id="sdlc-software-development-life-cycle">SDLC Software Development Life Cycle</h3>
+<p>AKA the application develpment life cycle.<br />
+A waterfall method that circle back around on it's self.  </p>
+<h4 id="sub-steps-of-the-sdlc">Sub steps of the SDLC</h4>
+<ul>
+<li>Initiation: Customer comes up with the initial idea  </li>
+<li>Concept Development: Initiator and interested parties explore posibilities. This 
+step determines if it is a go/no-go. It is expensive to back out after this.  <ul>
+<li>project definitions </li>
+<li>feasibility analysis  </li>
+<li>cost-benefit analysis </li>
+<li>risk analysis  </li>
+</ul>
+</li>
+<li>Preliminary planning: Project Manager and tech lead are assigned to the project.
+They start planning and may give tasks to team leads to plan. Estimate resources 
+needed, like staff, computers, networks, and such.<ul>
+<li>Document tracking (PERT or Gantt charts) </li>
+<li>Gather metrics so the PM can keep track of the project  </li>
+</ul>
+</li>
+<li>Requirements analysis: Team studies the user's needs and creates requirement 
+documents. <ul>
+<li>UML showing application structure </li>
+<li>Pics, use cases, prototypes, business rules</li>
+<li>Tech requirements for the developers to follow in the build  </li>
+</ul>
+</li>
+<li>High-level design: Team creates high-level design that specify major subsystems,
+data flow, database needs, applications high-level structure.  </li>
+<li>Low-level design: how to build the pieces, to the point a second-shelf programmer
+could build the right thing  </li>
+<li>Developement: Write the code. </li>
+<li>Acceptance testing: User tests the applications  </li>
+<li>Deployement: Roll out the app  </li>
+<li>Maintenance: </li>
+<li>Review: Use metrics gathered during the development to determine if the design 
+process can be improved.  </li>
+<li>Disposal: </li>
+</ul>
+<h3 id="iterative-models">Iterative Models</h3>
+<p>Start by building a small program that is useful, then provide <em>increments</em> to 
+add more features to the program. 
+Improves over predictive models issues of not being flexible to changes, requiring
+the exact requirements up front, and this allows for hazy, undefined requriements 
+to be used in the start, but figured out as the project moves along.  </p>
+<h4 id="comparison">Comparison:</h4>
+<p>Fidelity is the completeness of a feature. Low-fidelity is a released feature that 
+needs work still. High/full fidelity the feature is complete.<br />
+- Predictive: All features are full fidelity<br />
+- Iterative: Inital features are low fidelity. Every iteration afterwards is 
+higher and higher fidelity until full fidelity is reached.<br />
+- Incremental: One feature is rolled out, but it is full fidelity. The other 
+features will be released incrementally, at full fidelity.<br />
+- Agile: Start with the lowest fidelity and features. Later versions add features 
+and increase fidelity.  </p>
+<p><img alt="comparison_models" src="../images/comparison_models.png" />  </p>
+<h4 id="prototypes">Prototypes</h4>
+<p>Prototype  is a simplified model that demostrates some behaviour you want to 
+study. Mimics a part of the appliation you want to build.<br />
+- Horizontal prototypes: demonstrates features but has no depth, like a user interface,
+where the user can navigate through pages. That is breadth.  <br />
+- Vertical prototype: has little breadth, but great depth. Something may hot have 
+a user interface but is able to print a customer receipt.  </p>
+<h4 id="prototype-types">Prototype types:</h4>
+<ul>
+<li>Throw away: build and discard </li>
+<li>Evolutionary: Build into a finished product  </li>
+<li>Incremental prototyping: building the features in several prototypes, then taking 
+the code and building a full application.  </li>
+</ul>
+<h4 id="spiral">Spiral</h4>
+<p>Used to determine what development approach to take for parts of the project. 
+For example, if you don't understand all the requirements, use and iterative approach.  </p>
+<p><img alt="spiral" src="../images/spiral.png" />  </p>
+<h4 id="unified-process">Unified Process</h4>
+<p>Iterative and incremental development framework<br />
+Four phases: 
+- Inception: Come up with project's ideas. 
+- Elaboration: Project requirements<br />
+- Construction: Write, test, debug code.<br />
+- Transition: Transfer project ot customers.<br />
+You can add more phases to this if you want. Ex of two more:
+- Production: Users use the appliation.<br />
+- Disposal: Remove the app  </p>
+<h5 id="rational-unified-process-rup">Rational Unified Process (RUP)</h5>
+<p>IBMs version. Uses that same 4 basic phases of UP.<br />
+Uses the same engineering disciplines:<br />
+- Business modeling<br />
+- Requirements<br />
+- Analysis and design<br />
+- Implementation<br />
+- Test<br />
+- Deployment<br />
+RUP has additional IBM tools:<br />
+- artifact templates<br />
+- document production and sharing<br />
+- change rwquest tracking<br />
+- visual modeling<br />
+- performance profiling  </p>
+<h4 id="cleanroom-model">Cleanroom model</h4>
+<p>Empphaizes defect prevention rather than defect removal.  </p>
+<h2 id="rapid-appplication-developement-rad">Rapid Appplication Developement (RAD)</h2>
+<p>First created by James Martin in the 1980s, he described his method to be RAD.<br />
+Now the term has expanded to mean several more models of rapid development  </p>
+<h3 id="techniques-used-in-rad">Techniques used in RAD</h3>
+<ul>
+<li>Small teams: half dozen or fewer   </li>
+<li>Requirement gathering through focus groups, workshops, facilitated meetings, prototyping, and brainstorming.  </li>
+<li>Requirement validation through iteration prototypes, use cases, and constant customer testing designs.  </li>
+<li>Repeated customer testing of designs as they evolve.  </li>
+<li>Constant integration and testing of new code into the application.  </li>
+<li>Informal reviews and communication among team members.  </li>
+<li>Short iterations lasting between a few months and as little as a week.  </li>
+<li>Deferring complicated features for later releases. Doing just enough work to get the job done.  </li>
+<li><em>Timeboxing</em>, setting a tight delivery schedule for producing something, usually 
+the next iteration. The scope might change but the completion date for the iteration 
+cannot.  </li>
+</ul>
+<p><strong>Iteration 0</strong>: RAD starts in the middle of a project, assumably. That iteration 
+usually involves setting up hardware and development invironments. Try not to 
+include this iteration towards the budget.  </p>
+<h3 id="rad-advantages">RAD Advantages</h3>
+<ul>
+<li>More accurate rerquirements. THe suctomer can adjust the requirements as needed 
+during the project.  </li>
+<li>The ability to track changing requirements. If requirements must change (within reason), the 
+project can start tracking the new requirements in the next iteration.  </li>
+<li>Frequent customer feedback and involvement. In addition to helping keep the project on 
+track, theis keeps the users engagged with the project.  </li>
+<li>Reduced development time. If everyting goes smoothly, you don't spend as much time writing 
+requirements in exessive detail.  </li>
+<li>Encourages code reuse. One of the key RAD ides is to do whatever it takes to get the 
+current iteration done. If an existing piece of code does whit you need it to does 
+(or even almost what you need it to do), timeboxing encourages you  to use that code 
+instead of writing something new.  </li>
+<li>Possible early realeases with limited functionality.  </li>
+<li>Constant testing promotes high-quality code and eases integration issues.  </li>
+<li>Risk mitigation. Before each iteration, you can look for potential risks and handle them.  </li>
+<li>Greater chand of success. BDUF projects sometimes spend a lot of time following an incorrect 
+path before discovering they're heading in the wrong direction and they need to be 
+radically redone or even canceled. Frequent increments allow RAD projects to detect 
+and correct problems quickly before they become insurmountable.  </li>
+</ul>
+<h3 id="rad-disadvantages">Rad Disadvantages</h3>
+<ul>
+<li>Some software engineering groups resist to change and use RAD  </li>
+<li>Doesn't handle large systems well. Communication is difficult for larger projects.  </li>
+<li>Requires more skilled team members.  </li>
+<li>Requires access to scarce resources.  A lot of interaction with customer and 
+system experts.  </li>
+<li>Adds extra overhead if the requirements are known completely and correctly in advance.  </li>
+<li>Less managerial control.  </li>
+<li>Sometimes results in a less optimal design.  </li>
+<li>Unpredictable.  </li>
+</ul>
+<h3 id="james-martin-rad">James Martin RAD</h3>
+<p>Used these four phases:<br />
+- Requirements planning: Executive champion, management, team leaders and other stakeholders 
+agree on the project's general goals and requirements.<br />
+- User design: User and team members work together to convert he requirements 
+into a workable design.<br />
+- Construction: code<br />
+- Cutover: deliver project (staged delivery, gradual cutover, or incremental deployment)  </p>
+<p><img alt="james_martin_rad" src="../images/james_martin_rad.png" />  </p>
+<h3 id="agile">Agile</h3>
+<p>Set of guidelines, not really a model. 
+www.agilemanifesto.org <br />
+The values are:<br />
+- Individuals and interactions over process and tools<br />
+- Working software over comprehensive documentation<br />
+- Customer collaboration over contract negotiation<br />
+- Responding to change over following a plan  </p>
+<p>** Self-Organizing Teams**:  has the flexibility and authority to find its own methods 
+for achieving its goals.<br />
+- Google 'scrumalliance' and 'sef-organizing teams'  </p>
+<h3 id="common-agile-traits">Common Agile traits</h3>
+<ul>
+<li>Communication is constant with the customer  </li>
+<li>Incremental development. If every member of the team understands all the development 
+functions, the team is called <strong>cross-functional</strong>.  </li>
+<li>Focus on Quality  </li>
+<li>XP: Extreme programming. Increasing the fequency and amount of code reviewed. <ul>
+<li>Pair programming: two or more programmers write the code together, infront of the same 
+monitor. The <em>driver</em> controls the keyboard.  The second programmer, <em>navigator, pointer, observer</em> 
+watches and reviews every line of code.  </li>
+</ul>
+</li>
+</ul>
+<h4 id="versioning-shcemes">Versioning shcemes</h4>
+<p>Version 1.2.3.4 means:<br />
+1 - Major: thist represnts a new mahor release with significant new features. These 
+come out once or twice a year.<br />
+2 - Minor: All non major releases are minor <br />
+3 - Build: Each weekly build gets a new build number<br />
+4 - Revision: Builds that are not final weekly builds get a new revision number.  </p>
+<p><strong>Point releases</strong>: </p>
+<h3 id="xp">XP</h3>
+<p>In addition to the above description of XP, there are other possible roles:<br />
+- Customer: verifies the needs of the Customer are being met<br />
+- Tracker: Monitors the team memvers' progress and provides useful metrics<br />
+- Programmer: Defines the application's architecture and writes the code.<br />
+- Coach: Helps the team work effectively, self-organizing, and use good XP practices.<br />
+- Tester: Helps the suctomer write and perform acceptance test for use cases; looks for missing 
+requirements and holse in the design.<br />
+- Administratior: Sets up and maintains the team members' computers, network, and development tools. <br />
+- Doomsayer: looks for trouble  </p>
+<p>Values:<br />
+- Communication<br />
+- Simplicity<br />
+- Feedback<br />
+- Courage<br />
+- Respect: see book "Extreme Programming Explained: Embrace Change" by Kent Beck  </p>
+<p>Practices: 
+- Have a customer on site<br />
+- Play the planning game<br />
+- Use standup meetings<br />
+- Make frequent small releases<br />
+- Use intuitive metaphors<br />
+- Keep designs simple<br />
+- Defer optimization<br />
+- Refactor when necessary<br />
+- Give everyone ownership of the code<br />
+- Use coding standards<br />
+- Promote generalization<br />
+- Use pair programming<br />
+- Test constantly<br />
+- Integrate continuously<br />
+- Work sustainably<br />
+- Use test-driven and test-first development<br />
+    - One way is <strong>Test first development</strong>, write the test first before writing code.  </p>
+<h3 id="scrum">SCRUM</h3>
+<p>The members of a Scrum team play three roles:<br />
+- Product owner: represent the customer, users, stakeholders<br />
+    - User stories describe project goals<br />
+    - <strong>Backlog</strong>: prioritized list of wanted features<br />
+    - Liason between team and stakeholders<br />
+- Team member: build the application<br />
+- Scum Master: remover of obstacles for the team.  Sometimes leads meetings, makes 
+sure team is practicing Scrum, challenges team to improve. Funny name, "Scrum bag"  </p>
+<h4 id="scrum-spirits">Scrum spirits</h4>
+<p><strong>Spirits</strong>: series of timeboxed incremental iterations<br />
+- 30 days long, or two weeks, preference based<br />
+- <em>Potentially shippable increment (PSI)</em>: fully tested and approved piece  </p>
+<p>Hold a sprint planning meeting before each sprint begins<br />
+Product owner selects the stories for the sprint<br />
+Items are moved from the product backlog to the sprint backlog<br />
+During a standup, answer the following three questions:<br />
+- What did I do since the last scrum?<br />
+- What do you hope to accomplish before the next scrum?<br />
+- What obstacles do you see in your way?<br />
+Sprint review meeting at the end of sprint where Product owner makes sure the requirements were met<br />
+<strong>Burndown</strong> charts measure progress   </p>
+<h3 id="lean-software-development-lsd">Lean Software Development (LSD)</h3>
+<p>Work on only the essentials  </p>
+<h3 id="crystal">Crystal</h3>
+<p>Developed by Alistair Cockburn<br />
+Colors that indicate the project's size  </p>
+<h3 id="feature-driven-development-fdd">Feature Driven Development (FDD)</h3>
+<p>Iterative and incremental development model. Created to work with large teams.<br />
+Class owners will create a team for making changes to a class. In other agile methods, 
+anyone can make changes to the code. In this case, parts are given ownership to 
+individuals.  </p>
+<h3 id="agile-unified-process-aup">Agile Unified Process (AUP)</h3>
+<p>Version of Unified Process, developed by Scott Amber<br />
+"Serial at Large" means follows 4 phases of UP, sequentially<br />
+"Iterative in the small" meas performs each of theos phaes iteratively  </p>
+<h3 id="disciplined-agile-delivery-dad">Disciplined Agile Delivery (DAD)</h3>
+<p>Scott Amber moved to this in 2012 from AUP.<br />
+People first, learning oriented hybrid agil approach.  </p>
+<h3 id="dynamic-sytem-development-mehtod-dsdm">Dynamic Sytem Development Mehtod (DSDM)</h3>
+<p>www.dsdm.org<br />
+Meant to bring business deciplines to the relatively untamed RAD wilderness  </p>
+<h3 id="kanban">Kanban</h3>
+<p>japanese for sign board<br />
+Just-in-time (JIT) production methodology for controlling logistics in a production chain<br />
+Uses cards, called Kanbans, at each station. When the cards run out at the station, 
+that station is sent to the supplier to indicate a need for more.   </p>
+<p><img alt="kanban" src="../images/kanban.png" />  </p>
+<p>Limit Work in progress (WIP).  The shaded areas are consided WIP. This is to limit 
+task switching and keep production constant. Limit multitasking.  </p>
+<h2 id="gathering-requirements">Gathering Requirements</h2>
+<p>Requirements are:<br />
+- Clear<br />
+- Unambiguous<br />
+- Consistent: Don't contradict each other, not too many constraints that make it unsolvable<br />
+- Prioritized<br />
+    - MOSCOW is a method of Prioritization:<br />
+    - Must: required<br />
+    - Should: there are important features that should be included if possible<br />
+    - Could: Desirable features<br />
+    - Won't: Optional features  <br />
+- Verifiable  </p>
+<p>Requirement Categories:<br />
+- Audience-Oreinted Requirements<br />
+- Business Requirements<br />
+- User Requirements<br />
+- Functional Requirements<br />
+- Nonfunctional Requirements<br />
+- Implementation Requirements  </p>
+<h3 id="furps">FURPS</h3>
+<p>Acronym for this system requirement categories<br />
+- Functionality<br />
+- Usability<br />
+- Reliability<br />
+- Performance<br />
+- Supportability  </p>
+<p>FURPS+: adds categories software engineers thought were missing<br />
+- Design Constraints<br />
+- Implementation requirements<br />
+- Interface Requirements<br />
+- Physical requirements  </p>
+<p>Common Application Requirements:<br />
+- Screens <br />
+- Menus<br />
+- Navigation<br />
+- Work flow<br />
+- Login<br />
+- User types<br />
+- Audit tracking and history<br />
+- Archiving<br />
+- Configuration  </p>
+<h3 id="how-to-gather-requirements">How to gather requirements</h3>
+<ul>
+<li>Listen to Customers and Users  <ul>
+<li>Who, what, when, where, why, how  </li>
+</ul>
+</li>
+<li>Study users  </li>
+</ul>
+<h3 id="refine-requirements">Refine Requirements</h3>
+<ul>
+<li>Copy existing systems  </li>
+<li>Clairvoyance  </li>
+<li>Brainstorm  <ul>
+<li>Osborn method: <ul>
+<li>Focus on quality  </li>
+<li>Withhold criticism </li>
+<li>Encourage unusual ideas  </li>
+<li>Combine and improve ideas  </li>
+</ul>
+</li>
+<li>Popcorn: people shout out ideas that come to them  </li>
+<li>Subgroups: break into groups for thinking  </li>
+<li>Sticky Notes: write on something and share with group  </li>
+<li>Idea passing: pass the idea around for review  </li>
+<li>Circulation list: idea passing over email  </li>
+<li>Individual  </li>
+</ul>
+</li>
+</ul>
+<h3 id="recording-requirements">Recording Requirements</h3>
+<ul>
+<li>UML  </li>
+<li>User Stories</li>
+<li>Use cases: description of a series of interactions between actors.  <ul>
+<li>Title  </li>
+<li>Main success scenario  </li>
+<li>Extensions  </li>
+</ul>
+</li>
+<li>Prototypes  </li>
+<li>Requirement Specification  </li>
+</ul>
+<h3 id="requirement-validation">Requirement Validation</h3>
+<p>Makes sure requirements say the right things</p>
+<h3 id="requirement-verification">Requirement Verification</h3>
+<p>Checking that the final applications actually satisfies requirements  </p>
+<h3 id="change-requirements">Change Requirements</h3>
+<p>Change control board: submittals for changes  </p>
+<h2 id="high-level-design">High-Level Design</h2>
+<p>High-level design provides a view of the system at the abstract level. How the major 
+pieces of the finished app will fit together and interact<br />
+The following are major things to consider adding to high-level design:  </p>
+<h3 id="security">Security</h3>
+<ul>
+<li>OS security  </li>
+<li>App security  </li>
+<li>Data  </li>
+<li>Networking  </li>
+<li>Physical  </li>
+</ul>
+<h3 id="hardware">Hardware</h3>
+<h3 id="user-interface">User Interface</h3>
+<h3 id="internal-interfaces">Internal Interfaces</h3>
+<h3 id="external-interfaces">External Interfaces</h3>
+<h3 id="architecture">Architecture</h3>
+<ul>
+<li>Monolithic  </li>
+<li>Client/Server architecture  <ul>
+<li>Two-tier architecture: client is separate from the server  </li>
+</ul>
+</li>
+<li>Component-based software engineering (CBSE): loosely coupled components  </li>
+<li>Service-oriented Architecture (SOA): services that can run as programs on their own that are joined together  </li>
+<li>Data-centric architecture </li>
+<li>Event-driven architecture  </li>
+<li>Rule-based architecture</li>
+<li>Distributed architecture: different parts of app run on different processors  </li>
+<li>Mix and match  </li>
+</ul>
+<h3 id="reports">Reports</h3>
+<h3 id="databases">Databases</h3>
+<h3 id="audit-trails">Audit trails</h3>
+<p>Track user actions on app</p>
+<h3 id="user-access">User Access</h3>
+<h3 id="database-maintenance">Database Maintenance</h3>
+<h3 id="configuration-data">Configuration Data</h3>
+<h3 id="data-flows-and-states">Data Flows and States</h3>
+<h3 id="training">Training</h3>
+<h3 id="uml">UML</h3>
+<p>www.uml.org<br />
+There are 13 types:
+- Structural Diagram<br />
+    - Class Diagram 
+    - Composite Structure Diagram<br />
+    - COmponent Diagram<br />
+    - Deployment Ditagram<br />
+    - Object Diagram<br />
+    - Package Diagram<br />
+    - Profile Diagram<br />
+- Behavior Diagram<br />
+    - Activity Diagram<br />
+    - Use Case Diagram<br />
+    - State Machine Diagram<br />
+    - Interaction Diagram<br />
+        - Sequence Diagram<br />
+        - Communication Diagram<br />
+        - Interaction Overview Diagram<br />
+        - Timing Diagram  </p>
+<h4 id="structural-diagram">Structural Diagram</h4>
+<p>Shows things that will be in the system  </p>
+<p>Here is a class UML:<br />
+<img alt="class_uml" src="../images/class_uml.png" /><br />
+Above, 1 student is taking one or more classes  </p>
+<h2 id="development">Development</h2>
+<h3 id="the-right-tools">The Right Tools</h3>
+<h4 id="profilers">Profilers</h4>
+<p>Let you determine what parts of the program use the most tiem, memory, files 
+or other resources.   </p>
+<h4 id="static-analysis-tools">Static Analysis Tools</h4>
+<p>Study the code without executing it.  Focus on the code style.  </p>
+<h4 id="testing-tools">Testing Tools</h4>
+<h4 id="source-code-formatters">Source code formatters</h4>
+<h4 id="refactoring-tools">Refactoring Tools</h4>
+<h3 id="selecting-algorithms">Selecting Algorithms</h3>
+<ul>
+<li>Effective  </li>
+<li>Efficient  </li>
+<li>Predictable  </li>
+<li>Simple  </li>
+<li>Use packaged code/algorithms already in the language  </li>
+</ul>
+<h3 id="top-down-design">Top-Down Design</h3>
+<p><strong>Top-down, also calleds stepwise refinement</strong>: start with a high-level statement 
+of a problem, and you break the problem down into more detailed pieces. </p>
+<p>When commenting code, write what the code is supposed to do, not what it actually 
+is doing. The 'actually doing' comments are pseudo code.</p>
+<p>Avoid <em>magid numbers</em>, which are numbers that just appear with no explaination. 
+Like just assigning 201 for a return type. You could create a constant variable 
+called 'ELEMENT_CREATED' and assign it the value 201.  </p>
+<p>First make it work. Then make it faster if necessary.  </p>
+<p>Use a <strong>Profiler</strong> to see where the performance bottleneck is.  </p>
+<h2 id="testing">Testing</h2>
+<h3 id="testing-goals">Testing Goals</h3>
+<p><strong>Toolsmith</strong>: The job of a person on large projects. They help out by building tools 
+that will help out the teams. Like count lines, re-arrange the controls on a form,
+search customer data for pattersn. The handyman  </p>
+<h3 id="levels-of-testing">Levels of Testing</h3>
+<p>Summary:<br />
+Unit testing - You unit test each individual piece of code. Think each file or class.</p>
+<p>Integration testing - When putting several units together that interact you need to conduct Integration testing to make sure that integrating these units together has not introduced any errors.</p>
+<p>Regression testing - after integrating (and maybe fixing) you should run your unit tests again. This is regression testing to ensure that further changes have not broken any units that were already tested. The unit testing you already did has produced the unit tests that can be run again and again for regression testing.</p>
+<p>Acceptance tests - when a user/customer/business receive the functionality they (or your test department) will conduct Acceptance tests to ensure that the functionality meets their requirements.</p>
+<p>You might also like to investigate white box and black box testing. There are also performance and load testing, and testing of the "'ilities" to consider.  </p>
+<p>Load Test - simulate a lot of users all running simultaneously</p>
+<h4 id="unit-testing">Unit Testing</h4>
+<p>Unit tests verify the correctness of a specific piece of code.  </p>
+<h4 id="integration-testing">Integration Testing</h4>
+<p>After you write a chunk of code and use unit tests to verify that it works, it's time 
+to intergrate it into the existing codebase. An <strong>integration test</strong> verifies that the new 
+method works and plays well with others. It checks that existing code calls the new 
+method correctly , and that the new method can call other methods correctly.  </p>
+<p>Regression testing is a type of QA software testing that ensures changes or updates to an existing software product do not affect previously functioning features. </p>
+<h4 id="automated-testing">Automated Testing</h4>
+<p>Automated testing tools let you define tests and the results 
+they should produce. Like what keystrokes or mouse actions should be taken for the 
+test.</p>
+<p>A good testing tool should let you shcedule tests so that you can run regression testing 
+every night after the developers go home.  </p>
+<h4 id="component-interface-testing">Component Interface Testing</h4>
+<p>Component interface testing studies the interactions between components.</p>
+<h4 id="system-testing">System Testing</h4>
+<p>System testing is an end to end run of the whole system.  </p>
+<h4 id="acceptance-testing">Acceptance Testing</h4>
+<p>Does it meet the user's requirements.  </p>
+<h4 id="alpha-testing">Alpha Testing</h4>
+<p>First round of testing by selected customers. Not open to the public.  </p>
+<h4 id="beta-testing">Beta Testing</h4>
+<p>Second round of testing. Sometimes released as a limited trial to users.  </p>
+<h4 id="and-others">And others....</h4>
+<ul>
+<li>Compatability test  </li>
+<li>Destructive test  </li>
+<li>Functional test  </li>
+<li>Installation test  </li>
+<li>Internationalization test  </li>
+<li>Nonfunctional test  </li>
+<li>Performance test  </li>
+<li>Security Test  </li>
+<li>Usability test </li>
+</ul>
+<h3 id="testing-techniques">Testing Techniques</h3>
+<h4 id="exhaustive-testing">Exhaustive Testing</h4>
+<p>Proves that a method works under all cases by providing every case  </p>
+<h4 id="black-box-testing">Black-box testing</h4>
+<p>You pretend you don't know the way the method works, it's a black box. You just 
+spray a whole bunch of different cases into it and see if it breaks.  </p>
+<h4 id="white-box-testing">White-box testing</h4>
+<p>You know what the method looks like on the inside.  </p>
+<h4 id="gray-box-testing">Gray-box Testing</h4>
+<p>You know some, but not all of the internals.  </p>
+<h3 id="testing-habits">Testing Habits</h3>
+<h4 id="test-and-debug-when-you-are-alert">Test and Debug when you are Alert</h4>
+<h4 id="test-your-own-code">Test Your Own Code</h4>
+<h4 id="have-someone-else-test-your-code">Have Someone else test your code</h4>
+<h4 id="the-rules-of-egoless-programming">The Rules of Egoless Programming:</h4>
+<ol>
+<li>Understand and accept that you will make mistakes  </li>
+<li>You are not your code.  </li>
+<li>No matter how much "karate" you know, someone else will always know more.  </li>
+<li>Don'e rewrite code without consultation  </li>
+<li>Treat people who know less than you with respect, deference, and patience.  </li>
+<li>Th only constant in the world is change.  </li>
+<li>The only true authority stems from knowledge, not from position.  </li>
+<li>Fight for what you believe, but gracefully accept defeat.  </li>
+<li>Don't be "the guy in the room". Collaborate with others, don't be isolated.  </li>
+<li>Cirtique code instead of people - be kind to the coder, not the code.  </li>
+</ol>
+<h4 id="fix-your-own-bugs">Fix your own bugs</h4>
+<h4 id="think-before-you-change">Think before you change</h4>
+<h4 id="lincoln-index">Lincoln Index</h4>
+<p>Equation for estimating bugs in program  </p>
+<h2 id="metrics">Metrics</h2>
+<h3 id="defect-analysis">Defect Analysis</h3>
+<p><em>Defects</em>: all incorrect features<br />
+- <em>bugs</em>: type of defect   <br />
+- <em>changes</em>: type of defect  </p>
+<p>Categorizing defects:<br />
+- Discoverer<br />
+- Severity<br />
+- Time discovered<br />
+- Age at fix<br />
+- Task Type: Like High-level, Security, User Interface, Database...  </p>
+<h4 id="ishikawa-diagram">Ishikawa Diagram</h4>
+<p>Called <em>fishbone</em> diagrams. Used to determine which category a defect should go into.<br />
+Also called <em>cause and effect diagrams</em>.  </p>
+<p><img alt="ishikawa" src="../images/ishikawa.png" />  </p>
+<p>The defect is listed on the right. All causes leading up to the defect are drawn 
+as "bones".  </p>
+<p><img alt="cause_effect" src="../images/cause_effect.png" />  </p>
+<h3 id="software-metrics">Software Metrics</h3>
+<p>Metrics give you <em>quantitative</em> measurements. Defect analysis gives you <em>qualitative</em> results.  </p>
+<p><strong>Attribute</strong>: something you can measure.  </p>
+<p><strong>Metric</strong>: value that you sue to study aspects of a project. Sometimes the same as 
+and attribute.  </p>
+<p>Study the metrics to determine <strong>indicators</strong> of the project's future.  </p>
+<p>Use the indicators to make improvements  </p>
+<h4 id="attributes-of-a-metric">Attributes of a Metric</h4>
+<ul>
+<li>Simple  </li>
+<li>Measurable  </li>
+<li>Relevant  </li>
+<li>Objective / quantitative  </li>
+<li>Easily obtainable  </li>
+</ul>
+<h4 id="process-metrics">Process Metrics</h4>
+<p>Measure your organization's development process.  </p>
+<h4 id="project-metrics">Project Metrics</h4>
+<p>Measure and track the current project  </p>
+<h4 id="things-to-measure">Things to measure</h4>
+<ul>
+<li>Cost  </li>
+<li>Effort  </li>
+<li>Defect Rates  </li>
+<li>Lines of code (LOC)  </li>
+<li>Pages of documentation  </li>
+<li>Functionality  </li>
+<li>Quality  </li>
+<li>Complexity  </li>
+<li>Efficiency  </li>
+<li>Reliability  </li>
+<li>Maintainability  </li>
+</ul>
+<h4 id="measuring-metrics">Measuring Metrics</h4>
+<p><img alt="size_normalization" src="../images/size_normalization.png" />  </p>
+<h5 id="function-point-normalization">Function Point Normalization</h5>
+<p>Generates a number representing the application's complexity.   </p>
+<p>Overview:<br />
+- Count five specific function point metrics that include such things as the number of
+inputs and the number of outputs.<br />
+- Multiply eash of those values by a complexity fator to indicate how complicated each
+activity is. Add up the results to get a raw FP value.<br />
+- Calculate a series of complexity adjustment factors that take into account the 
+importance of general features of the application. Add the complexity adjustment factor 
+to get the complexity adjustment value (CAV).<br />
+- Take a weighted average of the raw FP and the CAV and you have the final FP value.  </p>
+<p><strong>Count Function Point Metrics</strong>:<br />
+- Inputs: The number of times data moves inot the application and updates the 
+application's internal data.<br />
+- Outputs: The number of times outputs move out of the application.<br />
+- Inquiries: The number of times the application performs a query/response action.<br />
+- Internal Files: The number of internal logical files used by the application.<br />
+- External Files: The number of files that the application uses that are maintained by 
+some other program.  </p>
+<p><img alt="fp_complexity" src="../images/fp_complexity.png" />  </p>
+<p><strong>Calculate the Complexity Adjustment Value</strong>: 
+Use the importance rating to assign for each of the items.<br />
+<img alt="importance_rating" src="../images/importance_rating.png" />  </p>
+<p>Factors:<br />
+<img alt="cav_factors_1" src="../images/cav_factors_1.png" /><br />
+<img alt="cav_factors_2" src="../images/cav_factors_2.png" />  </p>
+<p><strong>Calculate Adjusted FP</strong>:  </p>
+<blockquote>
+<p>FP = (raw FP) x (0.65 + 0.01 X CAV)  =&gt;<br />
+FP = (267) x (0.65 + 0.01 X 42) = 285.69  </p>
+</blockquote>
+<h2 id="uml_1">UML</h2>
+<h3 id="common-users-of-uml-diagrams">Common Users of UML Diagrams:</h3>
+<ul>
+<li>Product Owner  </li>
+<li>Business Analyst  </li>
+<li>Architect  </li>
+<li>Operations  </li>
+<li>Quality Assurance  </li>
+<li>Developer  </li>
+</ul>
+<h3 id="building-blocks">Building blocks</h3>
+<p><strong>Things</strong>:<br />
+<img alt="uml_things" src="../images/uml_things.png" /><br />
+<img alt="uml_tings_actions" src="../images/uml_tings_actions.png" />  </p>
+<p><strong>Relationships</strong>:<br />
+<img alt="uml_relationship" src="../images/uml_relationship.png" />  </p>
+<p><strong>Extensions</strong>:<br />
+<img alt="uml_extensions" src="../images/uml_extensions.png" />  </p>
+<h3 id="structural-modeling">Structural Modeling</h3>
+<ul>
+<li>Physical and conceptual parts.  </li>
+<li>Static parts  </li>
+<li>Nouns  </li>
+<li>Types:  <ul>
+<li>Class  </li>
+<li>Component  </li>
+<li>Package  </li>
+<li>Deployment  </li>
+</ul>
+</li>
+</ul>
+<h3 id="class-diagrams">Class Diagrams</h3>
+<ul>
+<li>Identifies Vocabulary  </li>
+<li>Relationships  </li>
+</ul>
+<h4 id="classes">Classes</h4>
+<ul>
+<li>Represents an Entity (Noun):  <ul>
+<li>Attributes  </li>
+<li>Operations  </li>
+</ul>
+</li>
+<li>Omit details if not required  </li>
+<li>Interface  </li>
+</ul>
+<p><img alt="classes_rep" src="../images/classes_rep.png" />  </p>
+<ul>
+<li>Implementation and Inheritance  <ul>
+<li><em>Account</em> Implements the interface <em>IAccount</em>  </li>
+<li><em>CheckingAccount</em> "Is A" <em>Account</em> (Inheritance)  </li>
+<li>Absract Class: <em>Account</em> is an abstract class  </li>
+<li>Concrete Class: <em>CheckingAccount</em> is a concrete class  </li>
+</ul>
+</li>
+</ul>
+<p><img alt="inheritance_implement" src="../images/inheritance_implement.png" />  </p>
+<h4 id="relationships">Relationships</h4>
+<p><img alt="class_relationship" src="../images/class_relationship.png" /><br />
+- Aggregation is a object that can stand alone. "Payee" is a stand alone to "Customer".<br />
+- Composite objects rely on other parts. "Customer" relys on "Address".<br />
+- <strong>Multiplicity</strong> describes how many instances of one class can be connected to an instance of another class through a given association.  </p>
+<p><img alt="basic_class" src="../images/basic_class.png" />  </p>
+<h3 id="component-diagram">Component Diagram</h3>
+<p><img alt="component_dia" src="../images/component_dia.png" />  </p>
+<ul>
+<li>Interfaces:  <ul>
+<li>Realized: "Lolipop" connected to a square port. Service provided by the lolipop.  </li>
+<li>Required: Half-circle, services that need to be built  </li>
+</ul>
+</li>
+<li>Tight connections, two boxes connected between components.  </li>
+<li>Loosely Connected, a half circle connecting to a full circle.  </li>
+</ul>
+<p><img alt="tight_loose" src="../images/tight_loose.png" />  </p>
+<ul>
+<li>Components can be inside components  <ul>
+<li>An arrow pointing in means a resource being supplied  </li>
+<li>An arrow pointing out means a component output. This is a component in a 
+component.<br />
+<img alt="component_inside" src="../images/component_inside.png" />  </li>
+</ul>
+</li>
+</ul>
+<h3 id="package-diagram">Package Diagram</h3>
+<ul>
+<li>Logical Container, showing dependencies and groupings  </li>
+<li>Support Large Models  </li>
+</ul>
+<p><img alt="simple_package" src="../images/simple_package.png" />  </p>
+<ul>
+<li>
+<p>Nested Package  </p>
+<ul>
+<li>Use a Fully Qualified Domain name to access nested components<br />
+<img alt="nested_package" src="../images/nested_package.png" />  </li>
+</ul>
+</li>
+<li>
+<p>Web Client has a dependency on Account Services  </p>
+</li>
+<li>BirthdayBonus is dependent on ChildSavingsPlan</li>
+</ul>
+<p><img alt="basic_package" src="../images/basic_package.png" />  </p>
+<h3 id="deployment-diagram">Deployment Diagram</h3>
+<p><img alt="deploy_basic" src="../images/deploy_basic.png" />  </p>
+<p>Nodes can be represented as an image (stereotyped) or by cubes. Cubes can also 
+be elaborated with details (multiplicity, attributes..).  </p>
+<p><img alt="deploy_nodes" src="../images/deploy_nodes.png" />  </p>
+<h3 id="behavoral-modeling">Behavoral Modeling</h3>
+<ul>
+<li>Functionality<ul>
+<li>Process </li>
+<li>Interactions  </li>
+</ul>
+</li>
+<li>Dynamic Parts  </li>
+<li>Verbs  </li>
+<li>Types of Diagrams:<ul>
+<li>Use Case</li>
+<li>Sequence  </li>
+<li>State  </li>
+<li>Activity  </li>
+</ul>
+</li>
+</ul>
+<h3 id="use-case-diagram">Use Case Diagram</h3>
+<p>Identify what is needed, not how it is implemented</p>
+<p><img alt="use_case_basic" src="../images/use_case_basic.png" />  </p>
+<p><img alt="use_actors" src="../images/use_actors.png" />  </p>
+<ul>
+<li>Generalize: two or more actions are grouped into one action for simplification.  </li>
+</ul>
+<p><img alt="use_case_relations" src="../images/use_case_relations.png" /></p>
+<ul>
+<li>One <em>use case</em> may have many <strong>scenarios</strong>.  <ul>
+<li>In this case, many use case diagrams will have to be created for each scenario.  </li>
+<li>Scenarios:  <ul>
+<li>Steps in process  </li>
+<li>Branches  </li>
+<li>Extensions  </li>
+<li>Exceptions  </li>
+</ul>
+</li>
+<li>Use Case vs. Use Case Diagrams <ul>
+<li>A non-diagram is a text document  </li>
+<li>Pre-Conditions  </li>
+<li>Post-Conditions  </li>
+</ul>
+</li>
+<li>May relate to User Stories  </li>
+</ul>
+</li>
+</ul>
+<h3 id="sequence-diagram">Sequence Diagram</h3>
+<p><img alt="sequence_diagram" src="../images/sequence_diagram.png" />  </p>
+<p>Class:<br />
+- Lifeline: dashedline that shows how long the class is alive.<br />
+- Focus of Control: block on the lifeline<br />
+- X on lifeline to mark that it was deleted  </p>
+<p><img alt="sequence_class" src="../images/sequence_class.png" />  </p>
+<ul>
+<li>Asynchronous messages don't have a dotted return line  </li>
+<li>Sequences can loop, indicated by a box that says loop:<br />
+<img alt="sequence_loop" src="../images/sequence_loop.png" />  </li>
+<li>A box that says "Opt" means this sequence is optional. The condition that triggers 
+the option is called a <strong>Guard Condition</strong> and is written below opt.  </li>
+<li>A box with "alt" is a conditional. Each if/else gaurd clause is separated by a horizontal dash line:<br />
+<img alt="sequence_conditional" src="../images/sequence_conditional.png" />  </li>
+<li>A Parallel box is represented with the word "par". Multiple actions can occur at 
+the same time, indicated within the box by sequences separated by a horizontal dash line.  </li>
+</ul>
+<h3 id="state-diagram">State Diagram</h3>
+<p><img alt="state_diagram" src="../images/state_diagram.png" />  </p>
+<ul>
+<li>
+<p><em>Swim lane</em>: the area for an individual or party responsible for the actions. 
+Represented above with "Customer", "Loan Officer", and "Loan Processor".  </p>
+</li>
+<li>
+<p>Internal behavior describes what methods are taken for each action. In the example 
+below, on entry into the method, another method is called, logPaymentAttempt(). 
+On exit from the method, logConfirmation is performed.  </p>
+</li>
+<li>The start of a state diagram is a solid circle  </li>
+<li>
+<p>The end of a state diagram is a solid circle with a circle around it.<br />
+<img alt="states_states" src="../images/states_states.png" />  </p>
+</li>
+<li>
+<p>The only transitions that won't be labeled are the start state and end state.  </p>
+</li>
+</ul>
+<h3 id="activity-diagrams">Activity Diagrams</h3>
+<p>Similar in looks to a flow chart  </p>
+<p><img alt="activity_diagram" src="../images/activity_diagram.png" />  </p>
+<ul>
+<li><em>Action</em>: single step that cannot logically be broken down  </li>
+<li><em>Activity</em>: multi-step that takes multiple actions  </li>
+<li>Both Activity and Action are represented the same.  </li>
+</ul>
+<p><img alt="activity_flow" src="../images/activity_flow.png" />  </p>
+<h2 id="relational-database-design">Relational Database Design</h2>
+<ul>
+<li>Based on Set Theory  </li>
+<li>First-order predicate logic  </li>
+<li>
+<p>Row (tuple), Column (attribute), Table (relation)  </p>
+</li>
+<li>
+<p>Cod's 12 rules (13 actually):  </p>
+<ul>
+<li>0:Foundation Rule </li>
+<li>1:Information Rule  </li>
+<li>2:Guaranteed Access Rule  </li>
+<li>3:Systematic Treatment of Null Values  </li>
+<li>4:Dynamic On-line Catalog Based on the Relational Model  </li>
+<li>5:Comprehensive Data Sublanguage  </li>
+<li>6:View Updating Rule  </li>
+<li>7:High-level insert, update and delete  </li>
+<li>8:Physical Data Independence  </li>
+<li>9:Logical Data Independence  </li>
+<li>10:Integrity Independence  </li>
+<li>11:Distribution Independence  </li>
+<li>12:Nonsubversion   </li>
+</ul>
+</li>
+</ul>
+<h3 id="data-modeling">Data Modeling</h3>
+<ul>
+<li>Conceptual Data Model  <ul>
+<li>All information in the organization  </li>
+<li>Not necessarily stored in computers  </li>
+</ul>
+</li>
+<li>Logical data model  <ul>
+<li>For storing in computers  </li>
+<li>For a specific database technology  </li>
+<li>Implementation independent  </li>
+</ul>
+</li>
+<li>Physical data model  <ul>
+<li>Optimized for specific vendor  </li>
+<li>Based on logical model  </li>
+</ul>
+</li>
+</ul>
+<h3 id="er-modeling-entity-relation">ER Modeling (Entity-Relation)</h3>
+<ul>
+<li><strong>IDEF1X</strong> notation  </li>
+</ul>
+<h4 id="entity-types">Entity Types</h4>
+<ul>
+<li>Entity: Objects, events, or abstractions  <ul>
+<li>Entity Instance  </li>
+</ul>
+</li>
+<li>Entity Type: describe all instances of the same type.  </li>
+</ul>
+<h4 id="attributes">Attributes</h4>
+<ul>
+<li>Keys:  <ul>
+<li>Composite Key<ul>
+<li>Candidate keys:<ul>
+<li>One primary key </li>
+<li>Zero or more alternate key  </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="relationship">Relationship</h4>
+<ul>
+<li>Identifying relationship: Solid line showing the child is dependent on the parent for its identity and cannot exist without it.  </li>
+<li>Solid lines represent identifying relationships and dashed lines represent non-identifying relationships. In a non-identifying relationship, the foreign key field does not form a part of the parent table's primary key.</li>
+<li>
+<p>Maximum Cardinality:<br />
+<img alt="max_cardinality" src="../images/max_cardinality.png" />  </p>
+</li>
+<li>
+<p>Minimum Cardinality: </p>
+<ul>
+<li>Parent adds a "P" if at least one is required, else it is left as is.  </li>
+<li>A diamond is added from the child if min. is 0.<br />
+<img alt="min_cardinality" src="../images/min_cardinality.png" />  </li>
+</ul>
+</li>
+<li>Read the realation from parent to child. Ex: "League contains Member". The underside can be the 
+child to parent relation. "Member plays in League"  </li>
+<li>Child in a relationship is <strong>weak</strong>, represented with round corners, if it's primary key 
+is dependent on the key of the parent. The parent key is part of the child's primary composite key.   </li>
+<li>A Child with corners is <strong>strong</strong> and has it's own primary key, not related 
+to other tables' primary key.  </li>
+<li>There can be more than one relationship between entities. (The bottom relation is one to one):<br />
+<img alt="multiple_relations" src="../images/multiple_relations.png" /><br />
+Going the other way:<br />
+<img alt="multi_relation_otherway" src="../images/multi_relation_otherway.png" />  </li>
+<li>Many to many relationship:<br />
+<img alt="many_to_may" src="../images/many_to_may.png" />  </li>
+<li>Recursive relation can never be an identifying relationship:<br />
+<img alt="recursive_relation" src="../images/recursive_relation.png" />  </li>
+<li>Normalizing between tables creates a weak relationship with a join table:<br />
+<img alt="normalized_relation" src="../images/normalized_relation.png" />  </li>
+<li>Subtypes:  <ul>
+<li>A board member cannot be a volunteer. A member could be neither board member or volunteer. 
+This is marked with a single horizontal line.      </li>
+<li>A board member is either male or female. Because they have to be one or the other, 
+there is a double horizontal bar for the subtype.      </li>
+<li>Subtypes are one-to-one relationship
+<img alt="subtypes_relation" src="../images/subtypes_relation.png" />  </li>
+</ul>
+</li>
+</ul>
+<p><img alt="er_relations" src="../images/er_relations.png" />  </p>
+<h3 id="create-a-data-model">Create a Data Model</h3>
+<ul>
+<li>Mission statement: Broad overview (I think user story)   </li>
+<li>Interviews:  <ul>
+<li>Management  </li>
+<li>Subject matter experts  </li>
+<li>End users  </li>
+</ul>
+</li>
+<li>Interviewing styles:  <ul>
+<li>Use concrete examples  </li>
+</ul>
+</li>
+<li>Find the relevant constraints  </li>
+<li>Convert the interview responses to <strong>facts</strong>  </li>
+<li>Create the data model  <ul>
+<li>Functional dependencies  </li>
+<li>Normalize the data model  </li>
+</ul>
+</li>
+<li>Reading a mission statement:<br />
+<img alt="read_mission" src="../images/read_mission.png" />  </li>
+</ul>
+<h3 id="creating-the-er-model">Creating the ER model</h3>
+<p><img alt="gen_fact_type" src="../images/gen_fact_type.png" />  </p>
+<ul>
+<li>Find Entity Types  </li>
+<li>All Entity types have an identifying fact type  </li>
+<li>You will have to create your own language for identifying an <em>optional</em> attribute in an Entity.  </li>
+</ul>
+<h3 id="converting-to-relational-database-design">Converting to Relational database Design</h3>
+<h4 id="relational-db-representation">Relational DB representation:</h4>
+<ul>
+<li>Table1(<u>Column1</u>, Column2, Column3)  <ul>
+<li>Very vague. The underlined column is the candidate key(s)  </li>
+<li>Dashed underlines are alternate keys  </li>
+</ul>
+</li>
+<li>
+<p>Another Representaion of DB is Data Description Language (DDL) of SQL:<br />
+<img alt="ddl" src="../images/ddl.png" />  </p>
+</li>
+<li>
+<p>Many to many relationships will have to have a join table  </p>
+</li>
+<li>Generated Column: when attribute is inserted, a check manipulates the value, usually to make it acceptable  </li>
+<li>Asserted column: during an attribute insertion, a check that performs a query on the database to check the value is performed.  </li>
+</ul>
+<h2 id="normalization">Normalization</h2>
+<p>Steps:<br />
+- First Normal Form (1NF)<br />
+- Second Normal Form (2NF)<br />
+- Third Normal Form (3NF) (best option) 
+- Elementary Key Normal Form (EKNF)<br />
+- Boyce-Codd Normal Form (BCNF)<br />
+- 4th
+- 5th<br />
+- Domain/Key Normal Form (DKNF)<br />
+- 6th  </p>
+<h3 id="functional-dependencies">Functional Dependencies</h3>
+<ul>
+<li>Determinant: attribute  A =&gt; attribute B  <ul>
+<li>"Attribute B is functionally dependent on attribute A"  </li>
+<li>Attribute A = Dave  </li>
+<li>Attribute B = No birthday on file  </li>
+<li><em>Attribute A is the Determinant</em>  </li>
+</ul>
+</li>
+<li>Dependent Attribute: attribute B above  </li>
+<li>Trivial Dependency: every attribute depends on itself  </li>
+<li>Derived Attribute: Attribute calculated from other attributes  <ul>
+<li>Storing: Price, tax rate, and taxed amount. Taxed amount is derived.  </li>
+<li>Avoid derived attributes  </li>
+</ul>
+</li>
+</ul>
+<h3 id="first-normal-form">First Normal Form</h3>
+<ul>
+<li>Every table must have a key  </li>
+<li>Candidate keys: attributes that could qualify as primary keys or alternate keys  <ul>
+<li>All attributes must be dependent on the Candidate Key  </li>
+</ul>
+</li>
+</ul>
+<h2 id="agile_1">Agile</h2>
+<p>Sprint Board. PBI is "Product Backlog Item". Minimize works in progress (WIP).
+Managed by Developers.  Burndown chart measures the developer's approach to completion.  <br />
+<img alt="sprint_board" src="../images/sprint_board.png" />  </p>
+<p>Burn-up Chart: The line at the top represents items that have to be completed.<br />
+<img alt="burnup_chart" src="../images/burnup_chart.png" />  </p>
+<p>Estimation Wall: Team members place tasks in the column where they feel it matches the task time duration. 
+Other members can move/change once placed.<br />
+<img alt="estimation_wall" src="../images/estimation_wall.png" />  </p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/charles-lucas-young/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["toc.integrate"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../../javascripts/drawer-toggle.js"></script>
+      
+        <script src="../../../../javascripts/header-title.js"></script>
+      
+        <script src="../../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

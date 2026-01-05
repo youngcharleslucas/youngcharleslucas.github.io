@@ -1,0 +1,4507 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://youngcharleslucas.github.io/Garage/WGU_Notes/C960_Discrete_Math_II/C960_Discrete_Math_II/">
+      
+      
+        <link rel="prev" href="../../C951_AI/C951_ai/">
+      
+      
+        <link rel="next" href="../../D268_Communication/D268_Communication/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../assets/images/dot-circles.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+  <title>Charles Young</title>
+
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Serif+4:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Source Serif 4";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#unit-1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Young/*" class="md-header__button md-logo" aria-label="Young/*" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 3h18v18H3zm2 2v14h14V5z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Young/*
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Unit 1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Young/*" class="md-nav__button md-logo" aria-label="Young/*" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 3h18v18H3zm2 2v14h14V5z"/></svg>
+
+    </a>
+    Young/*
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    { Bio }
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Garage
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Garage
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Quotes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quotes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Setting up MakeDocs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Library
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Library
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_1" id="__nav_2_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Structures and Algos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Structures and Algos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Data_Structures_and_Algos/basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Algorithms
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_2" id="__nav_2_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Frontend Masters
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Frontend Masters
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_2_1" id="__nav_2_3_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aws frontend v2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Aws frontend v2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Frontend_Masters/aws_frontend_v2/aws_frontend_v2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS for Fronted Engineers v2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_2_2" id="__nav_2_3_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    React v18
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    React v18
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Frontend_Masters/react_v18/intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    React 19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Frontend_Masters/react_v18/jsx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    JSX
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Frontend_Masters/react_v18/react/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    React
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Library/Frontend_Masters/react_v18/testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WGU Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    WGU Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_1" id="__nav_2_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C191 Operating Systems
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C191 Operating Systems
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C191_Operating_Systems/c191_Operating_Systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1 Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_2" id="__nav_2_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C949 Data Structures I
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C949 Data Structures I
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C949_Data_Structures_I/C949_Data_Structures_I/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C949 Data Structures I
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_3" id="__nav_2_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C950 Data Structures II
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C950 Data Structures II
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C950_Data_Structures_II/C950_Data_Structures_II/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson 1 Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_4" id="__nav_2_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C951 AI
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C951 AI
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C951_AI/C951_ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C951 Artificial Intelligence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_5" id="__nav_2_4_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C960 Discrete Math II
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C960 Discrete Math II
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit 1
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#some-algorithms-to-look-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Some algorithms to look up:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-algorithms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Algorithms
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-algorithm-structures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Algorithm Structures
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-introduction-to-algorithms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 Introduction to Algorithms
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-if-then-algorithms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4 If-then algorithms
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.4 If-then algorithms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#if-statements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        If-statements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-else-statements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        If-else statements
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-for-loop-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5 For-loop algorithm
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-while-loop-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6 While-loop algorithm
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-nested-loop-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.7 Nested loop algorithm
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-analyzing-algorithms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.8 Analyzing Algorithms
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-computational-complexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.9 Computational complexity
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.9 Computational complexity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#algorithm-fibonacci-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Algorithm Fibonacci-1
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#110-evaluating-algorithm-complexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.10 Evaluating algorithm complexity
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#111-worst-case-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.11 Worst-case analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#112-big-o-estimates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.12 Big-O Estimates
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#113-asymptotic-growth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.13 Asymptotic growth
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.13 Asymptotic growth">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rule-of-thumb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rule of Thumb:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asymptotic-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Asymptotic Notation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#114-algorithms-and-big-o" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.14 Algorithms and big-O
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_6" id="__nav_2_4_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D268 Communication
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D268 Communication
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D268_Communication/D268_Communication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_7" id="__nav_2_4_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D284 Software Engineering
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D284 Software Engineering
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D284_Software_Engineering/D284_Software_Engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D284 Software Engineering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8" id="__nav_2_4_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D287 Java Frameworks
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D287 Java Frameworks
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_1" id="__nav_2_4_8_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Additional Material
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Additional Material
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Additional_Material/Additional_Material/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Additional Material
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_2" id="__nav_2_4_8_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Collections
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Collections
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Collections/Collections/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Collections
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_3" id="__nav_2_4_8_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exceptions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Exceptions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Exceptions/Exceptions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exceptions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_4" id="__nav_2_4_8_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Generics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Generics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Generics/Generics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Generics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_5" id="__nav_2_4_8_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Searching and Algorithms
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Searching and Algorithms
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Searching_and_Algorithms/Search_and_Algo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Searching and Algorithm
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_6" id="__nav_2_4_8_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit Testing
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unit Testing
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D287_Java_Frameworks/Unit_Testing/Unit_Testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unit Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_9" id="__nav_2_4_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D288 Backend Programming
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D288 Backend Programming
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D288_Backend_Programming/D288_Backend_Programming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D288 Backend Programming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_10" id="__nav_2_4_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D333 Ethics in Tech
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D333 Ethics in Tech
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D333_Ethics_in_Tech/D333_ethics_in_tech/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ethics in Technology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_11" id="__nav_2_4_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D336 Business IT
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D336 Business IT
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D336_Business_IT/D336_business_it/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D336 ITIL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_12" id="__nav_2_4_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D387 Advanced Java
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D387 Advanced Java
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D387_Advanced_Java/D387_Advanced_Java/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D387 Advanced Java
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_13" id="__nav_2_4_13_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D480 Software QA
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    D480 Software QA
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../D480_Software_QA/D480_Software_QA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D480 Software Engineering and Quality Assurance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="unit-1">Unit 1</h1>
+<h4 id="some-algorithms-to-look-up">Some algorithms to look up:</h4>
+<p>https://www.youtube.com/watch?v=DjYZk8nrXVY</p>
+<ul>
+<li>
+<p>Prefix Sum  </p>
+</li>
+<li>
+<p>Two Pointers  </p>
+</li>
+<li>
+<p>Sliding Window  </p>
+</li>
+<li>
+<p>Fast and Slow pointers  </p>
+</li>
+<li>
+<p>Linked-List in place reversal  </p>
+</li>
+<li>
+<p>Monotonic Stack  </p>
+</li>
+<li>
+<p>Top 'k' Element  </p>
+<ul>
+<li>
+<p>Find 'k' largest: use min heap </p>
+</li>
+<li>
+<p>Find 'k' smallest: use max heap  </p>
+</li>
+</ul>
+</li>
+<li>
+<p>Overalpping Intervals  </p>
+</li>
+<li>
+<p>Modified Binary Search  </p>
+</li>
+<li>
+<p>Binary Tree Traversal  </p>
+</li>
+<li>
+<p>Depth First Search  </p>
+</li>
+<li>
+<p>Breadth First Search  </p>
+</li>
+<li>
+<p>Matrix Traversal  </p>
+</li>
+<li>
+<p>Back Tracking  </p>
+</li>
+<li>
+<p>Dynamic Programming  </p>
+</li>
+</ul>
+<h2 id="11-algorithms">1.1 Algorithms</h2>
+<h2 id="12-algorithm-structures">1.2 Algorithm Structures</h2>
+<p>Module 1 will cover these lessons:  </p>
+<ul>
+<li>Introduction to algorithms</li>
+<li>If-then algorithms</li>
+<li>For-loop algorithms</li>
+<li>While-loop algorithms</li>
+<li>Nested loop algorithms</li>
+</ul>
+<h2 id="13-introduction-to-algorithms">1.3 Introduction to Algorithms</h2>
+<p>An <strong>algorithm</strong> is a step-by-step method for solving a problem. A description 
+of an algorithm specifies the input to the problem, the output to the problem, 
+and the sequence of steps to be followed to obtain the output from the input.</p>
+<p>There are three basic building blocks of an algorithm: </p>
+<ul>
+<li>assignments: values to variables  </li>
+<li>conditional statements: direct flow of steps  </li>
+<li>loops: allow for steps to be repeated  </li>
+</ul>
+<p>A description of an algorithm usually includes:</p>
+<ul>
+<li>A name for the algorithm  </li>
+<li>A brief description of the task performed by the algorithm  </li>
+<li>A description of the input  </li>
+<li>A description of the output  </li>
+<li>A sequence of steps to follow  </li>
+</ul>
+<h2 id="14-if-then-algorithms">1.4 If-then algorithms</h2>
+<h3 id="if-statements">If-statements</h3>
+<p>"if" statements are branches?</p>
+<h3 id="if-else-statements">If-else statements</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>if (condition)  
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    one or more steps  
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Else 
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    one or more steps  
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>End-if
+</span></code></pre></div>
+<h2 id="15-for-loop-algorithm">1.5 For-loop algorithm</h2>
+<p>An <strong>iteration</strong> is a process where a set of instructions or structures are 
+repeated in a sequence a specified number of times or until a condition is met.  </p>
+<p>To control the iterations, <strong>for-loops</strong> use an <strong>index</strong> or a counter and a variable 
+that counts how many times a step or a block of steps executes.  </p>
+<h2 id="16-while-loop-algorithm">1.6 While-loop algorithm</h2>
+<p>A <strong>while-loop</strong> iterates an unknown number of times, ending when a certain 
+condition becomes false.</p>
+<h2 id="17-nested-loop-algorithm">1.7 Nested loop algorithm</h2>
+<p>Placing a loop within another loop is known as nesting. When a loop exists 
+within another loop, it is called a <strong>nested loop</strong>.  </p>
+<p>The nested loop, known as the <strong>inner loop</strong>  </p>
+<h2 id="18-analyzing-algorithms">1.8 Analyzing Algorithms</h2>
+<p>This module contains three lessons:</p>
+<ul>
+<li>Computational complexity</li>
+<li>Evaluating algorithm complexity</li>
+<li>Worst-case analysis  </li>
+</ul>
+<h2 id="19-computational-complexity">1.9 Computational complexity</h2>
+<p>How do you know which algorithm is more efficient? By counting the operations 
+that will happen for an input of any size, you would be able to see how their 
+resource requirements grow.  </p>
+<p><strong>Algorithm complexity</strong>: which is the study of the efficacy of algorithms</p>
+<ul>
+<li>
+<p><strong>time complexity</strong>: the time the algorithm requires to run. time depends on 
+the speed of the processing unit, the number of calculations that need to be 
+performed, the number of conditions that need to be evaluated, or the number 
+of iterations to be completed by the loops.  </p>
+</li>
+<li>
+<p><strong>space complexity</strong>: the amount of memory used. The values of all variables, 
+including the values of the input variables and all other values that will be 
+computed, need to be stored somewhere in the memory of the system—in the RAM, 
+hard drive, or external devices.  </p>
+</li>
+</ul>
+<p>Time and space efficiency are measured in terms of the input size.  </p>
+<h3 id="algorithm-fibonacci-1">Algorithm Fibonacci-1</h3>
+<p 13_="13," 144...="144..." 1_="1," 21_="21," 2_="2," 34_="34," 3_="3," 55_="55," 5_="5," 89_="89," 8_="8,">The first two elements of the Fibonacci sequence are both 1: </p>
+<p>The algorithm calculates the Nth element of the Fibonacci sequence by calculating 
+all terms:  </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>F[1] :=1
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>F[2]:=1
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>For i:=3 to n
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    F[i] := F[i-1]+F[i- 2]
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>End-for
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>Return (F[n])
+</span></code></pre></div>
+<p>This one has a constant runtime, the one above grows with n:  </p>
+<p><img alt="Fibonacci Constant Runtime" src="../images/fib_2_constant.png" />  </p>
+<h2 id="110-evaluating-algorithm-complexity">1.10 Evaluating algorithm complexity</h2>
+<p>** Atomic Operations**: each algorithm uses assignments, conditional statements, 
+and loops, and performs a variety of operations, such as addition and 
+multiplication. These operations (e.g., addition, multiplication, comparison) 
+that one would find in a single line of pseudocode, are referred to as atomic 
+operations. They are called "atomic," because they cannot be split any further; 
+a computer would evaluate each in one step.   </p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Max: = 0                            # Atomic operation note 1
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>For i: =1 to n                      # Atomic operation note 2 and 3  
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    If (a[i] &gt; Max), Max: = a[i]    # Atomic operation note 4
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>End-for
+</span></code></pre></div>
+- Note 1: The atomic operation of assignment, <code>Max: = 0</code>, occurs once.</p>
+<ul>
+<li>
+<p>Note 2: In the first iteration of the for loop, two atomic operations take place. 
+<code>i:= 1</code> as an assignment and <code>i&lt;n</code> for a conditional statment. These 2, plus 
+the one assignment above, create 3 atomic operations on the first iteration.  </p>
+</li>
+<li>
+<p>Note 3: On the preceeding iterations of the for loop, <code>i:= 1</code> i will increment,
+and <code>i&lt;n</code> the conditional statement will execute again. Since the loop is iterating
+<code>n</code> times, and everytime it iterates these two atomic operations occur, the count 
+is <code>2n + 3</code>. The three from the first iteration are added. </p>
+</li>
+<li>
+<p>Note 4: <code>a[i] &gt; Max</code> is always performed to determine if branching is needed. 
+This occurs <code>n</code> times, so add to the previous equation <code>(2n + 3) + n</code> is equal to 
+<code>3n +3</code>. This will <strong>represents the best case scenario</strong> because <code>Max:= a[i]</code> is 
+never called. <strong>Worst case scenario</strong> <code>Max:= a[i]</code> is called on every iteration 
+of <code>n</code>. That will add to what was the best case scenario <code>(3n + 3) + n</code> which is 
+<code>4n + 3</code>.</p>
+</li>
+</ul>
+<p>Since Atomic operations 2 and 3 occur every time, this adds <code>2n</code> operations to 
+the count.  </p>
+<p>Observe the following atomic operations:</p>
+<ul>
+<li>Assigning a value to a variable</li>
+<li>Looking up the value of a particular element in a sequence</li>
+<li>Comparing two values</li>
+<li>Incrementing a value (and/or arithmetic operations such as addition and multiplication)</li>
+</ul>
+<p>Recall that a <strong>sequence</strong> is an ordered set of elements—a list of numbers or 
+objects in a special order.  </p>
+<h2 id="111-worst-case-analysis">1.11 Worst-case analysis</h2>
+<h2 id="112-big-o-estimates">1.12 Big-O Estimates</h2>
+<p>This module contains two lessons:</p>
+<ul>
+<li>Asymptotic growth</li>
+<li>Algorithms and big-O  </li>
+</ul>
+<h2 id="113-asymptotic-growth">1.13 Asymptotic growth</h2>
+<p>Keeping track of all the constant factors can be overwhelming. Instead computer 
+scientists use a special type of language, <strong>asymptotic notations</strong>, to 
+determine running time without keeping track of constant factors and to capture 
+how the running time of the algorithm grows with the size of the input.  </p>
+<p><strong>asymptotic complexity</strong>: the behavior of the complexity function as n grows.  </p>
+<p>Eventually, we arrived at the function F(n) = n, which is the <strong>asymptotic run time function</strong> 
+of the algorithm. The function is void of constants and it only retains the 
+fastest growing component of the atomic operations counting function.</p>
+<p>As a refresher: for an exponential function, the coefficient of the exponent is 
+irrelevant to assessing the growth of the function, so the asymptotic run 
+function is usually expressed as 2n; whereas, a logarithmic function is 
+expressed without the need for specifying the base. So, the asymptotic run time 
+function for:</p>
+<ul>
+<li>f(n) = 1,000,032 is 1</li>
+<li>f(n) = 100033<sup>3n</sup> is 2n</li>
+<li>f(n) = log<sub>10003</sub> n is log(n)  </li>
+</ul>
+<p>This filter of "dropping all factors" and of "keeping the largest growing term" 
+as described above is what we call <strong>asymptotic behavior</strong>. </p>
+<h3 id="rule-of-thumb">Rule of Thumb:</h3>
+<ul>
+<li>
+<p>Simple programs can be analyzed by counting the nested loops of the program.</p>
+</li>
+<li>
+<p>A single loop over n items yields asymptotic complexity n.</p>
+</li>
+<li>
+<p>If you have a program that calls a function within a loop and you know the 
+number of atomic operations the called function performs, it is easy to 
+determine the number of atomic operations of the whole program. For example, 
+let’s consider the following algorithm:</p>
+</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>For i: = 1 to n
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    f(n)
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>End-for
+</span></code></pre></div>
+<ul>
+<li>
+<p>Since you know that f(n) is a function that performs exactly n instructions, 
+you then know that the number of instructions of the whole program is 
+asymptotically n2, as the function is called exactly n times.</p>
+</li>
+<li>
+<p>Given a series of for-loops that are sequential, the slowest of them 
+determines the asymptotic behavior of the program.</p>
+</li>
+<li>
+<p>Two nested loops followed by a single loop is asymptotically the same as 
+the nested loops alone, because the nested loops dominate the simple loop.</p>
+</li>
+</ul>
+<h3 id="asymptotic-notation">Asymptotic Notation</h3>
+<p>There are three types of asymptotic notation that are commonly used in 
+algorithmic analysis, O(n) ("big-O"), Ω(n) ("Omega"), and &theta;(n) ("Theta").</p>
+<ul>
+<li>
+<p>The big-O notation—O(n)—serves as a rough upper bound for functions 
+(disregarding constants and small input values).</p>
+</li>
+<li>
+<p>The Ω notation—Ω(n)—is similar to big-O, except that it provides a lower bound 
+on the growth of a function.</p>
+</li>
+<li>
+<p>The Θ notation—Θ(n)—indicates how the algorithm performs for any case. This is 
+referred to as an average time or random case function and, when possible, gives 
+us a sense of how the algorithm performs in any case. Note that it is often 
+possible to estimate upper and lower bounds, but not average cases especially 
+if there are complex branching in the code.</p>
+</li>
+</ul>
+<h2 id="114-algorithms-and-big-o">1.14 Algorithms and big-O</h2>
+<p>Big-O is the notation used to state that a function is the upper bound for the 
+asymptotic complexity, while big-Omega is used for a lower bound. In other 
+terms, when an algorithm is said to be <em>O(f(n)), then its asymptotic complexity</em> 
+<em>never surpasses f(n)</em>, and when an algorithm is <em>Ω(g(n)) then its complexity is</em> 
+<em>never smaller than g(n)</em>. The functions f(n) and g(n) are called upper and lower 
+bounds of the asymptotic complexity of the algorithm and the following is true 
+by definition: Ω(f(n)) ≤ Θ(f(n)) ≤ O(f(n)).</p>
+<p><img alt="O and Theta Comparisons" src="../images/o_omeg_comparisons.png" />  </p>
+<h1 id="unit-2">Unit 2</h1>
+<h2 id="21-number-theory-and-cryptography">2.1 Number Theory and Cryptography</h2>
+<p>Material in this Unit  </p>
+<ul>
+<li>Division algorithm</li>
+<li>Modular arithmetic and multiplication</li>
+<li>Congruence mod n</li>
+<li>Prime factorization, greatest common divisor (GCD), and least common multiple (LCM)</li>
+<li>Number representations</li>
+<li>Fast exponentiation  </li>
+</ul>
+<h2 id="22-divisibility-and-modular-arithmetic">2.2 Divisibility and Modular Arithmetic</h2>
+<p>This page marks the beginning of Module 4. This module contains three lessons:</p>
+<ul>
+<li>The division algorithm</li>
+<li>Modular arithmetic and multiplication</li>
+<li>Congruence modulo  </li>
+</ul>
+<h2 id="23-the-division-algorithm">2.3 The division algorithm</h2>
+<p><strong>Modular arithmetic</strong> has division, addition, multiplication, and subtraction 
+operations. The good news is that modular arithmetic only uses integers-no 
+fractional or decimal values.  </p>
+<p><strong>number theory</strong> the branch of mathematics concerned with the study of integers.   </p>
+<h3 id="integer-division">Integer Division</h3>
+<p><strong>Integer division</strong>: the input and output values must always be integers. 
+For example, when the number 9 is divided by 4, the answer is 2 with a 
+remainder of 1, instead of 2.25.  </p>
+<p><img alt="Divides Integers" src="../images/divide_integer.png" />  </p>
+<p>If a number x divides two different numbers, y and z, then x divides any linear 
+combination of y and z.   </p>
+<p>A <strong>linear combination</strong> of two numbers is the sum of multiples of those numbers. 
+For example, 3x - 7y and -2x + 4y are both linear combinations of x and y.  </p>
+<p>A statement about a generic linear combination uses variables to denote the 
+integer coefficients. For example, sx + ty is a linear combination of x and y.  </p>
+<ul>
+<li>Let x, y, and z be integers. If x|y and x|z, then x|(sy + tz) for any integers s and t.  </li>
+</ul>
+<h3 id="quotients-and-remainders">Quotients and remainders</h3>
+<p>If x does not divide y, then there is a non-zero remainder when x is divided 
+into y. </p>
+<p><strong>Division Algorithm</strong> states that the result of the division (the quotient) and 
+the remainder are unique:</p>
+<ul>
+<li>
+<p>Let n be an integer and let d be a positive integer. Then, there are unique 
+integers q and r, with 0 ≤ r ≤ d - 1, such that n = qd + r.  </p>
+</li>
+<li>
+<p>In the Division Algorithm, the number q is called the <strong>quotient</strong> and the number 
+r is called the <strong>remainder</strong>. The operations <strong>div</strong> and <strong>mod</strong> produce the quotient and 
+the remainder as a function of n and d.</p>
+<ul>
+<li>
+<p>q = n div d</p>
+</li>
+<li>
+<p>r = n mod d</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Division Algorithm</strong><br />
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a># Input: Integers n and d &gt; 0.
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a># Output: q = n div d, and r = n mod d.
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a># Case 1: n ≥ 0.
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>q := 0
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>r := n
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>While ( r ≥ d )
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>      q := q + 1
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>      r := r - d
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>End-While
+</span></code></pre></div></p>
+<p><img alt="Negative Division Modulous" src="../images/negative_division_mod.png" /> </p>
+<p>When finding the division of a negative number, overshoot the division by 1, like:</p>
+<p><img alt="Negative Division Example" src="../images/negative_mod_division_ex.png" />  </p>
+<h2 id="24-modular-arithmetic-and-multiplication">2.4 Modular arithmetic and multiplication</h2>
+<p>For example, if we wanted to know the date 19 days from January 23, we could 
+add 23 + 19 and get January 42. However, there's no such date as January 42, 
+so in order to calculate the date you need to use <strong>modular addition</strong>.  </p>
+<p>The operation defined by adding two numbers and applying modulo n to the 
+result is called <strong>addition modulo n</strong>:</p>
+<ul>
+<li><code>(2 + 4) mod 5 = 1</code></li>
+</ul>
+<p>The operation defined by multiplying two numbers and applying modulo n to the 
+result is called <strong>multiplication modulo n</strong>.  </p>
+<ul>
+<li><code>(2*6) mod 5 = 4</code>  </li>
+</ul>
+<h2 id="25-congruence-modulo-n">2.5 Congruence modulo n</h2>
+<p>Or perhaps, more simply, recall that military time of 15:00 hours will show 
+as 3:00 on a circular, analog clock face. Both of these are examples of 
+<strong>congruence</strong>, which means the same measure.  </p>
+<p><strong>Congruence in modular arithmetic</strong> is the same principle. For example, 13 
+mod 4 and 29 mod 4 are congruent since the remainder of 13 mod 4 is 1 and the 
+remainder of 29 mod 4 is also 1.</p>
+<p>Why is it important to know about congruence? In cryptography, one of the most 
+important concepts protecting encryption keys is the idea of a number being 
+divisible by very large prime numbers. Modular congruence is used frequently to 
+determine divisibility of integers.  </p>
+<h3 id="congruence-modulo-n">Congruence modulo n</h3>
+<blockquote>
+<p>Let n be an integer greater than 1. Let x and y be any two integers. Then x 
+is <strong>congruent to y modulo n</strong> if x mod n = y mod n. The fact that x is congruent 
+to y modulo n is denoted:
+x  ≡  y (mod n).  </p>
+</blockquote>
+<h3 id="alternate-characterization-of-congruence-modulo-n">Alternate characterization of congruence modulo n</h3>
+<blockquote>
+<p>Let n be an integer greater than 1. Let x and y be any two integers. 
+Then x  ≡  y (mod n) if and only if n|(x - y).  </p>
+</blockquote>
+<h3 id="exponentiation-modulo-71">Exponentiation modulo 71</h3>
+<p>Instead of 13<sup>158</sup> mod 71, which is computationally heavy:  </p>
+<blockquote>
+<p>The following theorem states that in computing arithmetic expressions with 
+multiplication and addition operations modulo n, taking partial results modulo 
+n does not change the final result.</p>
+</blockquote>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>p := 13
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>For i:= 1 to 158
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>      p := (13*p) mod 71
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>End-for
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>Return(p)
+</span></code></pre></div>
+<h3 id="alternative-notation-for-modular-arithmetic">Alternative notation for modular arithmetic</h3>
+<p>Instead of <code>x=y(mod n)</code>, say 'doing operations in <strong>Z</strong><sub>n</sub>.</p>
+<p><strong>Z</strong><sub>n</sub> refers to a set of integers {0, 1, 2,...,n-1} along with the 
+arithmetic operations mod n (+ mod n, - mod n, x mod n).  Note there is no  ÷ mod n.  </p>
+<h3 id="computing-arithmetic-operations-modulo-n">Computing arithmetic operations modulo n</h3>
+<blockquote>
+<p>Let n be an integer larger than 1. Let x and y be any integers. Then:  </p>
+</blockquote>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>[(x mod n) + (y mod n)] mod n = [x + y] mod n
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>[(x mod n)(y mod n)] mod n = [x·y] mod n
+</span></code></pre></div>
+<blockquote>
+<p>Alternatively, we could say that addition in Z is compatible with addition in 
+Zn. That is, we could reduce first and then do the operation, or we could do 
+the operation and then reduce. Often it simplifies the calculation to reduce as 
+much as possible as a first step.</p>
+</blockquote>
+<p><img alt="Computing Arithmetic Expressions modulo n" src="../images/mod_arithmetic_express.png" />  </p>
+<h2 id="26-prime-factorization-gcd-and-euclids-algorithm">2.6 Prime Factorization, GCD, and Euclid's Algorithm</h2>
+<p>This page marks the beginning of Module 5. This module contains six lessons:</p>
+<ul>
+<li>Prime factorization</li>
+<li>Greatest common denominators (GCD) and least common multiple (LCM)</li>
+<li>Factoring and primality testing</li>
+<li>Euclidean algorithm</li>
+<li>Extended Euclidean algorithm</li>
+<li>Multiplicative inverse and Euclidean algorithm  </li>
+</ul>
+<h2 id="27-prime-factorizations">2.7 Prime factorizations</h2>
+<h3 id="prime-and-composite-numbers">Prime and composite numbers</h3>
+<p>A number p is <strong>prime</strong> if it is an integer greater than 1 and its only factors 
+are 1 and p.  </p>
+<p>A positive integer is <strong>composite</strong> if it has a factor other than 1 or itself. </p>
+<p>Every positive integer greater than one can be expressed as a product of primes
+called its <strong>prime factorization</strong>.  </p>
+<p>The fact that every integer greater than one has a unique prime factorization 
+is central to number theory and is called <strong>The Fundamental Theorem of Arithmetic</strong>.</p>
+<h3 id="the-fundamental-theorem-of-arithmetic">The Fundamental Theorem of Arithmetic</h3>
+<blockquote>
+<p>Every positive integer other than 1 can be expressed uniquely as a product of 
+prime numbers where the prime factors are written in non-decreasing order.  </p>
+</blockquote>
+<p>A <strong>non-decreasing sequence</strong> is a sequence in which each number is equal to or 
+greater than the one that came before. For example, 1, 1, 2, 3, 17 is an example 
+of a non-decreasing sequence, whereas the sequence 1, 1, 3, 2, 17 is not 
+non-decreasing because 2 comes after 3. The number 120 has many prime 
+factorizations. For example, 2·2·3·2·5 and 2·5·2·2·3 are both prime 
+factorizations of 120. However, there is only one prime factorization of 120 in 
+which the prime numbers are written in non-decreasing order: 2·2·2·3·5.  </p>
+<p>The <strong>multiplicity of a prime factor</strong> p in a prime factorization is the number of 
+times p appears in the product of primes. For example, in the prime factorization 
+of 120 given above, the multiplicity of 2 is 3 and the multiplicity of 3 is 1. </p>
+<p>For example, the exponential notation for the prime factorization for 120 is:</p>
+<blockquote>
+<p>120 = 2<sup>3</sup> x 3 x 5  </p>
+</blockquote>
+<h2 id="28-greatest-common-division-and-least-common-multiple">2.8 Greatest common division and least common multiple</h2>
+<p>Prime factorization is important because it is used to determine the greatest 
+common divisor (GCD) and the least common multiple (LCM) of integers, which is 
+also needed to develop encryption keys.  </p>
+<h3 id="greatest-common-divisors-and-least-common-multiples">Greatest common divisors and least common multiples</h3>
+<p>The <strong>greatest common divisor (GCD)</strong> of non-zero integers x and y is the largest 
+positive integer that is a factor of both x and y.</p>
+<p>The <strong>least common multiple (LCM)</strong> of non-zero integers x and y is the smallest 
+positive integer that is an integer multiple of both x and y.  </p>
+<p>Two numbers are said to be <strong>relatively prime</strong> if their greatest common divisor is 1.  </p>
+<p>Note that any number raised to the power 0 is just 1, so multiplying by 
+5<sup>0</sup> or 3<sup>0</sup> does not change the value of the number.  </p>
+<p>Find the GCD and LCM of 24 and 50: </p>
+<ul>
+<li>Perform prime factorization:  </li>
+</ul>
+<blockquote>
+<p>24 = 2<sup>3</sup> x 3<sup>1</sup> x 5<sup>0</sup><br />
+50 = 2<sup>1</sup> x 3<sup>0</sup> x 5<sup>2</sup>  </p>
+</blockquote>
+<ul>
+<li>Find the greatest common factor shared:  </li>
+</ul>
+<blockquote>
+<p>GCD(24,50) = 2<sup>min(3,1)</sup> x 3<sup>min(1,0)</sup> x 5<sup>min(0,2)</sup> = 2  </p>
+</blockquote>
+<ul>
+<li>The least common multiple can be determined by using the larger of the two exponents 
+for each prime number appearing in the prime factorization:</li>
+</ul>
+<blockquote>
+<p>LCM(24,50) = 2<sup>max(3,1)</sup> x 3<sup>max(1,0)</sup> x 5<sup>max(0,2)</sup>
+= 2<sup>3</sup> x 3<sup>1</sup> x 5<sup>0</sup> = 600  </p>
+</blockquote>
+<p><img alt="GCM and LCM Theorem" src="../images/lcm_gcm_theorem.png" />  </p>
+<h2 id="29-factoring-and-primality-testing">2.9 Factoring and primality testing</h2>
+<h3 id="primality-testing">Primality testing</h3>
+<p>Primality Testing: </p>
+<ul>
+<li>
+<p>Input: Integer N greater than 1.</p>
+</li>
+<li>
+<p>Output: "Prime" if N is prime and "Composite" if N is composite.</p>
+</li>
+</ul>
+<p>Factoring: </p>
+<ul>
+<li>
+<p>Input: Integer N greater than 1.</p>
+</li>
+<li>
+<p>Output: "Prime" if N is prime. If N is composite, return two integers greater 
+than 1 whose product is N.</p>
+</li>
+</ul>
+<p>A <strong>brute force</strong> algorithm solves a problem by exhaustively searching all 
+possible solutions without using an understanding of the mathematical structure 
+in the problem to eliminate steps.  </p>
+<p>This is to find the prime factorization of a number</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a># Brute force algorithm for factoring
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a># Input: Integer N greater than 1.
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a># Output: &quot;Prime&quot; if N is prime, else &quot;Composite&quot; if N is composite.
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>For x = 2 to N-1
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>      If x evenly divides N,
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>            Return( &quot;Composite&quot; )
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>End-for
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>Return( &quot;Prime&quot; ) 
+</span></code></pre></div>
+<p>For a number with 110 digits, running the brute force algorithm would not finish 
+in our lifetime.  </p>
+<p>The procedure can be shortened using the fact that there is no need to test 
+factors past &#8730;(N) due to the theorem below:</p>
+<blockquote>
+<p><strong>Small factors</strong><br />
+If N is a composite number, then N has a factor greater than 1 and at most &#8730;(N).  </p>
+</blockquote>
+<p>Because every composite number N has a factor that is at most &#8730;(N), the 
+loop in the factoring algorithm can stop as soon as it gets past &#8730;(N) 
+instead of N. Note that although &#8730;(N) may not be an integer, the factor 
+must be an integer. Therefore, the last potential factor to test is floor(&#8730;(N))  </p>
+<p><img alt="Better Brute Force" src="../images/slightly_better_brute.png" />  </p>
+<p>The reason that RSA is used with such confidence to transmit sensitive information 
+is because researchers believe that there is no efficient algorithm for factoring.  </p>
+<p>Subtract one from the sqrt of the number, because the count will begin at 2:<br />
+<img alt="Brute Example" src="../images/brute_force_example.png" />  </p>
+<h3 id="the-prime-number-theorem">The prime number theorem</h3>
+<p>The Greek mathematician Euclid around 300 B.C. proved that there are 
+<em>Infinite Prime Numbers</em>  </p>
+<p>The Prime Number Theorem says how dense primes numbers are among the integers:</p>
+<p><img alt="Prime Number Theorem" src="../images/prime_number_theorem.png" />  </p>
+<p><strong>Question</strong>
+Consider a random integer selected from the range from 2 to 1,000,000,000,000. 
+Approximately, what are the chances that the selected number is prime?</p>
+<p>Use the equation <code>1/ln(x)</code>. So 1/ln(1,000,000,000,000) = 0.036  </p>
+<p><strong>Question</strong><br />
+Use the prime number theorem to give an approximation for the number of prime 
+numbers in the range 2 through 10,000,000.</p>
+<p>10,000,000 = 10<sup>7</sup>. The number of prime numbers in the range 2 through 107 is 
+approximately 10<sup>7</sup>/ln(10<sup>7</sup>) ≈ 620421.  </p>
+<h2 id="210-euclidean-algorithm">2.10 Euclidean algorithm</h2>
+<p>In this lesson, you'll get to learn how to use Euclid's algorithm, a very old 
+method, to find the GCD of two numbers without having to find their prime 
+factorizations first.  </p>
+<p><strong>GCD Theorem</strong>:</p>
+<blockquote>
+<p>Let x and y be two positive integers. Then GCD(x, y) = GCD(y mod x, x).</p>
+</blockquote>
+<p>Suppose that x and y are large numbers and that x &lt; y. According to the GCD 
+theorem, y can be replaced with (y mod x) in the computation of GCD(x, y) and 
+the result will be the same.   </p>
+<h3 id="euclids-algorithm-for-finding-the-greatest-common-divisor">Euclid's algorithm for finding the greatest common divisor</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Input: Two positive integers, x and y.
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>Output: GCD(x, y).
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>If ( y &lt; x )
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>      Swap x and y.
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>r := y mod x.
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>While ( r ≠ 0 )
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>      y := x
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>      x := r.
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>      r := y mod x.
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>End-while
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>
+</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>Return( x )
+</span></code></pre></div>
+<p><strong>Question</strong> </p>
+<p>Find the GCD of 675 and 210.</p>
+<p>The x in this equation is 210, since 210 &lt; 675.  675 is y.  </p>
+<blockquote>
+<p>GCD(y,x) =&gt; GCD(675, 210)</p>
+</blockquote>
+<p>The equation will now look like <code>y mod x = r</code>. You will recursively solve this 
+until you can't, which I think is 0. </p>
+<blockquote>
+<p>675 mod 210 = 45<br />
+210 mod 45 = 30<br />
+45 mod 30 = 15<br />
+30 mod 15 = 0  </p>
+</blockquote>
+<p>15 was the last number in the iteration, so GCD(675, 210) = 15  </p>
+<h2 id="211-extended-euclidean-algorithm">2.11 Extended Euclidean algorithm</h2>
+<h3 id="the-extended-euclidean-algorithm">The extended Euclidean algorithm</h3>
+<p>Expressing GCD(x, y) as a linear combination of x and y:  </p>
+<blockquote>
+<p>Let x and y be integers, then there are integers s and t such that</p>
+<p>GCD(x, y) = sx + ty</p>
+</blockquote>
+<p><img alt="Extended Euclidean Algo" src="../images/extended_euclidean_algo.png" />  </p>
+<p><strong>GET HELP ON EXTENDED EUCLIDEAN</strong>  </p>
+<p>For each of the following pairs of numbers, find the GCD of the two numbers, and express the GCD as a linear combination of the two numbers.</p>
+<p>(a) 56 and 42</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>Solution
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>56      42      14      0
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>56 mod 42 = 14
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>42 mod 14 = 0
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>GCD(56, 42) = 14
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>The equation is:
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>14 = 56 - (56 div 42)·42 = 56 - 42
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>GCD(56, 42) = 14 = 56 - 42
+</span></code></pre></div>
+<p>(b) 81 and 60</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>Solution
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>81      60      21      18      3      0
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>81 mod 60 = 21
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>60 mod 21 = 18
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>21 mod 18 = 3
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>18 mod 3 = 0
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>
+</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>The equations for substitution are:
+</span><span id="__span-10-13"><a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>
+</span><span id="__span-10-14"><a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>3 = 21 - (21 div 18)18 = 21 -18
+</span><span id="__span-10-15"><a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a>
+</span><span id="__span-10-16"><a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a>18 = 60 - (60 div 21)21 = 60 - 2·21
+</span><span id="__span-10-17"><a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a>
+</span><span id="__span-10-18"><a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a>21 = 81 - (81 div 60)60 = 81 - 60
+</span><span id="__span-10-19"><a id="__codelineno-10-19" name="__codelineno-10-19" href="#__codelineno-10-19"></a>
+</span><span id="__span-10-20"><a id="__codelineno-10-20" name="__codelineno-10-20" href="#__codelineno-10-20"></a>Substitute (60 - 2·21) for 18 into the equation 3 = 21 -18
+</span><span id="__span-10-21"><a id="__codelineno-10-21" name="__codelineno-10-21" href="#__codelineno-10-21"></a>
+</span><span id="__span-10-22"><a id="__codelineno-10-22" name="__codelineno-10-22" href="#__codelineno-10-22"></a>3 = 21 - (60 - 2·21) = 3·21 - 60
+</span><span id="__span-10-23"><a id="__codelineno-10-23" name="__codelineno-10-23" href="#__codelineno-10-23"></a>
+</span><span id="__span-10-24"><a id="__codelineno-10-24" name="__codelineno-10-24" href="#__codelineno-10-24"></a>Substitute (81 - 60) for 21 into the equation 3 = 3·21 - 60
+</span><span id="__span-10-25"><a id="__codelineno-10-25" name="__codelineno-10-25" href="#__codelineno-10-25"></a>
+</span><span id="__span-10-26"><a id="__codelineno-10-26" name="__codelineno-10-26" href="#__codelineno-10-26"></a>3 = 3·(81 - 60) - 60 = 3·81 - 4·60
+</span><span id="__span-10-27"><a id="__codelineno-10-27" name="__codelineno-10-27" href="#__codelineno-10-27"></a>
+</span><span id="__span-10-28"><a id="__codelineno-10-28" name="__codelineno-10-28" href="#__codelineno-10-28"></a>GCD(81, 60) = 3 = 3·81 - 4·60
+</span></code></pre></div>
+<p>(c) 259 and 77</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>Solution
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>259      77      28      21      7      0
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>259 mod 77 = 28
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>77 mod 28 = 21
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>28 mod 21 = 7
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>
+</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>21 mod 7 = 0
+</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>
+</span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a>The equations for substitution are:
+</span><span id="__span-11-13"><a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a>
+</span><span id="__span-11-14"><a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a>7 = 28 - (28 div 21)21 = 28 - 21
+</span><span id="__span-11-15"><a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a>
+</span><span id="__span-11-16"><a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a>21 = 77 - (77 div 28)28 = 77 - 2·28
+</span><span id="__span-11-17"><a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a>
+</span><span id="__span-11-18"><a id="__codelineno-11-18" name="__codelineno-11-18" href="#__codelineno-11-18"></a>28 = 259 - (259 div 77)77 = 259 - 3·77.
+</span><span id="__span-11-19"><a id="__codelineno-11-19" name="__codelineno-11-19" href="#__codelineno-11-19"></a>
+</span><span id="__span-11-20"><a id="__codelineno-11-20" name="__codelineno-11-20" href="#__codelineno-11-20"></a>Substitute (77 - 2·28) for 21 into the equation 7 = 28 - 21
+</span><span id="__span-11-21"><a id="__codelineno-11-21" name="__codelineno-11-21" href="#__codelineno-11-21"></a>
+</span><span id="__span-11-22"><a id="__codelineno-11-22" name="__codelineno-11-22" href="#__codelineno-11-22"></a>7 = 28 - (77 - 2·28) = 3·28 - 77
+</span><span id="__span-11-23"><a id="__codelineno-11-23" name="__codelineno-11-23" href="#__codelineno-11-23"></a>
+</span><span id="__span-11-24"><a id="__codelineno-11-24" name="__codelineno-11-24" href="#__codelineno-11-24"></a>Substitute (259 - 3·77) for 28 into the equation 7 = 3·28 - 77
+</span><span id="__span-11-25"><a id="__codelineno-11-25" name="__codelineno-11-25" href="#__codelineno-11-25"></a>
+</span><span id="__span-11-26"><a id="__codelineno-11-26" name="__codelineno-11-26" href="#__codelineno-11-26"></a>7 = 3·(259 - 3·77) - 77 = 3·259 - 10·77
+</span><span id="__span-11-27"><a id="__codelineno-11-27" name="__codelineno-11-27" href="#__codelineno-11-27"></a>
+</span><span id="__span-11-28"><a id="__codelineno-11-28" name="__codelineno-11-28" href="#__codelineno-11-28"></a>GCD(259, 77) = 7 = 3·259 - 10·77
+</span></code></pre></div>
+<h2 id="212-multiplicative-inverse-and-euclidean-algorithm">2.12 Multiplicative inverse and Euclidean algorithm</h2>
+<h3 id="the-multiplicative-inverse-mod-n">The multiplicative inverse mod n</h3>
+<blockquote>
+<p>A <strong>multiplicative inverse mod n</strong> (or just inverse mod n) of an integer x, is an 
+integer s ∈ {1, 2, …, n-1} such that sx mod n = 1.<br />
+Alternatively, we could say that s is the multiplicative inverse of x in 
+Z<sub>n</sub>.</p>
+</blockquote>
+<p>3 is an inverse of 7 mod 10 because 3 · 7 mod 10 = 1  <br />
+The number 7 is an inverse of 5 mod 17 because 7 · 5 mod 17 = 1  </p>
+<p><strong>The Goal is to have 1 as the result of the mod</strong>  </p>
+<p><strong>Numbers that are not relative prime will not have an inverse</strong>  </p>
+<p>The Extended Euclidean Algorithm can be used to find the multiplicative inverse 
+of x mod n when it exists:</p>
+<ul>
+<li>
+<p>If GCD(x, n) ≠ 1, then x does not have a multiplicative inverse mod n.</p>
+</li>
+<li>
+<p>If x and n are relatively prime, then the Extended Euclidean Algorithm finds 
+integers s and t such that 1 = sx + tn.</p>
+</li>
+<li>
+<p>sx - 1 = -tn. Therefore, (sx mod n) = (1 mod n) = 1. It was shown earlier 
+that if A - B is a multiple of n then (A mod n) = (B mod n).</p>
+</li>
+<li>
+<p>(s mod n) is the unique multiplicative inverse of x in {0, 1, …, n - 1}.  </p>
+</li>
+</ul>
+<p><strong>Questions</strong><br />
+For each x and n, find the multiplicative inverse mod n of x. Your answer should be an integer s in the range 0 through n - 1. Check your solution by verifying that sx mod n = 1.</p>
+<p>(a) x = 52, n = 77</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>Solution
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>77      52      25      2      1
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>77 mod 52 = 25
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>52 mod 25 = 2
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>25 mod 2 = 1
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>
+</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>The equations for substitution are:
+</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>
+</span><span id="__span-12-12"><a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>1 = 25 - 12·2
+</span><span id="__span-12-13"><a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>
+</span><span id="__span-12-14"><a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>2 = 52 - 2·25
+</span><span id="__span-12-15"><a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a>
+</span><span id="__span-12-16"><a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a>25 = 77 - 52
+</span><span id="__span-12-17"><a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a>
+</span><span id="__span-12-18"><a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a>Substitute (52 - 2·25) for 2 into the equation 1 = 25 - 12·2
+</span><span id="__span-12-19"><a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a>
+</span><span id="__span-12-20"><a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a>1 = 25 - 12·(52 - 2·25) = 25·25 - 12·52
+</span><span id="__span-12-21"><a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a>
+</span><span id="__span-12-22"><a id="__codelineno-12-22" name="__codelineno-12-22" href="#__codelineno-12-22"></a>Substitute (77 - 52) for 25 into the equation 1 = 25·25 - 12·52
+</span><span id="__span-12-23"><a id="__codelineno-12-23" name="__codelineno-12-23" href="#__codelineno-12-23"></a>
+</span><span id="__span-12-24"><a id="__codelineno-12-24" name="__codelineno-12-24" href="#__codelineno-12-24"></a>1 = 25·(77 - 52) - 12·52 = 25·77 - 37·52
+</span><span id="__span-12-25"><a id="__codelineno-12-25" name="__codelineno-12-25" href="#__codelineno-12-25"></a>
+</span><span id="__span-12-26"><a id="__codelineno-12-26" name="__codelineno-12-26" href="#__codelineno-12-26"></a>GCD(77, 52) = 1 = 25·77 - 37·52
+</span><span id="__span-12-27"><a id="__codelineno-12-27" name="__codelineno-12-27" href="#__codelineno-12-27"></a>
+</span><span id="__span-12-28"><a id="__codelineno-12-28" name="__codelineno-12-28" href="#__codelineno-12-28"></a>The coefficient of 52 in the equation above is -37. The multiplicative inverse of 52 mod 77 is (-37 mod 77) = 40.
+</span><span id="__span-12-29"><a id="__codelineno-12-29" name="__codelineno-12-29" href="#__codelineno-12-29"></a>
+</span><span id="__span-12-30"><a id="__codelineno-12-30" name="__codelineno-12-30" href="#__codelineno-12-30"></a>Check: 52·40 mod 77 = 2080 mod 77 = 1
+</span></code></pre></div>
+<p>(b) x = 77, n = 52</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>Solution
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>From the solution to the previous problem:
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>GCD(77, 52) = 1 = 25·77 - 37·52
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>The coefficient of 77 in the equation above is 25. The multiplicative inverse of 77 mod 52 is (25 mod 52) = 25.
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>Check: 77·25 mod 52 = 1925 mod 52 = 1
+</span></code></pre></div>
+<p>(c) x = 53, n = 71</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>Solution
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>71      53      18      17      1
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>71 mod 53 = 18
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>53 mod 18 = 17
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>18 mod 17 = 1
+</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>
+</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>The equations for substitution are:
+</span><span id="__span-14-11"><a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a>
+</span><span id="__span-14-12"><a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a>1 = 18 - 17
+</span><span id="__span-14-13"><a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a>
+</span><span id="__span-14-14"><a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a>17 = 53 - 2·18
+</span><span id="__span-14-15"><a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a>
+</span><span id="__span-14-16"><a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a>18 = 71 - 53
+</span><span id="__span-14-17"><a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a>
+</span><span id="__span-14-18"><a id="__codelineno-14-18" name="__codelineno-14-18" href="#__codelineno-14-18"></a>Substitute (53 - 2·18) for 17 into the equation 1 = 18 - 17
+</span><span id="__span-14-19"><a id="__codelineno-14-19" name="__codelineno-14-19" href="#__codelineno-14-19"></a>
+</span><span id="__span-14-20"><a id="__codelineno-14-20" name="__codelineno-14-20" href="#__codelineno-14-20"></a>1 = 18 - (53 - 2·18) = 3·18 - 53
+</span><span id="__span-14-21"><a id="__codelineno-14-21" name="__codelineno-14-21" href="#__codelineno-14-21"></a>
+</span><span id="__span-14-22"><a id="__codelineno-14-22" name="__codelineno-14-22" href="#__codelineno-14-22"></a>Substitute (71 - 53) for 18 into the equation 1 = 3·18 - 53
+</span><span id="__span-14-23"><a id="__codelineno-14-23" name="__codelineno-14-23" href="#__codelineno-14-23"></a>
+</span><span id="__span-14-24"><a id="__codelineno-14-24" name="__codelineno-14-24" href="#__codelineno-14-24"></a>1 = 3·(71 - 53) - 53 = 3·71 - 4·53
+</span><span id="__span-14-25"><a id="__codelineno-14-25" name="__codelineno-14-25" href="#__codelineno-14-25"></a>
+</span><span id="__span-14-26"><a id="__codelineno-14-26" name="__codelineno-14-26" href="#__codelineno-14-26"></a>GCD(71, 53) = 1 = 3·71 - 4·53
+</span><span id="__span-14-27"><a id="__codelineno-14-27" name="__codelineno-14-27" href="#__codelineno-14-27"></a>
+</span><span id="__span-14-28"><a id="__codelineno-14-28" name="__codelineno-14-28" href="#__codelineno-14-28"></a>The coefficient of 53 in the equation above is -4. The multiplicative inverse of 53 mod 71 is (-4 mod 71) = 67.
+</span><span id="__span-14-29"><a id="__codelineno-14-29" name="__codelineno-14-29" href="#__codelineno-14-29"></a>
+</span><span id="__span-14-30"><a id="__codelineno-14-30" name="__codelineno-14-30" href="#__codelineno-14-30"></a>Check: 53·67 mod 71 = 3551 mod 71 = 1
+</span></code></pre></div>
+<h2 id="213-number-representation-in-other-bases">2.13 Number Representation in Other Bases</h2>
+<p>This page marks the beginning of Module 6. This module contains three lessons:</p>
+<ul>
+<li>Decimal and binary numbers  </li>
+<li>Hexadecimal numbers  </li>
+<li>Base b expansion  </li>
+</ul>
+<h2 id="214-number-representation-decimal-and-binary-numbers">2.14 Number representation- Decimal and binary numbers</h2>
+<p>the binary number 1011 corresponds to the decimal 
+number 1·23 + 0·22 + 1·21 + 1·20 = 11.  </p>
+<p><img alt="Number Representation" src="../images/number_representation.png" />  </p>
+<p>The representation of n base b is called the <strong>base b expansion of n</strong> and is denoted 
+by (akak-1...a1a0)b. The following animation shows how to convert the 
+base b expansion of a number into its decimal expansion. The base in the example 
+is 3:  </p>
+<p><img alt="Base to Decimal" src="../images/base_to_decimal.png" />  </p>
+<p>Match each expression to its decimal expansion:  </p>
+<p><img alt="Conversion to decimal examples" src="../images/match_to_decimal_example.png" />  </p>
+<h2 id="215-number-representation-hexadecimal-numbers">2.15 Number representation- Hexadecimal numbers</h2>
+<p>In hexadecimal notation (or hex for short), numbers are represented base 16. 
+The 16 digits in hex are the usual 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 along with 
+A, B, C, D, E, F  </p>
+<p>Convert hex to decimal:  </p>
+<blockquote>
+<p>4E0F = 4 x 16<sup>3</sup> + 14 x 16<sup>2</sup> + 0 x 16<sup>1</sup> + 15 x 16<sup>0</sup> = 19983  </p>
+</blockquote>
+<p>Hexadecimal notation is particularly useful in computer science because each 
+hexadecimal digit can be used to represent a 4-bit binary number. A <strong>byte</strong>, 
+which consists of 8 bits, can be represented by a <em>2-digit hexadecimal number</em>.  </p>
+<p><strong>Question</strong>: Give a binary representation for each number given below in hex. 
+Drop the leading zeroes in your binary representation.</p>
+<p>(a) (A3)16</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>Solution
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>(A)16 = (1010)2
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>(3)16 = (0011)2
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>(A3)16 = (10100011)2
+</span></code></pre></div>
+<p>(b) (1FC)16</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>Solution
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>(1)16 = (0001)2
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>(F)16 = (1111)2
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>(C)16 = (1100)2
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>
+</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>(1FC)16 = (000111111100)2 = (111111100)2
+</span></code></pre></div>
+<h2 id="216-base-b-expansion">2.16 Base b expansion</h2>
+<p><strong>Question</strong>: Find the base 6 expansion of 67.  </p>
+<p>Use the formula <code>[Base b expansion of (n div b)][n mod b]</code>:  </p>
+<blockquote>
+<p>[base 6 expansion of 67 div 6][67 mod 6] =&gt;<br />
+[base 6 expansion of 11] 1   </p>
+<p>[base 6 expansion of 11 div 6][11 mod 6] 1 =&gt; 
+[base 6 expansion of 1]  5  1  </p>
+<p>[base 6 expansion of 0][1 mod 6]  5  1  =&gt;
+[base 6 expansion of 0] 1  5  1  =&gt;  </p>
+<p>(1  5  1)<sub>6</sub> = 67  </p>
+</blockquote>
+<h3 id="algorithm-to-find-the-base-b-expansion-for-a-positive-integer">Algorithm to find the base b expansion for a positive integer</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>Input: Integers n and b. b &gt; 1 and n ≥ 1.
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>Output: Base b expansion of n. Base b digits are output in reverse order.
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>x := n
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>while ( x &gt; 0 )
+</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>      Output( x mod b )
+</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>      x := x div b
+</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>End-while
+</span></code></pre></div>
+<p><strong>Question</strong>: Find the expansion base 5 of 57:  </p>
+<p>57 mod 5 = 2; Rightmost digit is 2.
+57 div 5 = 11</p>
+<p>11 mod 5 = 1; Next digit to the left is 1.
+11 div 5 = 2</p>
+<p>2 mod 5 = 2; Next digit to the left is 2.
+2 div 5 = 0</p>
+<p>Answer: <em>212</em>  </p>
+<h3 id="the-number-of-digits-required-to-represent-a-number">The number of digits required to represent a number</h3>
+<p>The digits in base b range from 0 through b - 1. </p>
+<p><img alt="largest_number_rep_k" src="../images/largest_number_rep_k.png" />  </p>
+<p><img alt="2_expansion_of_13" src="../images/2_expansion_of_13.png" />  </p>
+<p><img alt="7_expansion_2401" src="../images/7_expansion_2401.png" />  </p>
+<h2 id="217-fast-exponentiation-algorithms">2.17 Fast Exponentiation Algorithms</h2>
+<p>This page marks the beginning of Module 7. This module contains two lessons:</p>
+<ul>
+<li>Fast exponentiation</li>
+<li>Modular exponentiation  </li>
+</ul>
+<h2 id="218-fast-exponentiation">2.18 Fast exponentiation</h2>
+<p>Suppose you wanted to compute x<sup>y</sup>, for positive integers x and y. Computing 
+exponents is, in fact, an important step in the RSA cryptosystem  </p>
+<p><strong>An illustration of fast integer exponentiation:</strong></p>
+<p><img alt="fast_integer_expansion" src="../images/fast_integer_expansion.png" />  </p>
+<p><img alt="express_exponents_power_2_example" src="../images/express_exponents_power_2_example.png" />  </p>
+<h3 id="an-iterative-algorithm-for-fast-exponentiation">An iterative algorithm for fast exponentiation</h3>
+<p>The number of operations performed is therefore O(log y), which is much better 
+than the y - 1 multiplications required by simply multiplying a partial product 
+by x.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>Input: Positive integers x and y.
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>Output: xy
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>p := 1     // p holds the partial result.
+</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>s := x     // s holds the current x^2^j
+</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>r := y     // r is used to compute the binary expansion of y
+</span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>
+</span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a>While ( r &gt; 0 )
+</span><span id="__span-18-9"><a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a>      If ( r mod 2 = 1 )
+</span><span id="__span-18-10"><a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a>            p := p·s
+</span><span id="__span-18-11"><a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a>      s := s·s
+</span><span id="__span-18-12"><a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a>      r := r div 2
+</span><span id="__span-18-13"><a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a>End-while
+</span><span id="__span-18-14"><a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a>
+</span><span id="__span-18-15"><a id="__codelineno-18-15" name="__codelineno-18-15" href="#__codelineno-18-15"></a>Return(p)
+</span></code></pre></div>
+<h2 id="219-modular-exponentiation">2.19 Modular exponentiation</h2>
+<p>If you thought fast exponentiation was efficient, you are in for a treat. In 
+this lesson you will learn about an even faster, more efficient method for 
+exponentiation, when you only care about the value mod N. <strong>modular exponentiation or iterative fast exponentiation.</strong>  </p>
+<h3 id="an-iterative-algorithm-for-fast-modular-exponentiation">An iterative algorithm for fast modular exponentiation</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>Input: Positive integers x, y, and n.
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>Output: xy mod n
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>p := 1     //p holds the partial result.
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>s := x     //s holds the current 
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>.
+</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>r := y     //r is used to compute the binary expansion of y
+</span><span id="__span-19-8"><a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>
+</span><span id="__span-19-9"><a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>While ( r &gt; 0 )
+</span><span id="__span-19-10"><a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a>      If ( r mod 2 = 1 )
+</span><span id="__span-19-11"><a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a>            p := p·s mod n
+</span><span id="__span-19-12"><a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a>      s := s·s mod n
+</span><span id="__span-19-13"><a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a>      r := r div 2
+</span><span id="__span-19-14"><a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a>End-while
+</span><span id="__span-19-15"><a id="__codelineno-19-15" name="__codelineno-19-15" href="#__codelineno-19-15"></a>
+</span><span id="__span-19-16"><a id="__codelineno-19-16" name="__codelineno-19-16" href="#__codelineno-19-16"></a>Return(p)
+</span></code></pre></div>
+<p><strong>Get Help</strong>  </p>
+<p><strong>Questions</strong> Find the modulos fo the following exponential expressions: </p>
+<p>(a) 535 mod 11</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>Solution
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>520 mod 11 = 51 mod 11 = 5 mod 11 = 5
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>521 mod 11 = 52 mod 11 = 25 mod 11 = 3
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>
+</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>522 mod 11 = 32 mod 11 = 9
+</span><span id="__span-20-7"><a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>
+</span><span id="__span-20-8"><a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>523 mod 11 = 92 mod 11 = 81 mod 11 = 4
+</span><span id="__span-20-9"><a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a>
+</span><span id="__span-20-10"><a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a>524 mod 11 = 42 mod 11 = 16 mod 11 = 5
+</span><span id="__span-20-11"><a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a>
+</span><span id="__span-20-12"><a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a>525 mod 11 = 52 mod 11 = 25 mod 11 = 3
+</span><span id="__span-20-13"><a id="__codelineno-20-13" name="__codelineno-20-13" href="#__codelineno-20-13"></a>
+</span><span id="__span-20-14"><a id="__codelineno-20-14" name="__codelineno-20-14" href="#__codelineno-20-14"></a>35 = (100011)2
+</span><span id="__span-20-15"><a id="__codelineno-20-15" name="__codelineno-20-15" href="#__codelineno-20-15"></a>
+</span><span id="__span-20-16"><a id="__codelineno-20-16" name="__codelineno-20-16" href="#__codelineno-20-16"></a>535 mod 11 = (525 mod 11)(521 mod 11)(520 mod 11) mod 11 = (3·3·5) mod 11 = 45 mod 11 = 1
+</span></code></pre></div>
+<p>(b) 568 mod 7</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>Solution
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>520 mod 7 = 51 mod 7 = 5 mod 7 = 5
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>521 mod 7 = 52 mod 7 = 25 mod 7 = 4
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>
+</span><span id="__span-21-6"><a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>522 mod 7 = 42 mod 7 = 16 mod 7 = 2
+</span><span id="__span-21-7"><a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>
+</span><span id="__span-21-8"><a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>523 mod 7 = 22 mod 7 = 4 mod 7 = 4
+</span><span id="__span-21-9"><a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>
+</span><span id="__span-21-10"><a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a>524 mod 7 = 42 mod 7 = 16 mod 7 = 2
+</span><span id="__span-21-11"><a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a>
+</span><span id="__span-21-12"><a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a>525 mod 7 = 22 mod 7 = 4 mod 7 = 4
+</span><span id="__span-21-13"><a id="__codelineno-21-13" name="__codelineno-21-13" href="#__codelineno-21-13"></a>
+</span><span id="__span-21-14"><a id="__codelineno-21-14" name="__codelineno-21-14" href="#__codelineno-21-14"></a>526 mod 7 = 42 mod 7 = 2 mod 7 = 2
+</span><span id="__span-21-15"><a id="__codelineno-21-15" name="__codelineno-21-15" href="#__codelineno-21-15"></a>
+</span><span id="__span-21-16"><a id="__codelineno-21-16" name="__codelineno-21-16" href="#__codelineno-21-16"></a>68 = (1000100)2
+</span><span id="__span-21-17"><a id="__codelineno-21-17" name="__codelineno-21-17" href="#__codelineno-21-17"></a>
+</span><span id="__span-21-18"><a id="__codelineno-21-18" name="__codelineno-21-18" href="#__codelineno-21-18"></a>568 mod 7 = (526 mod 7)(522 mod 7) mod 7 = (2·2) mod 7 = 4 mod 7 = 4
+</span></code></pre></div>
+<p>(c) 1120 in Z<sub>33</sub></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>Solution
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>22
+</span></code></pre></div>
+<h2 id="220-mathematical-foundations-of-encryption">2.20 Mathematical Foundations of Encryption</h2>
+<p>This page marks the beginning of Module 8. This module contains four lessons:</p>
+<ul>
+<li>Introduction to cryptography</li>
+<li>Encryption and decryption</li>
+<li>RSA encryption</li>
+<li>RSA decryption</li>
+</ul>
+<h2 id="221-introduction-to-cryptography">2.21 Introduction to cryptography</h2>
+<p><strong>Cryptography</strong> is the science of protecting and authenticating data and 
+communication.</p>
+<p><strong>sender</strong>: sends message to receiver.   </p>
+<p><strong>receiver</strong>: receives sender's message  </p>
+<p><strong>encrypt</strong>: sender encrypts the message    </p>
+<p><strong>plaintext</strong>: unencrypted message  </p>
+<p><strong>ciphertext</strong>: Encrypted message    </p>
+<p><strong>secret key</strong>: needed by the receiver to decrypt the sender's message  </p>
+<p><strong>decrypt</strong>: change ciphertext to plaintext    </p>
+<p><strong>cryptosystems</strong></p>
+<h2 id="222-encryption-and-decryption">2.22 Encryption and decryption</h2>
+<p><strong>Symmetric key cryptosystem</strong>: Alice and Bob must meet in advance (or communicate 
+over a reliably secure channel) to decide on the value of a shared secret key  </p>
+<h3 id="simple-encryption-scheme-requirements">Simple encryption scheme requirements:</h3>
+<ul>
+<li>no two distinct plaintexts map to the same ciphertext  </li>
+</ul>
+<blockquote>
+<p>If m ≠ m' and m, m' ∈ Z<sub>N</sub> then (m + k) mod N ≠ (m' + k) mod N
+(no two distinct plaintexts map to same ciphertext)</p>
+</blockquote>
+<ul>
+<li>second fact to verify is that the decryption scheme is indeed the inverse of 
+the encryption scheme  </li>
+</ul>
+<blockquote>
+<p>If m ∈ Z<sub>N</sub> then (((m + k) mod N)-k) mod N = m
+(decryption scheme is inverse of encryption scheme)  </p>
+</blockquote>
+<ul>
+<li>
+<p>To accurately map plaintext (unencrypted message) to ciphertext (encrypted 
+message) and then reverse the process (decryption) requires a mathematical 
+function that is one-to- one. Each input maps to one and only one output, and 
+each output maps back to one and only one input.</p>
+</li>
+<li>
+<p>One simple cryptosystem uses modular arithmetic to encode and decode a 
+plaintext message. Specifically, ciphertext can be expressed as 
+c = (m + k) mod N; where m is the plaintext message, N is an integer, and k is 
+a secret value known only to the sender and receiver. Then the decryption 
+function can be expressed as m = (c - k) mod N. Note that the 
+addition/subtraction inverse operations use the secret value k.</p>
+</li>
+<li>
+<p>The systems used in this lesson are <strong>private key cryptosystems</strong>. In a private 
+key system both Bob and Alice must meet to decide upon the value of the secret 
+key-in our example the value of k-prior to sending encrypted messages.  </p>
+</li>
+</ul>
+<h2 id="223-rsa-encryption">2.23 RSA encryption</h2>
+<p>In a <strong>public key cryptosystem</strong>, anyone can encrypt the message, but only the receiver 
+has the correct decryption key to ultimately read the encrypted message.  </p>
+<p>Public key cryptosystems rely on two premises: </p>
+<ul>
+<li>
+<p>the presumed difficulty of the computation required to decrypt the message </p>
+</li>
+<li>
+<p>the assumption that there exists no more efficient method to decrypt the 
+ciphertext without knowing the key.  </p>
+</li>
+</ul>
+<p>The mostly widely used public key cryptosystem is the 
+<strong>RSA (Rivest, Adelman, and Shamir) cryptosystem</strong>(1978). This method of encryption 
+depends on the difficulty of factoring large numbers. As of now, there is no 
+efficient method of factoring numbers without having information (the key) 
+about how the numbers were created.  </p>
+<h3 id="public-key-cryptography">Public key Cryptography</h3>
+<p>In public key cryptography, Bob has an <strong>encryption key</strong> that he provides publicly 
+so that anyone can use it to send him an encrypted message. Bob holds a matching 
+<strong>decryption key</strong> that he keeps privately to decrypt messages. While anyone can 
+use the public key to encrypt a message, the security of the <strong>scheme depends on</strong> 
+<strong>the fact that it is difficult to decrypt the message without having the matching</strong> 
+<strong>private decryption key.</strong> </p>
+<p><strong>Preparation of public and private keys in RSA</strong>:</p>
+<p>1) Bob selects two large prime numbers, p and q.</p>
+<p>2) Bob computes N = pq and φ = (p-1)(q-1). [Note the symbol φ is read Phi.]</p>
+<p>3) Bob finds an integer e such that gcd(e, φ) = 1.</p>
+<p>4) Bob computes the multiplicative inverse of e mod φ: an integer d such that 
+(ed mod φ) = 1.</p>
+<p>5) Public (encryption) key: N and e.</p>
+<p>6) Private (decryption) key: d.  </p>
+<p><strong>Public Key Generation</strong>:  </p>
+<p><img alt="public_key_generation" src="../images/public_key_generation.png" />  </p>
+<p>There are infinitely many possibilities for public and private keys, which depend 
+on the choice of <strong>e</strong> that is relatively prime to <strong>phi</strong>.  </p>
+<p>Look at Section 2.11, Extended Euclidean Algorithm to solve for d.</p>
+<p><img alt="prep_public_key_example" src="../images/prep_public_key_example.png" />  </p>
+<p><img alt="prep_public_private_key" src="../images/prep_public_private_key.png" />  </p>
+<h3 id="rsa-encryption">RSA Encryption</h3>
+<p>The RSA scheme requires that m is an integer in Z<sub>N</sub> and is not a 
+multiple of p or q. Since p and q are primes with hundreds of digits, it is 
+extremely unlikely that m is a multiple of primes p or q.
+Alice encrypts her plaintext using e and N to produce ciphertext c as follows:  </p>
+<blockquote>
+<p>c = m<sup>e</sup> mod <em>N</em> (encription)<br />
+m is the message<br />
+c is the ciphered message</p>
+</blockquote>
+<p><strong>Encrypting plaintext into ciphertext using RSA</strong></p>
+<p><img alt="plaintext_to_RSA" src="../images/plaintext_to_RSA.png" /></p>
+<p><img alt="RSA_practice" src="../images/RSA_practice.png" />  </p>
+<h2 id="224-rsa-decryption">2.24 RSA decryption</h2>
+<p>public keys (values referred to as N and e) and private keys (the value d)</p>
+<p>To decrypt an RSA encoded message, not only must the receiver know the public 
+key, but the private key d, must also be known.  </p>
+<p>You will need the following mathematical skills: </p>
+<ul>
+<li>modular arithmetic  </li>
+<li>the extended Euclidean algorithm  </li>
+<li>the algorithm for fast exponentiation</li>
+</ul>
+<p><strong>RSA Decryption</strong>:  </p>
+<blockquote>
+<p>m = c<sup>d</sup> mod <em>N</em> (decryption)<br />
+m is the plaintext message<br />
+c is the cipher  </p>
+</blockquote>
+<p><img alt="RSA_decryption" src="../images/RSA_decryption.png" />  </p>
+<p><img alt="RSA_decryption_examples" src="../images/RSA_decryption_examples.png" />  </p>
+<h3 id="encrypting-and-decrypting-a-message-using-rsa">Encrypting and decrypting a message using RSA</h3>
+<p><img alt="RSA_encryption_decryption" src="../images/RSA_encryption_decryption.png" /></p>
+<p><strong>Question</strong>: In this problem, we will implement the RSA algorithm to encrypt 
+and decrypt the message "HI". For this exercise, you may want to use a 
+calculator that can compute the mod function.</p>
+<p>(a) Use the scheme used in your text to convert the message "HI" into an integer. Call the integer m.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>Solution
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>H → 08, I → 09. m = 0809 = 809
+</span></code></pre></div>
+<p>(b) Set the primes p and q as follows: p = 43 and q = 79. What are the values 
+for N and φ?</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>Solution
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>N = 43·79 = 3397
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>φ = (43 - 1)(79 - 1) = 42·78 = 3276
+</span></code></pre></div>
+<p>(c) The value for e is chosen to be 29. Use Euclid's algorithm to verify that 
+e and φ are relatively prime and to find d, the multiplicative inverse of 
+e mod φ.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>Solution
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>3276      29      28      1
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>3276 mod 29 = 28
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>
+</span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>29 mod 28 = 1
+</span><span id="__span-25-7"><a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a>
+</span><span id="__span-25-8"><a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a>The equations for substitution are:
+</span><span id="__span-25-9"><a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a>
+</span><span id="__span-25-10"><a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a>1 = 29 - 28
+</span><span id="__span-25-11"><a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a>
+</span><span id="__span-25-12"><a id="__codelineno-25-12" name="__codelineno-25-12" href="#__codelineno-25-12"></a>28 = 3276 - 112·29
+</span><span id="__span-25-13"><a id="__codelineno-25-13" name="__codelineno-25-13" href="#__codelineno-25-13"></a>
+</span><span id="__span-25-14"><a id="__codelineno-25-14" name="__codelineno-25-14" href="#__codelineno-25-14"></a>Substitute (3276 - 112·29) for 28 into the equation 1 = 29 - 28
+</span><span id="__span-25-15"><a id="__codelineno-25-15" name="__codelineno-25-15" href="#__codelineno-25-15"></a>
+</span><span id="__span-25-16"><a id="__codelineno-25-16" name="__codelineno-25-16" href="#__codelineno-25-16"></a>1 = 29 - (3276 - 112·29) = 113·29 - 3276
+</span><span id="__span-25-17"><a id="__codelineno-25-17" name="__codelineno-25-17" href="#__codelineno-25-17"></a>
+</span><span id="__span-25-18"><a id="__codelineno-25-18" name="__codelineno-25-18" href="#__codelineno-25-18"></a>gcd(3276, 29) = 1 = 113·29 - 3276
+</span><span id="__span-25-19"><a id="__codelineno-25-19" name="__codelineno-25-19" href="#__codelineno-25-19"></a>
+</span><span id="__span-25-20"><a id="__codelineno-25-20" name="__codelineno-25-20" href="#__codelineno-25-20"></a>The coefficient of 29 in the equation above is 113. The multiplicative inverse of 29 mod 3276 is 113.
+</span><span id="__span-25-21"><a id="__codelineno-25-21" name="__codelineno-25-21" href="#__codelineno-25-21"></a>
+</span><span id="__span-25-22"><a id="__codelineno-25-22" name="__codelineno-25-22" href="#__codelineno-25-22"></a>Check: 29·113 mod 3276 = 3277 mod 3276 = 1
+</span><span id="__span-25-23"><a id="__codelineno-25-23" name="__codelineno-25-23" href="#__codelineno-25-23"></a>
+</span><span id="__span-25-24"><a id="__codelineno-25-24" name="__codelineno-25-24" href="#__codelineno-25-24"></a>d = 113
+</span></code></pre></div>
+<p>(d) Encrypt the message m by computing me mod N</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>Solution
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>ciphertext = 80929 mod 3397
+</span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>
+</span><span id="__span-26-4"><a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>80920 mod 3397 = 8091 mod 3397 = 809 mod 3397 = 809
+</span><span id="__span-26-5"><a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a>
+</span><span id="__span-26-6"><a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a>80921 mod 3397 = 8092 mod 3397 = 654481 mod 3397 = 2257
+</span><span id="__span-26-7"><a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a>
+</span><span id="__span-26-8"><a id="__codelineno-26-8" name="__codelineno-26-8" href="#__codelineno-26-8"></a>80922 mod 3397 = 22572 mod 3397 = 5094049 mod 3397 = 1946
+</span><span id="__span-26-9"><a id="__codelineno-26-9" name="__codelineno-26-9" href="#__codelineno-26-9"></a>
+</span><span id="__span-26-10"><a id="__codelineno-26-10" name="__codelineno-26-10" href="#__codelineno-26-10"></a>80923 mod 3397 = 19462 mod 3397 = 3786916 mod 3397 = 2658
+</span><span id="__span-26-11"><a id="__codelineno-26-11" name="__codelineno-26-11" href="#__codelineno-26-11"></a>
+</span><span id="__span-26-12"><a id="__codelineno-26-12" name="__codelineno-26-12" href="#__codelineno-26-12"></a>80924 mod 3397 = 26582 mod 3397 = 7064964 mod 3397 = 2601
+</span><span id="__span-26-13"><a id="__codelineno-26-13" name="__codelineno-26-13" href="#__codelineno-26-13"></a>
+</span><span id="__span-26-14"><a id="__codelineno-26-14" name="__codelineno-26-14" href="#__codelineno-26-14"></a>29 = (11101)2
+</span><span id="__span-26-15"><a id="__codelineno-26-15" name="__codelineno-26-15" href="#__codelineno-26-15"></a>
+</span><span id="__span-26-16"><a id="__codelineno-26-16" name="__codelineno-26-16" href="#__codelineno-26-16"></a>80929 mod 3397 =
+</span><span id="__span-26-17"><a id="__codelineno-26-17" name="__codelineno-26-17" href="#__codelineno-26-17"></a>(80924 mod 3397)(80923 mod 3397)(80922 mod 3397)(80920 mod 3397) mod 3397 =
+</span><span id="__span-26-18"><a id="__codelineno-26-18" name="__codelineno-26-18" href="#__codelineno-26-18"></a>(2601·2658·1946·809) mod 3397 = 336
+</span><span id="__span-26-19"><a id="__codelineno-26-19" name="__codelineno-26-19" href="#__codelineno-26-19"></a>
+</span><span id="__span-26-20"><a id="__codelineno-26-20" name="__codelineno-26-20" href="#__codelineno-26-20"></a>ciphertext = 336
+</span></code></pre></div>
+<p>(e) The result of the previous question is the ciphertext c that is transmitted. 
+To decrypt the message, compute cd mod N.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>Solution
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>Message = 336113 mod 3397
+</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>
+</span><span id="__span-27-4"><a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>33620 mod 3397 = 3361 mod 3397 = 336 mod 3397 = 336
+</span><span id="__span-27-5"><a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>
+</span><span id="__span-27-6"><a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a>33621 mod 3397 = 3362 mod 3397 = 112896 mod 3397 = 795
+</span><span id="__span-27-7"><a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a>
+</span><span id="__span-27-8"><a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a>33622 mod 3397 = 7952 mod 3397 = 632025 mod 3397 = 183
+</span><span id="__span-27-9"><a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a>
+</span><span id="__span-27-10"><a id="__codelineno-27-10" name="__codelineno-27-10" href="#__codelineno-27-10"></a>33623 mod 3397 = 1832 mod 3397 = 33489 mod 3397 = 2916
+</span><span id="__span-27-11"><a id="__codelineno-27-11" name="__codelineno-27-11" href="#__codelineno-27-11"></a>
+</span><span id="__span-27-12"><a id="__codelineno-27-12" name="__codelineno-27-12" href="#__codelineno-27-12"></a>33624 mod 3397 = 29162 mod 3397 = 8503056 mod 3397 = 365
+</span><span id="__span-27-13"><a id="__codelineno-27-13" name="__codelineno-27-13" href="#__codelineno-27-13"></a>
+</span><span id="__span-27-14"><a id="__codelineno-27-14" name="__codelineno-27-14" href="#__codelineno-27-14"></a>33625 mod 3397 = 3652 mod 3397 = 133225 mod 3397 = 742
+</span><span id="__span-27-15"><a id="__codelineno-27-15" name="__codelineno-27-15" href="#__codelineno-27-15"></a>
+</span><span id="__span-27-16"><a id="__codelineno-27-16" name="__codelineno-27-16" href="#__codelineno-27-16"></a>33626 mod 3397 = 7422 mod 3397 = 550564 mod 3397 = 250
+</span><span id="__span-27-17"><a id="__codelineno-27-17" name="__codelineno-27-17" href="#__codelineno-27-17"></a>
+</span><span id="__span-27-18"><a id="__codelineno-27-18" name="__codelineno-27-18" href="#__codelineno-27-18"></a>113 = (1110001)2
+</span><span id="__span-27-19"><a id="__codelineno-27-19" name="__codelineno-27-19" href="#__codelineno-27-19"></a>
+</span><span id="__span-27-20"><a id="__codelineno-27-20" name="__codelineno-27-20" href="#__codelineno-27-20"></a>336113 mod 3397 =
+</span><span id="__span-27-21"><a id="__codelineno-27-21" name="__codelineno-27-21" href="#__codelineno-27-21"></a>(33626 mod 3397)(33625 mod 3397)(33624 mod 3397)(33620 mod 3397) mod 3397 =
+</span><span id="__span-27-22"><a id="__codelineno-27-22" name="__codelineno-27-22" href="#__codelineno-27-22"></a>(250·742·365·336) mod 3397 = 809
+</span><span id="__span-27-23"><a id="__codelineno-27-23" name="__codelineno-27-23" href="#__codelineno-27-23"></a>
+</span><span id="__span-27-24"><a id="__codelineno-27-24" name="__codelineno-27-24" href="#__codelineno-27-24"></a>Message = 809
+</span></code></pre></div>
+<p>(f) Verify that the decrypted message is the same as m. Convert m back into a 
+text message.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>Solution
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>The decrypted message is 809, the original value for m.
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>
+</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a>809 → 08 09 → HI
+</span></code></pre></div>
+<h1 id="unit-3">Unit 3</h1>
+<h2 id="31-recursion-and-induction">3.1 Recursion and Induction</h2>
+<p>The material in this unit comprises 20% of the high-stakes assessment and includes such concepts as:</p>
+<ul>
+<li>Recurrence Relations</li>
+<li>Induction Methods</li>
+<li>Summations and Limits</li>
+<li>Recursive Structures</li>
+<li>Recursive rules with functions, sets, and binary trees</li>
+<li>Simple Recurrence Relations</li>
+</ul>
+<p>There is an old joke in computer science:</p>
+<p>To understand recursion you must first understand recursion.  </p>
+<h2 id="32-recurrence-relations">3.2 Recurrence Relations</h2>
+<p>This page marks the beginning of Module 9. This module contains two lessons:</p>
+<ul>
+<li>
+<p>Introduction to recursive relations  </p>
+</li>
+<li>
+<p>Evaluating recursive relations  </p>
+</li>
+</ul>
+<h2 id="33-introduction-to-recursive-relations">3.3 Introduction to recursive relations</h2>
+<p>a key process for <strong>divide and conquer algorithms</strong>  </p>
+<p><strong>Recursion</strong> is a method that finds new values using previous values.  </p>
+<ul>
+<li>To denote the nth term you write a<sub>n</sub>. The 4th term is 16; 
+written a<sub>4</sub>=16.  </li>
+</ul>
+<h3 id="recurrence-relations">Recurrence relations</h3>
+<p>A <strong>recurrence relation</strong> is an equation that expresses a new term using 
+previous terms. Requires two things:  </p>
+<ul>
+<li>
+<p>the initial terms  </p>
+</li>
+<li>
+<p>a rule defining the new term based on the previous term  </p>
+</li>
+</ul>
+<h2 id="34-evaluating-a-recursive-relation">3.4 Evaluating a recursive relation</h2>
+<p>Recurrence relation defining an <strong>arithmetic sequence</strong>:</p>
+<blockquote>
+<p>a0 = a   (initial value)
+an = d + an-1   for n ≥ 1   (recurrence relation)
+Initial value = a. Common difference = d.</p>
+</blockquote>
+<p>Recurrence relation defining an <strong>geometric sequence</strong>:  </p>
+<blockquote>
+<p>a0 = a   (initial value)
+an = r⋅ an-1  for n ≥ 1   (recurrence relation)
+Initial value = a. Common ratio = r.</p>
+</blockquote>
+<p>Fibonacci defined the sequence in an attempt to mathematically describe the 
+population growth of rabbits.  </p>
+<p>Divide the previous term by the current term. Then do the same thing to previous 
+terms. If the quotient is the same, it is a <em>geometric sequence</em>.  </p>
+<p>If the terms change by a constant amount, then it is an <em>arithmetic sequence</em></p>
+<p><img alt="determine_if_recursive_geo" src="../images/determine_if_recursive_geo.png" />  </p>
+<h2 id="35-induction-methods">3.5 Induction Methods</h2>
+<p>This page marks the beginning of Module 10. This module contains eight lessons:</p>
+<ul>
+<li>Computing summations</li>
+<li>Summation: limits and variables</li>
+<li>Inductive proof</li>
+<li>Divisibility proof by induction</li>
+<li>Induction proof of a recurrence relation</li>
+<li>Induction proof of closed summation</li>
+<li>Strong induction</li>
+<li>Well-ordering principle  </li>
+</ul>
+<h2 id="36-summations">3.6 Summations</h2>
+<p>Summation of sequences (also called series)  </p>
+<p><strong>Summation notation</strong> is used to express the sum of terms in a numerical sequence. 
+Consider a sequence:  </p>
+<p><img alt="sum_sequence_define" src="../images/sum_sequence_define.png" />  </p>
+<ul>
+<li>
+<p><strong>k</strong> is called the <em>index</em>  </p>
+</li>
+<li>
+<p><strong>s</strong> is the <em>lower limit</em>  </p>
+</li>
+<li>
+<p><strong>n</strong> is the <em>upper limit</em>  </p>
+</li>
+</ul>
+<p>When the index starts at 1, the summation:<br />
+<img alt="sn_summation" src="../images/sn_summation.png" /><br />
+is referred to as the <strong>nth partial sum</strong>  </p>
+<p>Since: 
+S<sub>n</sub> = a<sub>1</sub> + a<sub>2</sub> + a<sub>3</sub> +...+ a<sub>n - 1</sub> + a<sub>n/sub&gt;  <br />
+and the <em>nth</em> term of a sequence can be defined recursively in terms of 
+partial sums <strong>a<sub>n</sub> = S<sub>n</sub> - S<sub>n-1</sub></strong>  </p>
+<p>The capital letter sigma (Σ) is used to denote the fact that the terms are to be 
+added together.<br />
+Summation notation can be used to sum up the terms in a sequence defined by an 
+explicit formula:  </p>
+<p><img alt="summation_form" src="../images/summation_form.png" />  </p>
+<p>Summation Example:  </p>
+<p><img alt="summation_example" src="../images/summation_example.png" />  </p>
+<h3 id="pulling-out-a-final-term-from-a-summation">Pulling out a final term from a summation</h3>
+<p>Representing pulling out the final sum: </p>
+<p><img alt="represent_pullingout_final_sum" src="../images/represent_pullingout_final_sum.png" />  </p>
+<p><img alt="pull_out_final_sum_two" src="../images/pull_out_final_sum_two.png" />  </p>
+<p><img alt="summation_notation_odds" src="../images/summation_notation_odds.png" />  </p>
+<p><img alt="outside_sum_notation_examples" src="../images/outside_sum_notation_examples.png" />  </p>
+<h2 id="37-limits-and-variables">3.7 limits and variables</h2>
+<p>Change the index variable:  </p>
+<p><img alt="changing_summation_index" src="../images/changing_summation_index.png" />  </p>
+<p>Change variable of summation, change the upper and lower limits:  </p>
+<p><img alt="change_variable_of_summation" src="../images/change_variable_of_summation.png" />  </p>
+<p>Note below for practicing change of variables: 
+You must re-arrange the given substitution <code>j = i + 2</code>. Where the question is 
+asking for j, you keep the equation <code>j = i + 2</code> the same. But if the question 
+asks for i, then re-arrange to <code>i = j - 2</code>  </p>
+<p><img alt="change_of_variable_practice" src="../images/change_of_variable_practice.png" /></p>
+<h3 id="closed-forms-for-sums">Closed forms for sums</h3>
+<p>A <strong>closed form</strong> for a sum is a mathematical expression that expresses the value 
+of the sum <em>without summation notation</em>. There are closed form expressions for 
+some, although not all, of the summations that arise naturally in scientific 
+applications. </p>
+<h4 id="closed-form-for-arithmetic">Closed form for arithmetic</h4>
+<p><img alt="closed_form_arithmetic" src="../images/closed_form_arithmetic.png" /></p>
+<h4 id="closed-form-for-geometric">Closed form for geometric</h4>
+<p><img alt="closed_form_geometric" src="../images/closed_form_geometric.png" />  </p>
+<p>Arithmetic and Geometric Closed Form practice:  </p>
+<p><img alt="closed_form_arith_geo_practice" src="../images/closed_form_arith_geo_practice.png" />  </p>
+<h2 id="38-inductive-proof">3.8 Inductive proof</h2>
+<p><strong>Induction</strong> (not to be confused with inductive reasoning). Knowing that 
+if the nth compartment filled then the (n+1)th compartment would fill, is the 
+inductive step. For the dominos to start falling, the first compartment, n=1, 
+had to fill; this is the base case.   </p>
+<p>Suppose that one day a genie grants you three wishes. You make two wishes and 
+then for your third wish, you wish for three more wishes the next day. Given 
+the fact that you can always use your third wish to renew your wishes for the 
+next day, it is possible to prove that from that first day onward, you can have 
+three wishes every day for the rest of your life. This is an example of the 
+<strong>principle of mathematical induction</strong> (or just induction for short).  </p>
+<p>The <strong>principle of mathematical induction</strong> states that if the base case 
+(for n = 1) is true and inductive step is true, then the theorem holds for all 
+positive integers.</p>
+<p>Use induction to prove that a series is equal to a given formula  </p>
+<p>Use induction to prove that inequalities are true.  </p>
+<p><strong>The two components of an inductive proof.</strong></p>
+<ul>
+<li>The base case establishes that the theorem is true for the first value in 
+the sequence.</li>
+</ul>
+<blockquote>
+<p>The genie grants you three wishes on day 1  </p>
+</blockquote>
+<ul>
+<li>The inductive step establishes that if the theorem is true for k, then the 
+theorem also holds for k + 1.</li>
+</ul>
+<blockquote>
+<p>If you have three wishes on day k, then you can get three wishes for day 
+k+1 (by using the third wish to ask for three more wishes the next day).  </p>
+</blockquote>
+<ul>
+<li>To be valid, an inductive proof must have a base case and at least one 
+inductive step.  </li>
+</ul>
+<p><img alt="math_induction_principle" src="../images/math_induction_principle.png" />  </p>
+<p><img alt="inductive_hypothesis" src="../images/inductive_hypothesis.png" />  </p>
+<h3 id="proving-an-identity-by-induction">Proving an identity by induction.</h3>
+<p>The next example will be <em>a (inductive?) proof</em> that for any positive integer n, the following 
+equality is true:</p>
+<p><img alt="inductive_proof_equality" src="../images/inductive_proof_equality.png" /> </p>
+<p>The left side of the equation is the sum 1 + 2 + 3 + 4 + 5. The expression on 
+the right side of the equation is 5(5 + 1)/2. Now it is possible to check that 
+both sides evaluate to the same number (<strong>in this case 15</strong>). The assertion that 
+the equality holds for a particular n can be denoted by the predicate P(n). 
+The statement P(n) may be true or false, depending on the value of n.</p>
+<p><img alt="proving_inequality_induction_1" src="../images/proving_inequality_induction_1.png" />  </p>
+<p><img alt="proving_inequality_induction_2" src="../images/proving_inequality_induction_2.png" />  </p>
+<h2 id="39-divisibility-proof-by-induction">3.9 Divisibility proof by induction</h2>
+<p>The next example of a proof by induction proves that 3 evenly divides the value
+of a mathematical expression parameterized by an integer n. A quantity is evenly 
+divisible by 3 if it can be expressed as 3·m for some integer m. Define the 
+predicate Q(n) to be the statement:</p>
+<blockquote>
+<p>Q(n): 3 evenly divides 2<sup>2n</sup> - 1.</p>
+</blockquote>
+<p>The statement Q(3) says that 3 evenly divides 22·3 - 1. Q(3) is true because 
+22·3 - 1 = 26 - 1 = 63 and 3 does in fact evenly divide 63 (because 63 = 3·21).</p>
+<p>The following example shows an inductive proof of the theorem that Q(n) is true 
+for all positive integers n:</p>
+<p><img alt="divisibility_proof" src="../images/divisibility_proof.png" />  </p>
+<h2 id="310-induction-proof-of-a-recurrence-relation">3.10 Induction proof of a recurrence relation</h2>
+<ul>
+<li>
+<p>Find the base step of an induction proof by substituting in n = 0 or n = 1.</p>
+</li>
+<li>
+<p>Find the inductive step of an induction proof by substituting in n + 1.</p>
+</li>
+<li>
+<p>Check that the base and inductive steps of a recurrence proof are satisfied.</p>
+</li>
+<li>
+<p>Prove the explicit formula for a recurrence relation using induction. Show the 
+base case by substituting in n = 0 or n = 1. Next substitute n + 1 into the 
+formula. Algebraically manipulate the result so the case for n is separated. 
+The n case is assumed to be true; now leverage this to show that the remaining 
+parts are true. For recursion, this often means isolating the fn+1 term.  </p>
+</li>
+</ul>
+<h3 id="explicit-formula-for-a-sequence-defined-by-a-recurrence-relation">Explicit formula for a sequence defined by a recurrence relation</h3>
+<p><img alt="explicit_formula_recurrence_relation" src="../images/explicit_formula_recurrence_relation.png" />  </p>
+<p><strong>Proving the explicit formula for a recurrence relation by induction</strong> </p>
+<p><img alt="explicit_formula_proof_for_recurrence" src="../images/explicit_formula_proof_for_recurrence.png" />  </p>
+<p>The next set of questions present an <strong>inductive proof</strong> of the following theorem:</p>
+<h3 id="explicit-formula-for-a-sequence-defined-by-a-recurrence-relation_1">Explicit formula for a sequence defined by a recurrence relation</h3>
+<p><img alt="inductive_proof_explicit_formula" src="../images/inductive_proof_explicit_formula.png" />  </p>
+<h2 id="311-induction-proof-of-closed-summation">3.11 Induction proof of closed summation</h2>
+<h3 id="inductive-proofs-showing-the-closed-forms-for-sums-of-arithmetic-and-geometric-sequences">Inductive proofs showing the <em>closed forms</em> for sums of arithmetic and geometric sequences</h3>
+<p><img alt="closed_form_proof_arithmetic" src="../images/closed_form_proof_arithmetic.png" />  </p>
+<h3 id="closed-form-for-the-sum-of-terms-in-a-geometric-sequence">Closed form for the sum of terms in a geometric sequence</h3>
+<p><img alt="closed_form_for_sum_arithmetic" src="../images/closed_form_for_sum_arithmetic.png" />  </p>
+<h1 id="unit-6">Unit 6</h1>
+<h2 id="61-modeling-computation">6.1 Modeling Computation</h2>
+<p>The material in this unit comprises 13% of the high-stakes assessment and 
+includes such concepts as:</p>
+<ul>
+<li>Theory of computation</li>
+<li>Deterministic Finite State Automata (DFA)</li>
+<li>Nondeterministic Finite State Automata</li>
+<li>State diagrams and transition tables  </li>
+</ul>
+<h2 id="62-deterministic-finite-state-machine">6.2 Deterministic Finite State Machine</h2>
+<p>This page marks the beginning of Module 21. This module contains six lessons:</p>
+<ul>
+<li>Theory of computation</li>
+<li>Introduction to deterministic finite state automata (DFA)</li>
+<li>DFA state diagrams</li>
+<li>DFA state transition tables</li>
+<li>Analyzing transition rules of a DFA</li>
+<li>Evaluating outcomes of a DFA  </li>
+</ul>
+<h2 id="63-theory-of-computation">6.3 Theory of computation</h2>
+<h3 id="introduction-to-computational-models">Introduction to computational models</h3>
+<p><strong>Computation</strong> is any type of calculation that includes both arithmetical and 
+non-arithmetical steps and follows steps that provide a solution to a problem.  </p>
+<p><strong>Computational models</strong> are abstract models that allow computer scientists to 
+reason about what can and cannot be computed by a particular kind of device.  </p>
+<ul>
+<li>pushdown automata </li>
+<li>linear-bounded automata</li>
+<li>Turing machines  </li>
+</ul>
+<h3 id="major-families-of-automata">Major families of automata</h3>
+<p>There are four major families of automaton listed in order of complexity from 
+simplest to most complex:  </p>
+<ul>
+<li>
+<p><strong>The finite state machine</strong> is the simplest family of automaton. In a finite 
+state machine, every bit exists in either of two states, 0 or 1, and a finite 
+number of possible inputs exist.</p>
+<ul>
+<li>Ideal for small amounts of memory.  </li>
+<li>Used in analysis of mathematical problems  </li>
+<li>Recognize regular language  </li>
+<li>Handle type-3 grammars</li>
+</ul>
+</li>
+<li>
+<p>A <strong>pushdown automaton</strong> uses a stack, or an abstract data type that collects 
+elements.  </p>
+<ul>
+<li>Used in theories to determine what machines can compute  </li>
+<li>Handle Type-2 grammars and context-free languages </li>
+</ul>
+</li>
+<li>
+<p>A <strong>linear-bounded automaton</strong> consists of two endmarkers with input in 
+between. Data is contained in a "tape" between the endmarkers. </p>
+<ul>
+<li>handle Type-1 grammars </li>
+<li>context-sensitive languages  </li>
+</ul>
+</li>
+<li>
+<p>A <strong>Turing machine</strong> is the most complex family of automaton. The Turing machine 
+consists of a finite automaton with infinite storage. </p>
+<ul>
+<li>Can change symbols on its tape</li>
+<li>can model all computations that can be handled by modern computers  </li>
+<li>handle Type-0 grammars</li>
+<li>Recursively enumeable languages  </li>
+</ul>
+</li>
+</ul>
+<h3 id="languages-and-grammars">Languages and grammars</h3>
+<p>The <strong>language</strong> accepted by a computational model is the set of all strings which 
+the computational model accepts.  </p>
+<p>A <strong>grammar</strong> is a set of rules for generating strings. The 
+<strong>language generated by a grammar</strong> is the set of all strings that can be generated 
+according to the rules of the grammar.  </p>
+<h3 id="the-finite-state-automaton">The finite state automaton</h3>
+<p>A <strong>finite state automaton</strong> (plural: <strong>finite state automata</strong>) consists of a finite 
+set of states with transitions between the states triggered by different input 
+actions. A finite state automaton is also known as a <strong>finite state machine (FSM)</strong>.  </p>
+<h3 id="summary">Summary:</h3>
+<ul>
+<li>
+<p>Computation is the process of solving problems using a physical device. The physical device that can perform computations is referred to as a "computer."</p>
+</li>
+<li>
+<p>Computational models are abstract models that allow computer scientists to reason out what can and what cannot be computed.</p>
+</li>
+<li>
+<p>Computational models receive a string as an input and produce an output based on the input. Some models output "yes" when the input string is accepted by the machine or "no" if it is rejected.</p>
+</li>
+<li>
+<p>The set of strings accepted by a machine is called a language. A language is generated by a set of rules called grammar. The concepts of languages, grammars, and automata are intrinsically connected. A grammar generates a language that is accepted by an automaton.</p>
+</li>
+<li>
+<p>Finite state automaton is a computational model that consists of a finite set of states with transitions between the states triggered by different input actions. It is also called a finite state machine (FSM).</p>
+</li>
+</ul>
+<h2 id="64-deterministic-finite-state-automata-dfa">6.4 Deterministic finite state automata (DFA)</h2>
+<ul>
+<li>
+<p>A <strong>deterministic finite automaton (DFA)</strong> is a finite state automaton whose next state is uniquely determined by the current state and the next input symbol.</p>
+<ul>
+<li>
+<p>Is a specific category of FSM  </p>
+</li>
+<li>
+<p>There is no possibility of going into two different states at any given step, which is what makes it "deterministic."  </p>
+</li>
+<li>
+<p>Simplest model of computation  </p>
+</li>
+<li>
+<p>Type-3 grammars, the simplest</p>
+</li>
+</ul>
+</li>
+<li>
+<p>A deterministic finite automaton is a <strong>quintuplet (5-tuple)</strong> that consists of:</p>
+<ul>
+<li>
+<p>a set of finite <strong>states</strong>,</p>
+</li>
+<li>
+<p>a set of symbols (<strong>alphabet</strong>),</p>
+</li>
+<li>
+<p>a <strong>transition function</strong> (set of rules for transitioning between states),</p>
+</li>
+<li>
+<p>an <strong>initial state</strong>  </p>
+</li>
+<li>
+<p>a set of final, <strong>accepting states</strong>.  </p>
+</li>
+</ul>
+</li>
+</ul>
+<p><img alt="DFA_5_tuple" src="../images/DFA_5_tuple.png" />  </p>
+<ul>
+<li>
+<p>Initially the DFA is in the given initial state. It initiates its transitions by looking at the first symbol of the input string. The state the DFA will transition to depends on the symbol currently at the beginning of the input string and the transition function.</p>
+</li>
+<li>
+<p>A string is accepted by a DFA if the machine does not have any symbols from the initial string to read and it has transitioned into an accepting state.</p>
+</li>
+</ul>
+<h2 id="65-dfa-state-diagrams">6.5 DFA state diagrams</h2>
+<ul>
+<li>
+<p>A <strong>state diagram</strong> is a visual representation of a deterministic finite automation.</p>
+<ul>
+<li>
+<p>Circles denote the states of the automation</p>
+</li>
+<li>
+<p>The labeled arrows explain the transitions between states, i.e. they model the transition function.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>The automaton transitions between states jumping from one state to another following the arrow that is labeled by the next alphabet symbol from the input string.</p>
+</li>
+</ul>
+<h2 id="66-dfa-state-transition-tables">6.6 DFA state transition tables</h2>
+<ul>
+<li>
+<p>The transition function of a deterministic automation can be represented by a 
+table that defines the state to which the automation transitions, based on the 
+current state. </p>
+<ul>
+<li>
+<p>states are represented as rows </p>
+</li>
+<li>
+<p>the current alphabet symbols are represented in the columns  </p>
+</li>
+</ul>
+</li>
+<li>
+<p>DFA transition functions can be described using: </p>
+<ul>
+<li>
+<p>words  </p>
+</li>
+<li>
+<p>state transition diagrams</p>
+</li>
+<li>
+<p>state transition tables  </p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="67-dfa-analyzing-transition-rules">6.7 DFA analyzing transition rules</h2>
+<ul>
+<li>
+<p>The DFA always starts in the "start" state and initiates the transition based 
+on the first symbol of the input string. In the new state it reacts to the 
+second symbol, transitions to a new state, and so on.</p>
+</li>
+<li>
+<p>Some DFAs can build output as they transition based on the input symbol.</p>
+</li>
+<li>
+<p>The input and output alphabets may coincide, but they do not need to. The DFA 
+with output is virtually a rewriting system, one that uses one string and 
+generates another based on the rewriting rules defined by the transition 
+function.</p>
+</li>
+</ul>
+<p><img alt="state_diagram_transitions_DFA" src="../images/state_diagram_transitions_DFA.png" />  </p>
+<p>DFA State table: </p>
+<p><img alt="DFA_state_table" src="../images/DFA_state_table.png" />  </p>
+<h2 id="68-dfa-evaluating-outcomes">6.8 DFA evaluating outcomes</h2>
+<p>There are languages a DFA cannot recognize, as its memory is limited on the 
+current state and the next symbol of the input string.  </p>
+<p>The property of whether a number is odd or even is called the <strong>parity</strong> of a number. 
+The parity of a string is the parity of the number of 1's. </p>
+<p><img alt="DFA_output" src="../images/DFA_output.png" />  </p>
+<p>Accepted Strings of a DFA:  </p>
+<p><img alt="accepted_strings_dfa" src="../images/accepted_strings_dfa.png" />  </p>
+<h2 id="69-nondeterministic-finite-state-machine">6.9 Nondeterministic Finite State Machine</h2>
+<p>This page marks the beginning of Module 22. This module contains five lessons:</p>
+<ul>
+<li>
+<p>Introduction to nondeterministic finite automata (NFA)</p>
+</li>
+<li>
+<p>NFA state diagrams</p>
+</li>
+<li>
+<p>NFA state tables</p>
+</li>
+<li>
+<p>NFA analyzing transition rules</p>
+</li>
+<li>
+<p>NFA evaluating outcomes</p>
+</li>
+</ul>
+<h2 id="610-nondeterministic-finite-automata-nfa">6.10 Nondeterministic finite automata (NFA)</h2>
+<p>The NFA are a superset of the DFAs.  </p>
+<p>A <strong>non-deterministic finite automaton (NFA)</strong> is a finite state automaton 
+whose next state is not uniquely determined by the current state and the next 
+input symbol.  </p>
+<ul>
+<li>
+<p>Nondeterministic finite automata are a quintuplet, where the transition 
+function maps into the power state of the set of states. The components of the 
+NFAs are:  </p>
+<ul>
+<li>states set  </li>
+<li>the alphabet</li>
+<li>set of final states</li>
+<li>initial state</li>
+<li>a transition function</li>
+</ul>
+</li>
+<li>
+<p>NFAs can transition into multiple states with one symbol or no symbols.</p>
+</li>
+<li>
+<p>An <strong>epsilon transition</strong> is a transition from one state or another without 
+reading an input symbol.  </p>
+</li>
+<li>
+<p>it is impossible to design a DFA that takes as input any binary string and 
+accepts if and only if the majority of the bits are 1  </p>
+</li>
+</ul>
+<h2 id="611-nfa-state-diagrams">6.11 NFA state diagrams</h2>
+<p><img alt="NFA_state_diagram" src="../images/NFA_state_diagram.png" />  </p>
+<p><img alt="6.11_nfa_transitions" src="../images/6.11_nfa_transitions.png" />  </p>
+<h2 id="612-nfa-state-transition-tables">6.12 NFA state transition tables</h2>
+<p>Use the state diagram above in 6.11 as a reference:</p>
+<p><img alt="nfa_state_table" src="../images/nfa_state_table.png" /></p>
+<h2 id="613-nfa-analyzing-transition-rules">6.13 NFA analyzing transition rules</h2>
+<p><img alt="NFA_after_computation" src="../images/NFA_after_computation.png" />  </p>
+<p><img alt="NFA_after_computation_captions" src="../images/NFA_after_computation_captions.png" />  </p>
+<p><img alt="NFA_transition_2" src="../images/NFA_transition_2.png" />  </p>
+<p><img alt="NFA_transition_3" src="../images/NFA_transition_3.png" />  </p>
+<h2 id="614-nfa-evaluating-outcomes">6.14 NFA evaluating outcomes</h2>
+<p>An NFA accepts a string as long as at least one valid sequence of 
+transitions corresponding to the input symbols exists, putting the NFA in an 
+accepting state at the end of the input string.  </p>
+<p>NFA Accepted State:</p>
+<p><img alt="NFA_acceptance_graph" src="../images/NFA_acceptance_graph.png" />  </p>
+<p><img alt="NFA_acceptance_captions" src="../images/NFA_acceptance_captions.png" />  </p>
+<p>NFA Rejected State:</p>
+<p><img alt="NFA_rejected_state" src="../images/NFA_rejected_state.png" />  </p>
+<p><img alt="NFA_rejected_state_captions" src="../images/NFA_rejected_state_captions.png" />  </p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/charles-lucas-young/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["toc.integrate"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../../javascripts/drawer-toggle.js"></script>
+      
+        <script src="../../../../javascripts/header-title.js"></script>
+      
+        <script src="../../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
