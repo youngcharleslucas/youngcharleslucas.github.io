@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
  :root {
     --md-primary-fg-color: rgba(0, 92, 118, 0.804);
     --md-default-bg-color: rgba(31, 33, 40, 1);
@@ -11,17 +11,31 @@
     max-width: initial;
 }
 
-/* Medium-style header logo */
+/* Modern header with Space Grotesk */
 .md-header__title {
-    font-family: 'Abhaya Libre', Georgia, serif;
-    font-weight: 700;
-    font-size: 1.75rem;
-    letter-spacing: -0.02em;
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 0.05em;
 }
 
 .md-header__topic:first-child {
-    font-family: 'Abhaya Libre', Georgia, serif;
-    font-weight: 700;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+}
+
+/* Always show both topics in header - format: Young/{PageTitle} */
+.md-header__topic {
+    position: static !important;
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+}
+
+/* Lighter weight for page title portion */
+.header-page-title {
+    font-weight: 300;
+    font-size: 1.25rem;
 }
 
 /* Fonts */
