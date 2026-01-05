@@ -120,6 +120,11 @@ Show global configurations and show location:
 One file: `git restore --staged fileName`  
 All: 'git restore --staged .`  
 
+## Undo the local Commit  
+You have a commit ready to push, but you decide you don't want to push this commit 
+You can remove the commit and unstage the files. The changes will still exits.  
+`git reset HEAD~1`  
+
 ## Restore to previous Commit 
 
 Last Commit: `git restore .`  
