@@ -1,0 +1,62 @@
+{{ define "main" }}
+<div class="page-title">writing</div>
+
+<div class="search-wrap">
+  <input id="search" type="search" placeholder="filter posts…" autocomplete="off" spellcheck="false">
+</div>
+
+<ul class="post-list" id="post-list">
+  {{ range .Pages }}
+  <li data-title="{{ .Title | lower }}">
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <span class="date">{{ .Date.Format "2006-01-02" }}</span>
+  </li>
+  {{ end }}
+</ul>
+
+<script>
+(function () {
+  const fuzzy = (q, t) => {
+    q = q.toLowerCase().trim(); t = t.toLowerCase();
+    if (!q) return 0;
+    let ti = 0, score = 0, last = -1;
+    for (const ch of q) {
+      if (ch === " ") continue;
+      const idx = t.indexOf(ch, ti);
+      if (idx === -1) return -1;
+      if (last >= 0) score += idx - last;
+      last = idx; ti = idx + 1;
+    }
+    return score;
+  };
+
+  const input = document.getElementById("search");
+  const list  = document.getElementById("post-list");
+  const items = Array.from(list.querySelectorAll("li"));
+
+  input.addEventListener("input", () => {
+    const q = input.value;
+    const scored = items.map(el => ({
+      el,
+      score: fuzzy(q, el.dataset.title)
+    }));
+
+    if (!q.trim()) {
+      // restore original DOM order (date order from Hugo)
+      items.forEach(el => list.appendChild(el));
+      items.forEach(el => el.hidden = false);
+      return;
+    }
+
+    const matched = scored.filter(x => x.score >= 0);
+    matched.sort((a, b) => a.score - b.score);
+
+    scored.forEach(x => x.el.hidden = true);
+    matched.forEach(x => {
+      x.el.hidden = false;
+      list.appendChild(x.el);
+    });
+  });
+})();
+</script>
+{{ end }}

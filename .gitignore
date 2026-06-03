@@ -30,3 +30,9 @@ go.work.sum
 # Editor/IDE
 # .idea/
 # .vscode/
+
+# Hugo build output
+public/
+.hugo_build.lock
+
+CLAUDE.md

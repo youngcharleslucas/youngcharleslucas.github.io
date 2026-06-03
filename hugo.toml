@@ -1,0 +1,8 @@
+baseURL = "https://youngcharleslucas.github.io/"
+locale = "en-us"
+title = "youngcharleslucas"
+
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  description = "software engineer"
