@@ -8,7 +8,7 @@
   --muted: #888;
   --link: #1a1a1a;
   --border: #e0e0e0;
-  --col: 520px;
+  --col: 760px;
   --gap: 2.5rem;
 }
 @media (prefers-color-scheme: dark) {
