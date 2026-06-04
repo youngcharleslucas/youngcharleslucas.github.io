@@ -2,7 +2,7 @@
 title = "resume"
 +++
 
-I am a programmer with experience in different languages and databases, with knowledge of Kubernetes and AWS Cloud services. Navy fast-attack submarine veteran. Design background in architecture.
+I am a programmer with experience in different languages and databases. I am a Navy fast-attack submarine veteran.
 
 Salt Lake City, UT · [LinkedIn](https://www.linkedin.com/in/charles-lucas-young/) · charles.lucas.young@gmail.com
 
