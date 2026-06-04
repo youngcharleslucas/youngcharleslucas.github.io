@@ -1,6 +1,5 @@
 +++
 title = "resume"
-date = 2026-06-03
 +++
 
 ## experience
