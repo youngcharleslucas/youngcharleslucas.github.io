@@ -1,5 +1,25 @@
 {{ define "main" }}
-<div class="page-title">writing</div>
+
+{{/* collect unique tags across all posts */}}
+{{ $allTags := slice }}
+{{ range .Pages }}
+  {{ range .Params.tags }}
+    {{ $allTags = $allTags | append . }}
+  {{ end }}
+{{ end }}
+{{ $allTags = $allTags | uniq }}
+
+<div class="page-title">
+  <button id="tags-toggle" class="tags-toggle" aria-expanded="false">tags</button>
+</div>
+
+{{ if $allTags }}
+<div id="tags-panel" class="tags-panel" hidden>
+  {{ range $allTags }}
+  <button class="tag-btn" data-tag="{{ . | lower }}">{{ . }}</button>
+  {{ end }}
+</div>
+{{ end }}
 
 <div class="search-wrap">
   <input id="search" type="search" placeholder="filter posts…" autocomplete="off" spellcheck="false">
@@ -7,7 +27,7 @@
 
 <ul class="post-list" id="post-list">
   {{ range .Pages }}
-  <li data-title="{{ .Title | lower }}">
+  <li data-title="{{ .Title | lower }}" data-tags="{{ range .Params.tags }}{{ . | lower }} {{ end }}">
     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
     <span class="date">{{ .Date.Format "2006-01-02" }}</span>
   </li>
@@ -30,33 +50,67 @@
     return score;
   };
 
-  const input = document.getElementById("search");
-  const list  = document.getElementById("post-list");
-  const items = Array.from(list.querySelectorAll("li"));
+  const input      = document.getElementById("search");
+  const list       = document.getElementById("post-list");
+  const items      = Array.from(list.querySelectorAll("li"));
+  const tagsToggle = document.getElementById("tags-toggle");
+  const tagsPanel  = document.getElementById("tags-panel");
+  const tagBtns    = tagsPanel ? Array.from(tagsPanel.querySelectorAll(".tag-btn")) : [];
 
-  input.addEventListener("input", () => {
+  let activeTag = null;
+
+  function applyFilters() {
     const q = input.value;
-    const scored = items.map(el => ({
-      el,
-      score: fuzzy(q, el.dataset.title)
-    }));
 
-    if (!q.trim()) {
-      // restore original DOM order (date order from Hugo)
+    if (!q.trim() && !activeTag) {
       items.forEach(el => list.appendChild(el));
       items.forEach(el => el.hidden = false);
       return;
     }
 
+    const scored = items.map(el => {
+      if (activeTag) {
+        const tags = (el.dataset.tags || "").trim().split(/\s+/).filter(Boolean);
+        if (!tags.includes(activeTag)) return { el, score: -2 };
+      }
+      return { el, score: fuzzy(q, el.dataset.title) };
+    });
+
     const matched = scored.filter(x => x.score >= 0);
-    matched.sort((a, b) => a.score - b.score);
+    if (q.trim()) matched.sort((a, b) => a.score - b.score);
 
     scored.forEach(x => x.el.hidden = true);
     matched.forEach(x => {
       x.el.hidden = false;
       list.appendChild(x.el);
     });
+  }
+
+  if (tagsToggle && tagsPanel) {
+    tagsToggle.addEventListener("click", () => {
+      const open = !tagsPanel.hidden;
+      tagsPanel.hidden = open;
+      tagsToggle.setAttribute("aria-expanded", String(!open));
+      tagsToggle.classList.toggle("open", !open);
+    });
+  }
+
+  tagBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const tag = btn.dataset.tag;
+      if (activeTag === tag) {
+        activeTag = null;
+        btn.classList.remove("active");
+      } else {
+        tagBtns.forEach(b => b.classList.remove("active"));
+        activeTag = tag;
+        btn.classList.add("active");
+      }
+      applyFilters();
+    });
   });
+
+  input.addEventListener("input", applyFilters);
 })();
 </script>
 {{ end }}

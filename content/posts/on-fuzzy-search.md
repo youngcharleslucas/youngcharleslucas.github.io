@@ -2,6 +2,7 @@
 title = "a tiny fuzzy search filter in vanilla JS"
 date = 2026-04-10
 draft = false
+tags = ["javascript", "web"]
 +++
 
 The blog index on this site filters posts as you type, with no search library.
