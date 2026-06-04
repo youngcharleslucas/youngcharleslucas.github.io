@@ -1,7 +1,7 @@
 +++
 title = "building a site with Hugo and GitHub Pages"
 date = 2026-05-20
-draft = false
+draft = true
 tags = ["hugo", "web"]
 +++
 

@@ -1,9 +1,11 @@
 +++
 title = "a tiny fuzzy search filter in vanilla JS"
 date = 2026-04-10
-draft = false
+draft = true
 tags = ["javascript", "web"]
 +++
+
+<!-- https://www.codementor.io/@anwarulislam/how-to-implement-fuzzy-search-in-javascript-2742dqz1p9 -->
 
 The blog index on this site filters posts as you type, with no search library.
 
