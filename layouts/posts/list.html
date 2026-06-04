@@ -64,7 +64,7 @@
 
     if (!q.trim() && !activeTag) {
       items.forEach(el => list.appendChild(el));
-      items.forEach(el => el.hidden = false);
+      items.forEach(el => el.style.display = "");
       return;
     }
 
@@ -79,9 +79,9 @@
     const matched = scored.filter(x => x.score >= 0);
     if (q.trim()) matched.sort((a, b) => a.score - b.score);
 
-    scored.forEach(x => x.el.hidden = true);
+    scored.forEach(x => x.el.style.display = "none");
     matched.forEach(x => {
-      x.el.hidden = false;
+      x.el.style.display = "";
       list.appendChild(x.el);
     });
   }
