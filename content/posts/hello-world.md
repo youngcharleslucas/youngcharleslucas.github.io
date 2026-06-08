@@ -1,7 +1,7 @@
 +++
 title = "hello world"
 date = 2026-06-03
-draft = false
+draft = true
 tags = ["personal"]
 +++
 
