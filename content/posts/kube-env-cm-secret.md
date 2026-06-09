@@ -1,7 +1,7 @@
 +++
 title = "ways to throw secrets and config maps into a container for CKAD"
 date = 2026-05-31
-draft = true
+draft = false
 tags = ["kubernetes", "ckad"]
 +++
 

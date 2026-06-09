@@ -1,8 +1,8 @@
 +++
 title = "AI introduction"
 date = 2026-05-29
-draft = true
-tags = ["AI"]
+draft = false
+tags = ["ai"]
 +++
 
 Brief training covering the basic topics of AI  
