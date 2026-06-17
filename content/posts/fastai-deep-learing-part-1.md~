@@ -58,8 +58,6 @@ parameter of the DataBlock.
 
 **Segmentation** in AI refers to a computer vision technique that analyzes an image at the pixel level to identify objects and their exact boundaries. Instead of just placing a rough bounding box around an object, AI models generate a detailed "mask" that outlines the shape, allowing machines to understand an image comprehensively
 
-**Loss**: Used during training. Tell the model how good the prediction results are. Feed the loss back to the weights to 
-improve the prediction.  
 
 <!-- resource links --> 
 [deep_learing] https://course.fast.ai/ "Practical Deep Learning for Coders"  
