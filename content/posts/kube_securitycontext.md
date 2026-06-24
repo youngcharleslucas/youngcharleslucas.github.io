@@ -31,7 +31,7 @@ overrides the Pod-level value** for that container.
 |-------|:---:|:---------:|-------------|
 | `runAsUser` | ✓ | ✓ | UID the container process runs as. Container-level overrides Pod-level. |
 | `runAsGroup` | ✓ | ✓ | Primary GID for the container process. |
-| `runAsNonRoot` | ✓ | ✓ | If true, kubelet refuses to start the container when it would run as UID 0. |
+| **runAsNonRoot** | ✓ | ✓ | If true, kubelet refuses to start the container when it would run as UID 0. |
 | `seLinuxOptions` | ✓ | ✓ | SELinux labels (user, role, type, level) applied to the container/Pod. |
 | `seccompProfile` | ✓ | ✓ | Seccomp filtering profile (e.g. `RuntimeDefault`, `Localhost`, `Unconfined`). |
 | `appArmorProfile` | ✓ | ✓ | AppArmor confinement profile. |
@@ -42,8 +42,8 @@ overrides the Pod-level value** for that container.
 | `supplementalGroupsPolicy` | ✓ |  | Whether to merge or replace groups defined in the container image (`Merge` / `Strict`). |
 | `sysctls` | ✓ |  | Namespaced kernel parameters (sysctls) to set for the Pod. |
 | `privileged` |  | ✓ | Grants the container near-full host access (essentially root on the node). |
-| `allowPrivilegeEscalation` |  | ✓ | Controls whether a process can gain more privileges than its parent (e.g. via setuid). |
-| `readOnlyRootFilesystem` |  | ✓ | Mounts the container's root filesystem as read-only. |
+| **allowPrivilegeEscalation** |  | ✓ | Controls whether a process can gain more privileges than its parent (e.g. via setuid). |
+| **readOnlyRootFilesystem** |  | ✓ | Mounts the container's root filesystem as read-only. |
 | `capabilities` |  | ✓ | Add or drop individual Linux capabilities (e.g. drop `ALL`, add `NET_BIND_SERVICE`). |
 | `procMount` |  | ✓ | Controls masking of `/proc` (`Default` or `Unmasked`). |
 
