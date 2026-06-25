@@ -65,6 +65,30 @@ using LLMs no just to generate the final answer, but as helpers earlier
 the in the pipeline (rewriteing a vague user question into a better search 
 query, or summarizing retrieved chunks before they go into the prompt).  
 
+### Training notes  
+
+How to evaulate the embedding system and RAG:
+- Precision equation
+- Recall equation  
+- https://en.wikipedia.org/wiki/Evaluation_measures_(information_retrieval)  
+- OR, you don't want the math above: Could you produce 100 questions that your users will ask commonly? Could you provide an answer document for each?  
+
+Once you have a way to evaluate your model, you can work on improving your model.  
+You need to work on 'cleaning'. Removing random characters and data. 
+You can use cleaning libraries.  
+Work on chunking  
+Labeling: like a title on a text section, or labels on parts. 
+You can start tagging your data  
+What is cosine coparability? 
+sbert.net  
+what is reranking and a reranker  
+How to finetune a RAG 
+get torch for Nvidia driver...LOL  
+Training Loss
+Validation Loss  
+
+
+
 <!-- resource links -->  
 [datacamp_rag] https://www.datacamp.com/blog/what-is-retrieval-augmented-generation-rag "Datacamp: What is RAG"  
 [ibm_rag] https://www.ibm.com/think/topics/retrieval-augmented-generation "IBM RAG"  
