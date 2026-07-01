@@ -9,6 +9,69 @@ https://www.youtube.com/watch?v=oYxTTirKY8M
 https://www.youtube.com/watch?v=vRYBG_R8JAI
 https://www.youtube.com/watch?v=I7_WXKhyGms
 
+### Glossary   
+
+**Dynamically-typed language**: like JavaScript, where the interpreter 
+assigns variables a type at runtime based on the variable's value at 
+the time. Like in Python, variables are not bound to a specific type 
+at declaration. A single variable can hold data of **different types** 
+throughout its lifetime.   
+
+**Statically-typed langauge**: like Java, C, or C++, where variable types 
+are known at compile time.  
+
+**Compiler**: Translates the **entire** source code program into machine 
+code all at once, *before* execution. It saves this translation as a 
+standalone file (like an `.exe` file on Windows)  
+
+**Interpreter**: Translates **and executes** the source code line-by-line 
+(or statement-by-statement) at runtime. **No separate machine code file is created**.  
+
+**Just-In-Time (JIT) Compilation**: Traditional JavaScript used to be an 
+interpreted language. Modern JavaScript engines (like Chrome's V8 or 
+Firefox's SpiderMonkey) no longer rely on simple line-by-line 
+interpretation. JIT Compilation is a hybrid approach of compilation 
+and interpretation.
+- Parsing: the engine reads the source code and turns it into a data 
+  structure called an Abstract Syntax Tree  
+- Interpretation: An interpreter quickly takes that AST and generates 
+  unoptimized bytecode so the program can start running immediately.  
+- Profiling: While the code runs, a profiler monitors it to see which 
+  pieces of code are run freqeuntly (these are called 'hot spots')  
+- JIT Compilation: The engine passes thos "hot" chunks of code to a 
+  compiler, which translates them directly into higly optimized machine 
+  code on the fly. The engine then swaps out the slow interpreted code 
+  for this lightning-fase machine code.  
+
+**Ahead-of-time (AOT) Compiler**:  
+
+
+**Intermediate Representations and Virtual Machines**: Like Java, C#, Scala,
+these languages don't generate an .exe file. It produces **byte code** in 
+.class files. These files are an intermediate language that run on a 
+virtual machine. This makes the language portable and platform independent. 
+The os needs the JVM for Java or .NET CLR VM for C#. The Run Time step 
+includes execution of the VM. Inside the VM, a JIT Compiler and interpreter 
+translate the byte code into machine code. The JIT Compiler's feature of 
+compiling "hot spots" greatly increases performance.  
+
+**REPL**: Read-Evaluate-Print-Loop, interactive programming environment 
+that takes single user inputs, executes them, and returns the results. 
+The user can type a single line of code and see what happens instantly.  
+ 
+**Turing Completeness**: a system or language can compute any logically 
+possible problem. If gien enough time and memory, it can simulate any modern 
+computer. A system typically needs: conditional branching, arbitrary repitition 
+(while or for loops), data storage.  
+
+
+**Monads**: in functional programming (like Haskell), it is a design pattern 
+used to chain operations and manage side effects (like null values, async 
+requests, or state changes) while keeping functions pure. It acts as a 
+wrapper, or "context", around a value and provies a standardized way to 
+apply functions to it. It helps Haskell deal with problems of side effects 
+at compile time instead of runtime.   
+
 ### Transactions -> ACID  
 
 - **Atomicity** All changes to data are performed as if they are a single 

@@ -1,0 +1,85 @@
++++
+title = "Handy Dandy Vim"
+date = 2025-01-01
+draft = true 
+tags = ["vim", "netrw"]
++++
+
+## Vim  
+
+---  
+Command structure:  
+`[count] [operation] [motion]`  
+
+---  
+**Re-load the .vimrc** 
+After making changes to the vimrc, run `:source %` in the vimrc file. 
+It will re-execute all the commands.   
+--- 
+**Folding**  
+
+`za` is the quickest. It will fold and open between tags.  
+`zf%` can be more specific, saying fold the enclosure.  
+`zc` close fold  
+`zo` open the fold  
+`zfat` will fold all of a tag, like html element's children  
+`zfit` will only fold the contents of a tag  
+---  
+**Jump to surrounding brackets**  
+`[{` will jump to the first surrounding `{`. You can swap out `{` for `(`  
+
+---  
+**Perform an operation on multiple matching values in file**  
+`:g/<seachPhrase>/<operation>` -> `:g/var/d` will delete all words `var`  
+
+---  
+**Buffers**  
+`:ls` view buffers  
+`:b` + the number of a buffer to open that buffer.  
+You can also type the partial path of a buffer for it to open. 
+So `:b App` might open `App.js` if it was in a buffer.  
+`:wa` will write changes made on ALL BUFFERS  
+---  
+**Pasting into the terminal in terminal mode**  
+`Crtl + r` + `"` to insert from the default register. You can 
+replace `"` with whatever register you have something saved.   
+`%` will paste the current file name.  
+`/` will paste the last search term.  
+---  
+**Git Grep**  
+https://www.youtube.com/watch?v=hIbTvteBdSY&list=PL0tgH22U2S3GN7MdobsdWV44qw-P5g7RJ&index=4
+Figure out why the command is not finding the .git working directory  
+
+You need to make sure that the local pwd is set to the git project folder or a folder within 
+the git project.  
+
+You will be adding the `git grep <seachString>` into the vimrc.  
+`set gp=git\ grep\ -n`  
+AI returned this string to be more specific with arguments and to set pwd.  
+`set gp=git\ -C\ %:p:h\ grep\ -n\ $*`
+
+You can see the returned results with `:copen`. `:cclose` to hide results window.  
+---  
+**VimGrep**  
+Know what your pwd is. You may have to set the pwd.  
+`:vimgrep /pattern/ **/*`  
+The above will perform a deep search of your current directory and sub directories.  
+You can change where grep is looking with a different path or file.  
+
+See the returned results with `:copen`
+
+---  
+**Set the PWD**  
+
+Set globally: `:cd /path/to/dir`  
+Set for current window: `:lcd /path/to/dir`  
+Set for current tab: `:tcd /path/to/dir`  
+Set to the directory of the currently open file: `:cd %:p:h`  
+Automate for every file you open by adding to vimrc: `set autochdir`  
+
+---  
+
+
+
+
+
